@@ -10,19 +10,13 @@ console.log('|Le bot est en ligne.|');
 client.login(token)
 
 client.on('guildMemberAdd', member => {
-const channel = member.guild.channels.find('name', 'accueil');
-if(!channel) {
-return;
-}
-channel.send(`Bonjour et bienvenue sur le discord de DreamsCraft ${member.user} ! :smiley:  `);
+let role = member.guild.roles.find("name","--=[Visiteur]=--");
+const channel = member.guild.channels.find("name", "accueil").send(`Bonjour et bienvenue sur le discord de DreamsCraft ${member.user} ! :smiley: `)
+member.addRole(role)
 });
 
 client.on('guildMemberRemove', member => {
-const channel = member.guild.channels.find('name', 'accueil');
-if(!channel) {
-return;
-}
-channel.send(` ${member.user} a quitté le discord de DreamsCraft !`);
+const channel = member.guild.channels.find('name', 'accueil').send(` ${member.user} a quitté le discord de DreamsCraft !`);
 });
 
 client.on('message', message =>{
