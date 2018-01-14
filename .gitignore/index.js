@@ -36,7 +36,7 @@ name: '``/dc``',
 value: "``Donne les informations concernant le serveur.``",
 inline: true
 }, {
-name: '**/partenaires**',
+name: '``/partenaires``',
 value: "``Donne la liste de nos partenaires officiels.``",
 inline: true
 }
