@@ -38,7 +38,7 @@ inline: true
 }, {
 name: '**/partenaires**',
 value: "``Donne la liste de nos partenaires officiels.``",
-inline: false
+inline: true
 }
 ],
 thumbnail: {
