@@ -28,15 +28,15 @@ author: message.author.name,
 title: ' Voici les commandes du DreamsCraft BOT :',
 description: ' ',
 fields: [{
-name: '``:help``',
+name: '``/help``',
 value: "``Affiche les commandes du DreamsCraft BOT``",
 inline: true
 }, {
-name: '``:dc``',
+name: '``/dc``',
 value: "``Donne les informations concernant le serveur.``",
 inline: true
 }, {
-name: '**:partenaires**',
+name: '**/partenaires**',
 value: "``Donne la liste de nos partenaires officiels.``",
 inline: false
 }
