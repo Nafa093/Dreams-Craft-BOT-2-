@@ -29,7 +29,7 @@ title: ' Voici les commandes du DreamsCraft BOT :',
 description: ' ',
 fields: [{
 name: '``/help``',
-value: "``Affiche les commandes du DreamsCraft BOT``",
+value: "``Affiche les commandes du DreamsCraft BOT.`",
 inline: true
 }, {
 name: '``/dc``',
