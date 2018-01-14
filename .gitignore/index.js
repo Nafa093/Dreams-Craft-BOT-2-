@@ -23,7 +23,7 @@ client.on('message', message =>{
 if (message.content === ("/help")) {
  message.channel.send("", {
 embed: {
-color: 4400734,
+color: 1000,
 author: message.author.name,
 title: ' Voici les commandes du DreamsCraft BOT :',
 description: ' ',
