@@ -33,7 +33,15 @@ value: "``Affiche les commandes du DreamsCraft BOT.``",
 inline: true
 }, {
 name: '``/dc``',
-value: "``Donne les informations concernant le serveur.``",
+value: "``Donne les informations concernant le serveur notamment l'ip.``",
+inline: true
+}, {
+name: '``/soft``',
+value: "``Donne la date de la prochaine Soft-Opening et ses informations.``",
+inline: true
+}, {
+name: '``/ouverture``',
+value: "``Donne la date de l'ouverture officielle du serveur.``",
 inline: true
 }, {
 name: '``/partenaires``',
@@ -57,5 +65,11 @@ message.reply("Voici la liste des serveurs partenaires de DreamsCraft : DisneyWo
 }
 if(message.content == ("/dc")){
 message.reply("L'ip de DreamsCraft est : DreamsCraft.minecraft-mania.fr en version 1.12.2 de minecraft premium !");
+}
+if(message.content == ("/soft")){
+message.reply("La prochaine Soft-Opening se déroulera du 2 février au 2 mars pour la saison de le force !");
+}
+if(message.content == ("/ouverture")){
+message.reply("Il n'y a pas encore de date d'ouverture.");
 }
 });
