@@ -82,7 +82,7 @@ message.reply("Les attractions ouvertes sont : ``Les Tapis Volants d'Aladin`` - 
 if(message.content == ("/lumieux")){
 message.reply(" est définitivement du côté lumieux de la force ! Que la force soit avec toi jeune jedi. ");
 }
-if(message.content == ("/obscure")){
+if(message.content == ("/obscur")){
 message.reply(" est définitivement du côté obscure de la force ! Bienvenue jeune sith.");
 }
 });
