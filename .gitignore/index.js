@@ -44,6 +44,10 @@ name: '``/ouverture``',
 value: "``Donne la date de l'ouverture officielle du serveur.``",
 inline: true
 }, {
+name: '``/attractions``',
+value: "``Donne la liste complète des attractions ouvertes.``",
+inline: true
+}, {
 name: '``/partenaires``',
 value: "``Donne la liste de nos partenaires officiels.``",
 inline: true
@@ -71,5 +75,8 @@ message.reply("La prochaine Soft-Opening se déroule actuellement du 2 février 
 }
 if(message.content == ("/ouverture")){
 message.reply("Il n'y a pas encore de date d'ouverture.");
+}
+if(message.content == ("/attractions")){
+message.reply("Les attractions ouvertes sont : ``Les Tapis Volants d'Aladin`` - `` Rc Racer`` - `` Zig-Zag Spin `` !");
 }
 });
