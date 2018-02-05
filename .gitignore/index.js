@@ -80,9 +80,9 @@ if(message.content == ("/attractions")){
 message.reply("Les attractions ouvertes sont : ``Les Tapis Volants d'Aladin`` - `` Rc Racer`` - `` Zig-Zag Spin `` !");
 }
 if(message.content == ("/lumieux")){
-message.reply(" est définitivement du côté lumieux de la force !Que la force soit avec toi jeune jedi");
+message.reply(" est définitivement du côté lumieux de la force ! Que la force soit avec toi jeune jedi. ");
 }
-if(message.content == ("obscure")){
+if(message.content == ("/obscure")){
 message.reply(" est définitivement du côté obscure de la force ! Bienvenue jeune sith.");
 }
 });
