@@ -79,7 +79,7 @@ message.reply("Il n'y a pas encore de date d'ouverture.");
 if(message.content == ("/attractions")){
 message.reply("Les attractions ouvertes sont : ``Les Tapis Volants d'Aladin`` - `` Rc Racer`` - `` Zig-Zag Spin `` !");
 }
-if(message.content == ("/lumieux")){
+if(message.content == ("/lumineux")){
 message.reply(" est définitivement du côté lumieux de la force ! Que la force soit avec toi jeune jedi. ");
 }
 if(message.content == ("/obscur")){
