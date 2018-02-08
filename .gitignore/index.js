@@ -115,14 +115,14 @@ message.channel.send(args.join(' '))
 if (message.content.includes("pute") || message.content.includes("encule") || message.content.includes("fdp") || message.content.includes("batard") || message.content.includes("ta race") || message.content.includes("ta mère") || message.content.includes("ntm") || message.content.includes("salop") || message.content.includes("bougnoule") || message.content.includes("con") || message.content.includes("ntm")) {
 if(message.author.bot) return;
 message.reply("Merci d'éviter ce genre de langage ! ");
-client.channels.get('336969764557684748').send(`${message.author} A dit : "** ${message} **"`)
+client.channels.get('411217787785183245').send(`${message.author} A dit : "** ${message} **"`)
 message.delete()
 }
 
 if (message.content.includes("WaltCraft") || message.content.includes("MagicCraft") || message.content.includes("DisneyPixel") || message.content.includes("Walt Disney Imagineer") || message.content.includes("DLPparks") || message.content.includes("Magic Of Disney") || message.content.includes("Disney Imagineer") || message.content.includes("World of Disney")) {
 if(message.author.bot) return;
 message.reply("Merci d'éviter ce genre de langage ! ");
-client.channels.get('336969764557684748').send(`${message.author} A dit : "** ${message} **.`)
+client.channels.get('411217787785183245').send(`${message.author} A dit : "** ${message} **".`)
 message.delete()
 }
 });
