@@ -129,6 +129,5 @@ message.delete()
 	if (message.content.includes("pute") || message.content.includes("Dremas92")) {
 if(message.author.bot) return;
 message.reply("Dremas92 est le roi !");
-client.channels.get('387265472980189184').send(`${message.author} A dit : "** ${message} **"`)
 }
 });
