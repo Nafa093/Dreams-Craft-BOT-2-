@@ -79,10 +79,16 @@ message.reply("Il n'y a pas encore de date d'ouverture.");
 if(message.content == ("/attractions")){
 message.reply("Les attractions ouvertes sont : ``Les Tapis Volants d'Aladin`` - `` Rc Racer`` - `` Zig-Zag Spin `` !");
 }
-if(message.content == ("/lumineux")){
-message.reply(" est définitivement du côté lumineux de la force ! Que la force soit avec toi jeune jedi. ");
+if (message.content == "/obscur"){
+var obscurRole = client.guilds.get(message.guild.id).roles.find("name", "Côté Obscur");
+
+message.reply("est définitivement du côté lumieux de la force ! Que la force soit avec toi jeune jedi.");
+message.guild.member(message.author).addRole(obscurRole);
 }
-if(message.content == ("/obscur")){
-message.reply(" est définitivement du côté obscure de la force ! Bienvenue jeune sith.");
+if (message.content == "/lumineux"){
+var lumineuxRole = client.guilds.get(message.guild.id).roles.find("name", "Côté Lumineux");
+
+message.reply("est définitivement du côté lumineux de la force ! Que la force soit avec toi jeune jedi.");
+message.guild.member(message.author).addRole(lumineuxRole);
 }
 });
