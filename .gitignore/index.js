@@ -91,4 +91,38 @@ var lumineuxRole = client.guilds.get(message.guild.id).roles.find("name", "Côt�
 message.reply("est définitivement du côté lumineux de la force ! Que la force soit avec toi jeune jedi.");
 message.guild.member(message.author).addRole(lumineuxRole);
 }
+
+let argument = message.content.split("/clear").slice(1)
+if(!argument) return message.channel.send("Merci d'indiquer de respecter le modèle suivant : ``/clear ( nombre de 0 à 100)``").then(m => m.delete(20000))
+var person = message.member.permissions
+function dot() {
+message.channel.bulkDelete(argument);
+};
+function doNot() {
+message.channel.send(" ").then(m => m.delete(20000));
+};
+person.has("MANAGE_MESSAGES") ? dot() : doNot();
+
+if (message.content.startsWith(prefix + 'annonce')) {
+if (!message.member.hasPermission('ADMINISTRATOR'))
+return message.channel.send("Tu n'as pas la permissions !");
+message.delete()
+let args = message.content.split(' ')
+args.shift()
+message.channel.send(args.join(' '))
+    }
+	
+if (message.content.includes("pute") || message.content.includes("encule") || message.content.includes("fdp") || message.content.includes("batard") || message.content.includes("ta race") || message.content.includes("ta mère") || message.content.includes("ntm") || message.content.includes("salop") || message.content.includes("bougnoule") || message.content.includes("con") || message.content.includes("ntm")) {
+if(message.author.bot) return;
+message.reply("Merci d'éviter ce genre de langage ! ");
+client.channels.get('336969764557684748').send(`${message.author} A dit : "** ${message} **"`)
+message.delete()
+}
+
+if (message.content.includes("WaltCraft") || message.content.includes("MagicCraft") || message.content.includes("DisneyPixel") || message.content.includes("Walt Disney Imagineer") || message.content.includes("DLPparks") || message.content.includes("Magic Of Disney") || message.content.includes("Disney Imagineer") || message.content.includes("World of Disney")) {
+if(message.author.bot) return;
+message.reply("Merci d'éviter ce genre de langage ! ");
+client.channels.get('336969764557684748').send(`${message.author} A dit : "** ${message} **.`)
+message.delete()
+}
 });
