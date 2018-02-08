@@ -11,12 +11,12 @@ client.login(token)
 
 client.on('guildMemberAdd', member => {
 let role = member.guild.roles.find("name","--=[Visiteur]=--");
-const channel = member.guild.channels.find("name", "accueil").send(`Bonjour et bienvenue sur le discord de DreamsCraft ${member.user} ! :smiley: `)
+const channel = member.guild.channels.find("name", "accueil").send(`Bonjour et bienvenue sur le discord de DreamsCraft ${member.user}. Que la force soit avec toi ! :smiley: `)
 member.addRole(role)
 });
 
 client.on('guildMemberRemove', member => {
-const channel = member.guild.channels.find('name', 'accueil').send(` ${member.user} a quitté le discord de DreamsCraft !`);
+const channel = member.guild.channels.find('name', 'accueil').send(` ${member.user} a quitté le discord de DreamsCraft. Que la force soit avec lui !`);
 });
 
 client.on('message', message =>{
@@ -112,7 +112,7 @@ args.shift()
 message.channel.send(args.join(' '))
     }
 	
-if (message.content.includes("pute") || message.content.includes("encule") || message.content.includes("fdp") || message.content.includes("batard") || message.content.includes("ta race") || message.content.includes("ta mère") || message.content.includes("ntm") || message.content.includes("salop") || message.content.includes("bougnoule") || message.content.includes("con") || message.content.includes("ntm")) {
+if (message.content.includes("pute") || message.content.includes("encule") || message.content.includes("fdp") || message.content.includes("batard") || message.content.includes("ta race") || message.content.includes("ta mère") || message.content.includes("ntm") || message.content.includes("salop") || message.content.includes("bougnoule") || message.content.includes("con") || message.content.includes("ntm") || message.content.includes("Encule") || message.content.includes("Fdp") || message.content.includes("Batard") || message.content.includes("Ta race") || message.content.includes("Ta mère") || message.content.includes("Ntm") || message.content.includes("Salop") || message.content.includes("Bougnoule") || message.content.includes("Con") || message.content.includes("Ntm")) {
 if(message.author.bot) return;
 message.reply("Merci d'éviter ce genre de langage ! ");
 client.channels.get('411217787785183245').send(`${message.author} A dit : "** ${message} **"`)
