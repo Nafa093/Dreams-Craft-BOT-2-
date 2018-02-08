@@ -121,7 +121,7 @@ message.delete()
 
 if (message.content.includes("WaltCraft") || message.content.includes("MagicCraft") || message.content.includes("DisneyPixel") || message.content.includes("Walt Disney Imagineer") || message.content.includes("DLPparks") || message.content.includes("Magic Of Disney") || message.content.includes("Disney Imagineer") || message.content.includes("World of Disney")) {
 if(message.author.bot) return;
-message.reply("Merci d'éviter ce genre de langage ! ");
+message.reply("Merci d'éviter la pub ! ");
 client.channels.get('411217787785183245').send(`${message.author} A dit : "** ${message} **".`)
 message.delete()
 }
