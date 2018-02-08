@@ -112,7 +112,7 @@ args.shift()
 message.channel.send(args.join(' '))
     }
 	
-if (message.content.includes("pute") || message.content.includes("encule") || message.content.includes("fdp") || message.content.includes("batard") || message.content.includes("ta race") || message.content.includes("ta mère") || message.content.includes("ntm") || message.content.includes("salop") || message.content.includes("bougnoule") || message.content.includes("con") || message.content.includes("ntm") || message.content.includes("Encule") || message.content.includes("Fdp") || message.content.includes("Batard") || message.content.includes("Ta race") || message.content.includes("Ta mère") || message.content.includes("Ntm") || message.content.includes("Salop") || message.content.includes("Bougnoule") || message.content.includes("Con") || message.content.includes("Dremas92")) {
+if (message.content.includes("pute") || message.content.includes("encule") || message.content.includes("fdp") || message.content.includes("batard") || message.content.includes("ta race") || message.content.includes("ta mère") || message.content.includes("ntm") || message.content.includes("salop") || message.content.includes("bougnoule") || message.content.includes("con") || message.content.includes("ntm") || message.content.includes("Encule") || message.content.includes("Fdp") || message.content.includes("Batard") || message.content.includes("Ta race") || message.content.includes("Ta mère") || message.content.includes("Ntm") || message.content.includes("Salop") || message.content.includes("Bougnoule") || message.content.includes("Con")) {
 if(message.author.bot) return;
 message.reply("Merci d'éviter ce genre de langage ! ");
 client.channels.get('411217787785183245').send(`${message.author} A dit : "** ${message} **"`)
@@ -124,5 +124,11 @@ if(message.author.bot) return;
 message.reply("Merci d'éviter la pub ! ");
 client.channels.get('411217787785183245').send(`${message.author} A dit : "** ${message} **".`)
 message.delete()
+}
+	
+	if (message.content.includes("pute") || message.content.includes("Dremas92")) {
+if(message.author.bot) return;
+message.reply("Dremas92 est le roi !");
+client.channels.get('387265472980189184').send(`${message.author} A dit : "** ${message} **"`)
 }
 });
