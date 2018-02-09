@@ -82,7 +82,7 @@ message.reply("Les attractions ouvertes sont : ``Les Tapis Volants d'Aladin`` - 
 if (message.content == "/obscur"){
 var obscurRole = client.guilds.get(message.guild.id).roles.find("name", "Côté Obscur");
 
-message.reply("est définitivement du côté lumieux de la force ! Que la force soit avec toi jeune jedi.");
+message.reply("est définitivement du côté obscur de la force ! Bienvenue jaune sith.");
 message.guild.member(message.author).addRole(obscurRole);
 }
 if (message.content == "/lumineux"){
