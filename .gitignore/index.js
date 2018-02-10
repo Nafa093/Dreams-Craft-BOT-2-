@@ -11,12 +11,12 @@ client.login(token)
 
 client.on('guildMemberAdd', member => {
 let role = member.guild.roles.find("name","--=[Visiteur]=--");
-const channel = member.guild.channels.find("name", "accueil").send(`Bonjour et bienvenue sur le discord de DreamsCraft ${member.user}. Que la force soit avec toi ! :smiley: `)
+const channel = member.guild.channels.find("name", "accueil").send(`Bonjour et bienvenue sur le discord de DreamsCraft ${member.user}. Que la force soit avec toi ! :XWing: `)
 member.addRole(role)
 });
 
 client.on('guildMemberRemove', member => {
-const channel = member.guild.channels.find('name', 'accueil').send(` ${member.user} a quitté le discord de DreamsCraft. Que la force soit avec lui !`);
+const channel = member.guild.channels.find('name', 'accueil').send(` ${member.user} a quitté le discord de DreamsCraft. Que la force soit avec lui ! :ChasseurTIE:  `);
 });
 
 client.on('message', message =>{
@@ -82,13 +82,13 @@ message.reply("Les attractions ouvertes sont : ``Les Tapis Volants d'Aladin`` - 
 if (message.content == "/obscur"){
 var obscurRole = client.guilds.get(message.guild.id).roles.find("name", "Côté Obscur");
 
-message.reply("est définitivement du côté obscur de la force ! Bienvenue jaune sith.");
+message.reply("est définitivement du côté obscur de la force ! Bienvenue jeune sith. :sabreobscur: ");
 message.guild.member(message.author).addRole(obscurRole);
 }
 if (message.content == "/lumineux"){
 var lumineuxRole = client.guilds.get(message.guild.id).roles.find("name", "Côté Lumineux");
 
-message.reply("est définitivement du côté lumineux de la force ! Que la force soit avec toi jeune jedi.");
+message.reply("est définitivement du côté lumineux de la force ! Que la force soit avec toi jeune jedi. :sabrelumineux:  ");
 message.guild.member(message.author).addRole(lumineuxRole);
 }
 
@@ -124,10 +124,5 @@ if(message.author.bot) return;
 message.reply("Merci d'éviter la pub ! ");
 client.channels.get('411217787785183245').send(`${message.author} A dit : "** ${message} **".`)
 message.delete()
-}
-	
-	if (message.content.includes("pute") || message.content.includes("Dremas92")) {
-if(message.author.bot) return;
-message.reply("Dremas92 est le roi !");
 }
 });
