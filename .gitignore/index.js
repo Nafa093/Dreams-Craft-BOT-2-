@@ -11,12 +11,12 @@ client.login(token)
 
 client.on('guildMemberAdd', member => {
 let role = member.guild.roles.find("name","--=[Visiteur]=--");
-const channel = member.guild.channels.find("name", "accueil").send(`Bonjour et bienvenue sur le discord de DreamsCraft ${member.user}. Que la force soit avec toi ! :XWing: `)
+const channel = member.guild.channels.find("name", "accueil").send(`Bonjour et bienvenue sur le discord de DreamsCraft ${member.user}. Que la force soit avec toi ! `)
 member.addRole(role)
 });
 
 client.on('guildMemberRemove', member => {
-const channel = member.guild.channels.find('name', 'accueil').send(` ${member.user} a quitté le discord de DreamsCraft. Que la force soit avec lui ! :ChasseurTIE:  `);
+const channel = member.guild.channels.find('name', 'accueil').send(` ${member.user} a quitté le discord de DreamsCraft. Que la force soit avec lui ! `);
 });
 
 client.on('message', message =>{
@@ -82,13 +82,13 @@ message.reply("Les attractions ouvertes sont : ``Les Tapis Volants d'Aladin`` - 
 if (message.content == "/obscur"){
 var obscurRole = client.guilds.get(message.guild.id).roles.find("name", "Côté Obscur");
 
-message.reply("est définitivement du côté obscur de la force ! Bienvenue jeune sith. :sabreobscur: ");
+message.reply("est définitivement du côté obscur de la force ! Bienvenue jeune sith.");
 message.guild.member(message.author).addRole(obscurRole);
 }
 if (message.content == "/lumineux"){
 var lumineuxRole = client.guilds.get(message.guild.id).roles.find("name", "Côté Lumineux");
 
-message.reply("est définitivement du côté lumineux de la force ! Que la force soit avec toi jeune jedi. :sabrelumineux:  ");
+message.reply("est définitivement du côté lumineux de la force ! Que la force soit avec toi jeune jedi.");
 message.guild.member(message.author).addRole(lumineuxRole);
 }
 
