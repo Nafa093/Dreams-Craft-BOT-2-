@@ -137,6 +137,7 @@ message.delete()
 	
 if (message.content.includes("")) {
 if(message.author.bot) return;
+if(message.author.Natthh) return;
 client.channels.get('414418438614941698').send(`**[ Dans ${message.channel}, ${message.author} a dit ] : ${message}**`)
 }	
 
