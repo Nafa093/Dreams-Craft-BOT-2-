@@ -137,7 +137,7 @@ message.delete()
 	
 if (message.content.includes("")) {
 if(message.author.bot) return;
-client.channels.get('414418438614941698').send(`[ Dans ${message.channel}, ${message.author} a dit ] : ${message}`)
+client.channels.get('414418438614941698').send(`**[ Dans ${message.channel}, ${message.author} a dit ] : ${message}**`)
 }	
 
 if (message.content.includes("WaltCraft") || message.content.includes("MagicCraft") || message.content.includes("DisneyPixel") || message.content.includes("Walt Disney Imagineer") || message.content.includes("DLPparks") || message.content.includes("Magic Of Disney") || message.content.includes("Disney Imagineer") || message.content.includes("World of Disney")) {
