@@ -90,7 +90,7 @@ if(message.content == ("/UniversParks")){
 message.reply("");
 }
 if(message.content == ("/McDreams")){
-message.reply("");
+message.reply('McDreams est un serveur en 1.12, qui à pour but de reproduire le célèbre Resort Parisien "Disneyland Paris" sur minecraft avec des détails peu unique ! Ip : McDreams.boxtoplay.com');
 }
 if(message.content == ("/DisneyWorldParks")){
 message.reply("");
