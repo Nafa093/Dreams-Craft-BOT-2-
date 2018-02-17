@@ -49,7 +49,7 @@ value: "``Donne la liste complète des attractions ouvertes.``",
 inline: true
 }, {
 name: '``/partenaires``',
-value: "``Donne la liste de nos partenaires officiels.``",
+value: "``Donne la liste de nos partenaires officiels. Pour plus d'information utilisez /(Nom du partenaire) !``",
 inline: true
 }
 ],
@@ -65,7 +65,7 @@ text: 'Pour toute autres demande, le staff de DreamsCraft se tient à votre disp
 
 client.on('message', message => {
 if(message.content == ("/partenaires")){
-message.reply("Voici la liste des serveurs partenaires de DreamsCraft : DisneyWorldParks -  UniversParks  - McDreams  !");
+message.reply("Voici la liste des serveurs partenaires de DreamsCraft : DisneyWorldParks -  UniversParks  - McDreams ! Pour plus d'information sur un serveur en question, utilisez /(Nom du partenaire) !");
 }
 if(message.content == ("/dc")){
 message.reply("L'ip de DreamsCraft est : DreamsCraft.minecraft-mania.fr en version 1.12.2 de minecraft premium !");
