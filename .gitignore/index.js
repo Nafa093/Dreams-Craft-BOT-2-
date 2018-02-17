@@ -83,6 +83,12 @@ message.reply("Il n'y a pas encore de date d'ouverture.");
 if(message.content == ("/attractions")){
 message.reply("Les attractions ouvertes sont : ``Les Tapis Volants d'Aladin`` - `` Rc Racer`` - `` Zig-Zag Spin `` !");
 }
+if(message.content == ("/sortie")){
+message.reply("La prochaine sortie à DisneyLand Paris organisé par Loulouemerick se déroule le 4 mars ! Vous voulez participer ? Contectez Loulouemerick par MP ! Participants actuels : Loulouemerick.");
+}
+if(message.content == ("/UniversParks")){
+message.reply("");
+}
 if (message.content == "/obscur"){
 var obscurRole = client.guilds.get(message.guild.id).roles.find("name", "Côté Obscur");
 
