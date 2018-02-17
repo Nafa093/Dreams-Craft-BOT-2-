@@ -89,6 +89,12 @@ message.reply("La prochaine sortie à DisneyLand Paris organisé par Loulouemeri
 if(message.content == ("/UniversParks")){
 message.reply("");
 }
+if(message.content == ("/McDreams")){
+message.reply("");
+}
+if(message.content == ("/DisneyWorldParks")){
+message.reply("");
+}
 if (message.content == "/obscur"){
 var obscurRole = client.guilds.get(message.guild.id).roles.find("name", "Côté Obscur");
 
