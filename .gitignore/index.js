@@ -51,6 +51,10 @@ inline: true
 name: '``/partenaires``',
 value: "``Donne la liste de nos partenaires officiels. Pour plus d'information utilisez /(Nom du partenaire) !``",
 inline: true
+},{
+name: '``/sortie``',
+value: "``Donne la date et les partcipants de la prochaine sortie organisé par Loulouemerick & Dremas92.``",
+inline: true
 }
 ],
 thumbnail: {
