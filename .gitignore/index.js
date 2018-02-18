@@ -68,40 +68,40 @@ text: 'Pour toute autres demande, le staff de DreamsCraft se tient à votre disp
 }});
 
 client.on('message', message => {
-if(message.content == ("/partenaires")){
+if(message.content.toLocaleLowerCase() == ("/partenaires")){
 message.reply("Voici la liste des serveurs partenaires de DreamsCraft : DisneyWorldParks -  UniversParks  - McDreams ! Pour plus d'information sur un serveur en question, utilisez /(Nom du partenaire) !");
 }
-if(message.content == ("/dc")){
+if(message.content.toLocaleLowerCase() == ("/dc")){
 message.reply("L'ip de DreamsCraft est : DreamsCraft.minecraft-mania.fr en version 1.12.2 de minecraft premium !");
 }
-if(message.content == ("/soft")){
+if(message.content.toLocaleLowerCase() == ("/soft")){
 message.reply("La prochaine Soft-Opening se déroule actuellement du 2 février au 2 mars pour la saison de le force ! Alors, qu'attends-tu pour venir ? ");
 }
-if(message.content == ("/ouverture")){
+if(message.content.toLocaleLowerCase() == ("/ouverture")){
 message.reply("Il n'y a pas encore de date d'ouverture.");
 }
-if(message.content == ("/attractions")){
+if(message.content.toLocaleLowerCase() == ("/attractions")){
 message.reply("Les attractions ouvertes sont : ``Les Tapis Volants d'Aladin`` - `` Rc Racer`` - `` Zig-Zag Spin `` !");
 }
-if(message.content == ("/sortie")){
+if(message.content.toLocaleLowerCase() == ("/sortie")){
 message.reply("La prochaine sortie à DisneyLand Paris organisé par Loulouemerick se déroule le 4 mars ! Vous voulez participer ? Contectez Loulouemerick par MP ! Participants actuels : Loulouemerick.");
 }
-if(message.content == ("/UniversParks")){
+if(message.content.toLocaleLowerCase() == ("/UniversParks")){
 message.reply("");
 }
-if(message.content == ("/McDreams")){
+if(message.content.toLocaleLowerCase() == ("/McDreams")){
 message.reply('McDreams est un serveur en 1.12, qui à pour but de reproduire le célèbre Resort Parisien "Disneyland Paris" sur minecraft avec des détails peu unique ! Ip : McDreams.boxtoplay.com');
 }
-if(message.content == ("/DisneyWorldParks")){
+if(message.content.toLocaleLowerCase() == ("/DisneyWorldParks")){
 message.reply("");
 }
-if (message.content == "/obscur"){
+if (message.content.toLocaleLowerCase() == "/obscur"){
 var obscurRole = client.guilds.get(message.guild.id).roles.find("name", "Côté Obscur");
 
 message.reply("est définitivement du côté obscur de la force ! Bienvenue jeune sith.");
 message.guild.member(message.author).addRole(obscurRole);
 }
-if (message.content == "/lumineux"){
+if (message.content.toLocaleLowerCase() == "/lumineux"){
 var lumineuxRole = client.guilds.get(message.guild.id).roles.find("name", "Côté Lumineux");
 
 message.reply("est définitivement du côté lumineux de la force ! Que la force soit avec toi jeune jedi.");
@@ -128,7 +128,7 @@ args.shift()
 message.channel.send(args.join(' '))
     }
 	
-if (message.content.includes("pute") || message.content.includes("encule") || message.content.includes("fdp") || message.content.includes("batard") || message.content.includes("ta race") || message.content.includes("ta mère") || message.content.includes("ntm") || message.content.includes("salop") || message.content.includes("bougnoule") || message.content.includes("connard") || message.content.includes("ntm") || message.content.includes("Encule") || message.content.includes("Fdp") || message.content.includes("Batard") || message.content.includes("Ta race") || message.content.includes("Ta mère") || message.content.includes("Ntm") || message.content.includes("Salop") || message.content.includes("Bougnoule") || message.content.includes("Connard")) {
+if (message.content.includes.toLocaleLowerCase()("pute") || message.content.includes("encule") || message.content.includes("fdp") || message.content.includes("batard") || message.content.includes("ta race") || message.content.includes("ta mère") || message.content.includes("ntm") || message.content.includes("salop") || message.content.includes("bougnoule") || message.content.includes("connard") || message.content.includes("ntm") || message.content.includes("Encule") || message.content.includes("Fdp") || message.content.includes("Batard") || message.content.includes("Ta race") || message.content.includes("Ta mère") || message.content.includes("Ntm") || message.content.includes("Salop") || message.content.includes("Bougnoule") || message.content.includes("Connard")) {
 if(message.author.bot) return;
 message.reply("Merci d'éviter ce genre de langage ! ");
 client.channels.get('411217787785183245').send(`${message.author} A dit : "** ${message} ** dans : ${message.channel}"`)
