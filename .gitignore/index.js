@@ -86,13 +86,13 @@ message.reply("Les attractions ouvertes sont : ``Les Tapis Volants d'Aladin`` - 
 if(message.content.toLocaleLowerCase() == ("/sortie")){
 message.reply("La prochaine sortie à DisneyLand Paris organisé par Loulouemerick se déroule le 4 mars ! Vous voulez participer ? Contectez Loulouemerick par MP ! Participants actuels : Loulouemerick.");
 }
-if(message.content.toLocaleLowerCase() == ("/UniversParks")){
+if(message.content.toLocaleLowerCase() == ("/universparks")){
 message.reply("");
 }
-if(message.content.toLocaleLowerCase() == ("/McDreams")){
+if(message.content.toLocaleLowerCase() == ("/mcdreams")){
 message.reply('McDreams est un serveur en 1.12, qui à pour but de reproduire le célèbre Resort Parisien "Disneyland Paris" sur minecraft avec des détails peu unique ! Ip : McDreams.boxtoplay.com');
 }
-if(message.content.toLocaleLowerCase() == ("/DisneyWorldParks")){
+if(message.content.toLocaleLowerCase() == ("/disneyworldparks")){
 message.reply("");
 }
 if (message.content.toLocaleLowerCase() == "/obscur"){
