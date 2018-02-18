@@ -128,7 +128,7 @@ args.shift()
 message.channel.send(args.join(' '))
     }
 	
-if (message.content.toLocaleLowerCase().includes("pute") || message.content.includes("encule") || message.content.includes("fdp") || message.content.includes("batard") || message.content.includes("ta race") || message.content.includes("ta mère") || message.content.includes("ntm") || message.content.includes("salop") || message.content.includes("bougnoule") || message.content.includes("connard") || message.content.includes("ntm") || message.content.includes("Encule") || message.content.includes("Fdp") || message.content.includes("Batard") || message.content.includes("Ta race") || message.content.includes("Ta mère") || message.content.includes("Ntm") || message.content.includes("Salop") || message.content.includes("Bougnoule") || message.content.includes("Connard")) {
+if (message.content.toLocaleLowerCase().includes("pute") || message.content.toLocaleLowerCase().includes("encule") || message.content.includes("fdp") || message.content.toLocaleLowerCase().includes("batard") || message.content.toLocaleLowerCase().includes("ta race") || message.content.toLocaleLowerCase().includes("ta mère") || message.content.includes("ntm") || message.content.toLocaleLowerCase().includes("salop") || message.content.toLocaleLowerCase().includes("bougnoule") || message.content.toLocaleLowerCase().includes("connard") || message.content.toLocaleLowerCase().includes("ntm")) {
 if(message.author.bot) return;
 message.reply("Merci d'éviter ce genre de langage ! ");
 client.channels.get('411217787785183245').send(`${message.author} A dit : "** ${message} ** dans : ${message.channel}"`)
@@ -141,7 +141,7 @@ if(message.author.Natthh) return;
 client.channels.get('414418438614941698').send(`**[ Dans ${message.channel}, ${message.author} a dit ] : ${message}**`)
 }	
 
-if (message.content.includes("WaltCraft") || message.content.includes("MagicCraft") || message.content.includes("DisneyPixel") || message.content.includes("Walt Disney Imagineer") || message.content.includes("DLPparks") || message.content.includes("Magic Of Disney") || message.content.includes("Disney Imagineer") || message.content.includes("World of Disney")) {
+if (message.content.toLocaleLowerCase().includes("WaltCraft") || message.content.toLocaleLowerCase().includes("MagicCraft") || message.content.toLocaleLowerCase().includes("DisneyPixel") || message.content.toLocaleLowerCase().includes("Walt Disney Imagineer") || message.content.includes("DLPparks") || message.content.toLocaleLowerCase().includes("Magic Of Disney") || message.content.toLocaleLowerCase().includes("Disney Imagineer") || message.content.toLocaleLowerCase().includes("World of Disney")) {
 if(message.author.bot) return;
 message.reply("Merci d'éviter la pub ! ");
 client.channels.get('411217787785183245').send(`${message.author} A dit : "** ${message} **".`)
