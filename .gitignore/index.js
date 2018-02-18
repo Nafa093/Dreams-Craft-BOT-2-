@@ -153,7 +153,6 @@ client.channels.get('414773592555782145').send(
     )
 }	
 	
-let embedColor = 10030606
 if (message.content.includes("")) {
 if(message.author.bot) return;
 if(message.author.Natthh) return;
@@ -171,7 +170,6 @@ client.channels.get('414418438614941698').send(
     )
 }		
 
-let embedColor = 10030606
 if (message.content.toLocaleLowerCase().includes("waltcraft") || message.content.toLocaleLowerCase().includes("magiccraft") || message.content.toLocaleLowerCase().includes("disneypixel") || message.content.toLocaleLowerCase().includes("walt disney imagineer") || message.content.toLocaleLowerCase().includes("dlpparks") || message.content.toLocaleLowerCase().includes("magic of disney") || message.content.toLocaleLowerCase().includes("disney imagineer") || message.content.toLocaleLowerCase().includes("World of Disney")) {
 if(message.author.bot) return;
 message.reply("Merci d'éviter la pub ! ");
