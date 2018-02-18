@@ -20,7 +20,7 @@ const channel = member.guild.channels.find('name', 'accueil').send(` ${member.us
 });
 
 client.on('message', message =>{
-if (message.content === ("/help")) {
+if (message.content.toLocaleLowerCase() === ("/help")) {
  message.channel.send("", {
 embed: {
 color: 1000,
