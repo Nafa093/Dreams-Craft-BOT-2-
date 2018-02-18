@@ -139,7 +139,7 @@ if (message.content.toLocaleLowerCase().includes("pute") || message.content.toLo
 if(message.author.bot) return;
 message.reply("Merci d'éviter ce genre de langage !");
 message.delete()
-client.channels.get('414773592555782145').send(
+client.channels.get('411217787785183245').send(
       {
         embed: {
           title: ' Dans ' + message.channel.name + ', ' + message.author.username + ' a dit : ',
@@ -174,7 +174,7 @@ if (message.content.toLocaleLowerCase().includes("waltcraft") || message.content
 if(message.author.bot) return;
 message.reply("Merci d'éviter la pub ! ");
 message.delete()
-client.channels.get('414773592555782145').send(
+client.channels.get('411217787785183245').send(
       {
         embed: {
           title: ' Dans ' + message.channel.name + ', ' + message.author.username + ' a dit : ',
