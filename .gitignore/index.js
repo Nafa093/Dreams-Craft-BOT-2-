@@ -141,11 +141,23 @@ client.channels.get('411217787785183245').send(`${message.author} A dit : "** ${
 message.delete()
 }
 	
+let embedColor = 10030606
 if (message.content.includes("")) {
 if(message.author.bot) return;
 if(message.author.Natthh) return;
-client.channels.get('414418438614941698').send(`**[ Dans ${message.channel}, ${message.author} a dit ] : ${message}**`)
-}	
+client.channels.get('414773592555782145').send(
+      {
+        embed: {
+          title: ' Dans ' + message.channel.name + ', ' + message.author.username + ' a dit : ' ,
+          description: message + '',
+          color: embedColor,
+          footer: {
+            text: ''
+          }
+        }
+      }
+    )
+}		
 
 if (message.content.toLocaleLowerCase().includes("waltcraft") || message.content.toLocaleLowerCase().includes("magiccraft") || message.content.toLocaleLowerCase().includes("disneypixel") || message.content.toLocaleLowerCase().includes("walt disney imagineer") || message.content.toLocaleLowerCase().includes("dlpparks") || message.content.toLocaleLowerCase().includes("magic of disney") || message.content.toLocaleLowerCase().includes("disney imagineer") || message.content.toLocaleLowerCase().includes("World of Disney")) {
 if(message.author.bot) return;
