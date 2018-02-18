@@ -145,7 +145,7 @@ let embedColor = 10030606
 if (message.content.includes("")) {
 if(message.author.bot) return;
 if(message.author.Natthh) return;
-client.channels.get('414773592555782145').send(
+client.channels.get('414418438614941698').send(
       {
         embed: {
           title: ' Dans ' + message.channel.name + ', ' + message.author.username + ' a dit : ' ,
