@@ -15,6 +15,12 @@ const channel = member.guild.channels.find("name", "accueil").send(`Bonjour et b
 member.addRole(role)
 });
 
+client.on('guildMemberAdd', member => {
+const channel = member.guild.channels.find("name", "reglement");
+channel.send(`${member.user}`)
+    .then(message =>  message.delete())
+});
+
 client.on('guildMemberRemove', member => {
 const channel = member.guild.channels.find('name', 'accueil').send(` ${member.user} a quitté le discord de DreamsCraft. Que la force soit avec lui ! `);
 });
