@@ -188,4 +188,23 @@ client.channels.get('411217787785183245').send(
     )
 }	
 
+let embedColorr = 1284672
+if (message.content.toLocaleLowerCase().includes("/avis")) {
+if(message.author.bot) return;
+message.reply("Merci d'avoir donné ton avis ! ");
+message.delete()
+client.channels.get('415068910300430347').send(
+      {
+        embed: {
+          title: message.author.username + ' a donné son avis : ',
+          description: message + '',
+          color: embedColorr,
+          footer: {
+            text: 'Type : AVIS'
+          }
+        }
+      }
+    )
+}
+	
 });
