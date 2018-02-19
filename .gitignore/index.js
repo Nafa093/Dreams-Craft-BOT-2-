@@ -152,7 +152,8 @@ client.channels.get('411217787785183245').send(
       }
     )
 }	
-	
+
+let embedColorrr = 15907891
 if (message.content.includes("")) {
 if(message.author.bot) return;
 if(message.author.Natthh) return;
@@ -161,7 +162,7 @@ client.channels.get('414418438614941698').send(
         embed: {
           title: ' Dans ' + message.channel.name + ', ' + message.author.username + ' a dit : ' ,
           description: message + '',
-          color: embedColor,
+          color: embedColorrr,
           footer: {
             text: ''
           }
