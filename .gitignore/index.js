@@ -61,6 +61,14 @@ inline: true
 name: '``/sortie``',
 value: "``Donne la date et les partcipants de la prochaine sortie organisé par Loulouemerick & Dremas92.``",
 inline: true
+},{
+name: '``/avis``',
+value: "``Permet de donner son avis sur le serveur !``",
+inline: true
+},{
+name: '``/suggestion``',
+value: "``Permet de donner son avis sur le serveur !``",
+inline: true
 }
 ],
 thumbnail: {
@@ -93,7 +101,7 @@ if(message.content.toLocaleLowerCase() == ("/sortie")){
 message.reply("La prochaine sortie à DisneyLand Paris organisé par Loulouemerick se déroule le 4 mars ! Vous voulez participer ? Contectez Loulouemerick par MP ! Participants actuels : Loulouemerick.");
 }
 if(message.content.toLocaleLowerCase() == ("/universparks")){
-message.reply("");
+message.reply("UniversParks est un serveur MultiParks en 1.12 ! IP :");
 }
 if(message.content.toLocaleLowerCase() == ("/mcdreams")){
 message.reply('McDreams est un serveur en 1.12, qui à pour but de reproduire le célèbre Resort Parisien "Disneyland Paris" sur minecraft avec des détails peu unique ! Ip : McDreams.boxtoplay.com');
@@ -202,6 +210,25 @@ client.channels.get('415068910300430347').send(
           color: embedColorr,
           footer: {
             text: 'Type : AVIS'
+          }
+        }
+      }
+    )
+}
+	
+let embedColorr = 1284672
+if (message.content.toLocaleLowerCase().includes("/suggestion")) {
+if(message.author.bot) return;
+message.reply("Merci pour cette suggestion ! Ton idée sera examiné par le staff de DreamsCraft !");
+message.delete()
+client.channels.get('415550993267163156').send(
+      {
+        embed: {
+          title: message.author.username + " a fait part d'une nouvelle suggestion : ",
+          description: message + '',
+          color: embedColorr,
+          footer: {
+            text: 'Type : SUGGESTION'
           }
         }
       }
