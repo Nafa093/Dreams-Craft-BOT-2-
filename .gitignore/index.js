@@ -216,7 +216,7 @@ client.channels.get('415068910300430347').send(
     )
 }
 	
-let embedColorr = 2977512
+let embedColorry = 2977512
 if (message.content.toLocaleLowerCase().includes("/suggestion")) {
 if(message.author.bot) return;
 message.reply("Merci pour cette suggestion ! Ton idée sera examiné par le staff de DreamsCraft !");
@@ -226,7 +226,7 @@ client.channels.get('415550993267163156').send(
         embed: {
           title: message.author.username + " a fait part d'une nouvelle suggestion : ",
           description: message + '',
-          color: embedColorr,
+          color: embedColorry,
           footer: {
             text: 'Type : SUGGESTION'
           }
