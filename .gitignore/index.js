@@ -101,13 +101,13 @@ if(message.content.toLocaleLowerCase() == ("/sortie")){
 message.reply("La prochaine sortie à DisneyLand Paris organisé par Loulouemerick se déroule le 4 mars ! Vous voulez participer ? Contectez Loulouemerick par MP ! Participants actuels : Loulouemerick.");
 }
 if(message.content.toLocaleLowerCase() == ("/universparks")){
-message.reply("UniversParks est un serveur MultiParks en 1.12 ! IP :");
+message.reply("UniversParks est un serveur MultiParks en 1.12 ! IP : play.universparks.cf:26267 !");
 }
 if(message.content.toLocaleLowerCase() == ("/mcdreams")){
-message.reply('McDreams est un serveur en 1.12, qui à pour but de reproduire le célèbre Resort Parisien "Disneyland Paris" sur minecraft avec des détails peu unique ! Ip : McDreams.boxtoplay.com');
+message.reply('McDreams est un serveur en 1.12, qui à pour but de reproduire le célèbre Resort Parisien "Disneyland Paris" sur minecraft avec des détails peu unique ! Ip : McDreams.boxtoplay.com !');
 }
 if(message.content.toLocaleLowerCase() == ("/disneyworldparks")){
-message.reply("");
+message.reply(`disneyworldparks reproduit le célèbre parc " DisneyLand Paris " ! Plus d'informations à venir ! `);
 }
 if (message.content.toLocaleLowerCase() == "/obscur"){
 var obscurRole = client.guilds.get(message.guild.id).roles.find("name", "Côté Obscur");
@@ -216,7 +216,7 @@ client.channels.get('415068910300430347').send(
     )
 }
 	
-let embedColorr = 1284672
+let embedColorr = 2977512
 if (message.content.toLocaleLowerCase().includes("/suggestion")) {
 if(message.author.bot) return;
 message.reply("Merci pour cette suggestion ! Ton idée sera examiné par le staff de DreamsCraft !");
