@@ -232,7 +232,7 @@ client.channels.get('415550993267163156').send(
     )
 }
 
-  const embed = {
+  const mcdreams = {
   "url": "http://mcdreams.livehost.fr/index.php",
   "color": 4420817,
   "footer": {
@@ -289,6 +289,6 @@ client.channels.get('415550993267163156').send(
   ]
 };
 if(message.content.toLocaleLowerCase() == ("/mcdreams")){
-message.reply("voici plus d'informations sur notre partenaire !", {embed});
+message.reply("voici plus d'informations sur notre partenaire !", {embed: mcdreams});
  }	
 });
