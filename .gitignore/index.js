@@ -234,5 +234,64 @@ client.channels.get('415550993267163156').send(
       }
     )
 }
-	
+
+  const embedd = {
+  "url": "http://mcdreams.livehost.fr/index.php",
+  "color": 4420817,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/347050495392874507/415841617963122700/540677fdea010b286fc35175074dd35b.png",
+    "text": "Nous remercions McDreams de nous faire confiance !"
+  },
+  "thumbnail": {
+    "url": "https://cdn.discordapp.com/attachments/347050495392874507/415841617963122700/540677fdea010b286fc35175074dd35b.png"
+  },
+  "image": {
+      "url": "https://cdn.discordapp.com/attachments/322470437722521600/399179491726983179/2018-01-06_13.34.58.png"
+    },
+  "author": {
+    "name": "McDreams :",
+    "url": "https://discordapp.com",
+    "icon_url": "https://cdn.discordapp.com/attachments/347050495392874507/415841617963122700/540677fdea010b286fc35175074dd35b.png"
+  },
+  "fields": [
+    {
+      "name": "Nom : McDreams.",
+      "value": "--------------------",
+      "inline": true
+    },
+    {
+      "name": "Reproduction : DisneyLandParis.",
+      "value": "--------------------",
+      "inline": false
+    },
+    {
+      "name": "Directeurs : Dremas92 & TheSkinter.",
+      "value": "--------------------",
+      "inline": false
+    },
+    {
+      "name": "État : Fermée.",
+      "value": "--------------------",
+      "inline": false
+    },
+    {
+      "name": "Ip / Version : McDreams.boxtoplay.com en 1.12. ( Une version premium est nécéssaire.)",
+      "value": "--------------------",
+      "inline": false
+    },
+	{
+      "name": "Facebook :  https://www.facebook.com/McDreamsOfficiel/ ",
+      "value": "--------------------",
+      "inline": false
+    },
+    {
+      "name": "Discord : https://discord.gg/Se4k9Pw",
+      "value": "--------------------",
+      "inline": false
+    }
+  ]
+};
+if(message.content.toLocaleLowerCase() == ("/mcdreams")){
+message.reply("voici plus d'informations sur notre partenaire !", {embedd});
+ }	
 });
