@@ -103,9 +103,6 @@ message.reply("La prochaine sortie à DisneyLand Paris organisé par Loulouemeri
 if(message.content.toLocaleLowerCase() == ("/universparks")){
 message.reply("UniversParks est un serveur MultiParks en 1.12 ! IP : play.universparks.cf:26267 !");
 }
-if(message.content.toLocaleLowerCase() == ("/mcdreams")){
-message.reply('McDreams est un serveur en 1.12, qui à pour but de reproduire le célèbre Resort Parisien "Disneyland Paris" sur minecraft avec des détails peu unique ! Ip : McDreams.boxtoplay.com !');
-}
 if(message.content.toLocaleLowerCase() == ("/disneyworldparks")){
 message.reply(`disneyworldparks reproduit le célèbre parc " DisneyLand Paris " ! Plus d'informations à venir ! `);
 }
@@ -235,7 +232,7 @@ client.channels.get('415550993267163156').send(
     )
 }
 
-  const embedd = {
+  const embed = {
   "url": "http://mcdreams.livehost.fr/index.php",
   "color": 4420817,
   "footer": {
@@ -292,6 +289,6 @@ client.channels.get('415550993267163156').send(
   ]
 };
 if(message.content.toLocaleLowerCase() == ("/mcdreams")){
-message.reply("voici plus d'informations sur notre partenaire !", {embedd});
+message.reply("voici plus d'informations sur notre partenaire !", {embed});
  }	
 });
