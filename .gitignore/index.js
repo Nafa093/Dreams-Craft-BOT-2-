@@ -108,10 +108,10 @@ if(message.content.toLocaleLowerCase() == ("/ouverture")){
 message.reply("Il n'y a pas encore de date d'ouverture.");
 }
 if(message.content.toLocaleLowerCase() == ("/attractions")){
-message.reply("Les attractions ouvertes sont : ``Les Tapis Volants d'Aladin`` - `` Rc Racer`` - `` Zig-Zag Spin `` !");
+message.reply("Les attractions ouvertes sont : ``Les Tapis Volants d'Aladin`` - `` Rc Racer`` - `` Zig-Zag Spin `` - ``Crush Coaster`` !");
 }
 if(message.content.toLocaleLowerCase() == ("/sortie")){
-message.reply("La prochaine sortie à DisneyLand Paris organisé par Loulouemerick se déroule le 4 mars ! Vous voulez participer ? Contectez Loulouemerick par MP ! Participants actuels : Loulouemerick.");
+message.reply("La prochaine sortie à DisneyLand Paris organisé par Loulouemerick se déroule le 6 mars ! Vous voulez participer ? Contectez Loulouemerick par MP ! Participants actuels : Loulouemerick.");
 }
 if (message.content.toLocaleLowerCase() == "/obscur"){
 var obscurRole = client.guilds.get(message.guild.id).roles.find("name", "Côté Obscur");
