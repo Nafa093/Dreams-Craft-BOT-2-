@@ -100,12 +100,6 @@ message.reply("Les attractions ouvertes sont : ``Les Tapis Volants d'Aladin`` - 
 if(message.content.toLocaleLowerCase() == ("/sortie")){
 message.reply("La prochaine sortie à DisneyLand Paris organisé par Loulouemerick se déroule le 4 mars ! Vous voulez participer ? Contectez Loulouemerick par MP ! Participants actuels : Loulouemerick.");
 }
-if(message.content.toLocaleLowerCase() == ("/universparks")){
-message.reply("UniversParks est un serveur MultiParks en 1.12 ! IP : play.universparks.cf:26267 !");
-}
-if(message.content.toLocaleLowerCase() == ("/disneyworldparks")){
-message.reply(`disneyworldparks reproduit le célèbre parc " DisneyLand Paris " ! Plus d'informations à venir ! `);
-}
 if (message.content.toLocaleLowerCase() == "/obscur"){
 var obscurRole = client.guilds.get(message.guild.id).roles.find("name", "Côté Obscur");
 
