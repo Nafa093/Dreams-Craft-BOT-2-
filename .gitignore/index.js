@@ -146,23 +146,28 @@ args.shift()
 message.channel.send(args.join(' '))
     }
 	
-let embedColor = 10030606
+const insultelogs = {
+  "url": "",
+  "color": 10030606,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
+    "text": "Type : INSULTE "
+  },
+  "thumbnail": {
+    "url": message.author.displayAvatarURL
+  },
+  "fields": [
+	{
+      "name": "Dans " + message.channel.name + ", " + message.author.username + " à dit : ",
+      "value": message + "",
+      "inline": false
+    }
+  ]
+};
+ 
 if (message.content.toLocaleLowerCase().includes("pute") || message.content.toLocaleLowerCase().includes("encule") || message.content.includes("fdp") || message.content.toLocaleLowerCase().includes("batard") || message.content.toLocaleLowerCase().includes("ta race") || message.content.toLocaleLowerCase().includes("ta mère") || message.content.includes("ntm") || message.content.toLocaleLowerCase().includes("salop") || message.content.toLocaleLowerCase().includes("bougnoule") || message.content.toLocaleLowerCase().includes("connard") || message.content.toLocaleLowerCase().includes("ntm")) {
 if(message.author.bot) return;
-message.reply("Merci d'éviter ce genre de langage !");
-message.delete()
-client.channels.get('411217787785183245').send(
-      {
-        embed: {
-          title: ' Dans ' + message.channel.name + ', ' + message.author.username + ' a dit : ',
-          description: message + '',
-          color: embedColor,
-          footer: {
-            text: 'Type : INSULTE - Message Blacklisté'
-          }
-        }
-      }
-    )
+client.channels.get('411217787785183245').send({embed: insultelogs})
 }	
 
 const messagelogs = {
