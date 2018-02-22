@@ -165,23 +165,29 @@ client.channels.get('411217787785183245').send(
     )
 }	
 
-let embedColorrr = 15907891
+const messagelogs = {
+  "url": "",
+  "color": 1073142,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
+    "text": "Type : MESSAGE "
+  },
+  "thumbnail": {
+    "url": message.author.displayAvatarURL
+  },
+  "fields": [
+	{
+      "name": "Dans " + message.channel.name + ", " + message.author.username + " à dit : ",
+      "value": message + "",
+      "inline": false
+    }
+  ]
+};
+ 
 if (message.content.includes("")) {
 if(message.author.bot) return;
-if(message.author.Natthh) return;
-client.channels.get('414418438614941698').send(
-      {
-        embed: {
-          title: ' Dans ' + message.channel.name + ', ' + message.author.username + ' a dit : ' ,
-          description: message + '',
-          color: embedColorrr,
-          footer: {
-            text: ''
-          }
-        }
-      }
-    )
-}		
+client.channels.get('414418438614941698').send({embed: messagelogs})
+}				
 
 if (message.content.toLocaleLowerCase().includes("waltcraft") || message.content.toLocaleLowerCase().includes("magiccraft") || message.content.toLocaleLowerCase().includes("disneypixel") || message.content.toLocaleLowerCase().includes("walt disney imagineer") || message.content.toLocaleLowerCase().includes("dlpparks") || message.content.toLocaleLowerCase().includes("magic of disney") || message.content.toLocaleLowerCase().includes("disney imagineer") || message.content.toLocaleLowerCase().includes("world of disney")) {
 if(message.author.bot) return;
