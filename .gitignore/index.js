@@ -90,7 +90,7 @@ const help = {
   ]
 };
 if(message.content.toLocaleLowerCase() == ("/help")){
-message.reply("voici toute mes commandes !", {embed: help});
+ message.channel.send({embed: help});
  }
 });
 
@@ -296,7 +296,7 @@ client.channels.get('415550993267163156').send(
   ]
 };
 if(message.content.toLocaleLowerCase() == ("/mcdreams")){
-message.reply("voici plus d'informations sur notre partenaire !", {embed: mcdreams});
+ message.channel.send({embed: mcdreams});
  }	
 	
   const disneyworldparks = {
@@ -356,6 +356,6 @@ message.reply("voici plus d'informations sur notre partenaire !", {embed: mcdrea
   ]
 };
 if(message.content.toLocaleLowerCase() == ("/disneyworldparks")){
-message.reply("voici plus d'informations sur notre partenaire !", {embed: disneyworldparks});
+ message.channel.send({embed: disneyworldparks});
  }
 });
