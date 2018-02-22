@@ -26,60 +26,73 @@ const channel = member.guild.channels.find('name', 'accueil').send(` ${member.us
 });
 
 client.on('message', message =>{
-if (message.content.toLocaleLowerCase() === ("/help")) {
- message.channel.send("", {
-embed: {
-color: 1000,
-author: message.author.name,
-title: ' Voici les commandes du DreamsCraft BOT :',
-description: ' ',
-fields: [{
-name: '``/help``',
-value: "``Affiche les commandes du DreamsCraft BOT.``",
-inline: true
-}, {
-name: '``/dc``',
-value: "``Donne les informations concernant le serveur notamment l'ip.``",
-inline: true
-}, {
-name: '``/soft``',
-value: "``Donne la date de la prochaine Soft-Opening et ses informations.``",
-inline: true
-}, {
-name: '``/ouverture``',
-value: "``Donne la date de l'ouverture officielle du serveur.``",
-inline: true
-}, {
-name: '``/attractions``',
-value: "``Donne la liste complète des attractions ouvertes.``",
-inline: true
-}, {
-name: '``/partenaires``',
-value: "``Donne la liste de nos partenaires officiels. Pour plus d'information utilisez /(Nom du partenaire) !``",
-inline: true
-},{
-name: '``/sortie``',
-value: "``Donne la date et les partcipants de la prochaine sortie organisé par Loulouemerick & Dremas92.``",
-inline: true
-},{
-name: '``/avis``',
-value: "``Permet de donner son avis sur le serveur !``",
-inline: true
-},{
-name: '``/suggestion``',
-value: "``Permet de donner son avis sur le serveur !``",
-inline: true
-}
-],
-thumbnail: {
-url: message.client.iconURL
-},
-footer: {
-text: 'Pour toute autres demande, le staff de DreamsCraft se tient à votre disposition.',
-}
-}
+const help = {
+  "url": " ",
+  "color": 1073142,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
+    "text": "Pour toute autres demande, le staff de DreamsCraft se tient à votre disposition."
+  },
+  "thumbnail": {
+    "url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png"
+  },
+  "author": {
+    "name": 'Toutes mes commandes commencent par " / " : ',
+    "url": " ",
+    "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png"
+  },
+  "fields": [
+    {
+      "name": "``/help``",
+      "value": "``Affiche les commandes du DreamsCraft BOT.``",
+      "inline": false
+    },
+    {
+      "name": "``/dc``",
+      "value": "``Donne les informations concernant le serveur notamment l'ip.``",
+      "inline": false
+    },
+    {
+      "name": "``/soft``",
+      "value": "``Donne la date de la prochaine Soft-Opening et ses informations.``",
+      "inline": false
+    },
+    {
+      "name": "``/ouverture``",
+      "value": "``Donne la date de l'ouverture officielle du serveur.``",
+      "inline": false
+    },
+    {
+      "name": "``/attractions``",
+      "value": "``Donne la liste complète des attractions ouvertes.``",
+      "inline": false
+    },
+	{
+      "name": "``/partenaires``",
+      "value": "``Donne la liste de nos partenaires officiels. Pour plus d'information utilisez /(Nom du partenaire) !``",
+      "inline": false
+    },
+    {
+      "name": "``/sortie``",
+      "value": "``Donne la date et les partcipants de la prochaine sortie organisé par Loulouemerick & Dremas92.``",
+      "inline": false
+    },
+	{
+      "name": "``/avis``",
+      "value": "``Permet de donner son avis sur le serveur !``",
+      "inline": false
+    },
+	{
+      "name": "``/suggestion``",
+      "value": "``Permet de faire part d'une suggestion au staff !``",
+      "inline": false
+    }
+  ]
+};
+if(message.content.toLocaleLowerCase() == ("/help")){
+message.reply("voici toute mes commandes !", {embed: help});
+ }
 });
-}});
 
 client.on('message', message => {
 if(message.content.toLocaleLowerCase() == ("/partenaires")){
