@@ -291,4 +291,64 @@ client.channels.get('415550993267163156').send(
 if(message.content.toLocaleLowerCase() == ("/mcdreams")){
 message.reply("voici plus d'informations sur notre partenaire !", {embed: mcdreams});
  }	
+	
+  const disneyworldparks = {
+  "url": "https://disneyworldparks.net/",
+  "color": 1,
+  "footer": {
+    "icon_url": "https://disneyworldparksdotcom.files.wordpress.com/2017/03/logo3.png",
+    "text": "Nous remercions DisneyWorldParks de nous faire confiance !"
+  },
+  "thumbnail": {
+    "url": "https://disneyworldparksdotcom.files.wordpress.com/2017/03/logo3.png"
+  },
+  "image": {
+      "url": "https://disneyworldparksdotcom.files.wordpress.com/2017/07/cropped-2017-07-18_17-41-57.png"
+    },
+  "author": {
+    "name": "DisneyWorldParks :",
+    "url": "https://disneyworldparks.net/",
+    "icon_url": "https://disneyworldparksdotcom.files.wordpress.com/2017/03/logo3.png"
+  },
+  "fields": [
+    {
+      "name": "Nom : DisneyWorldParks.",
+      "value": "--------------------",
+      "inline": true
+    },
+    {
+      "name": "Reproduction : Tout les parcs Disney.",
+      "value": "--------------------",
+      "inline": false
+    },
+    {
+      "name": "Directeurs : Xzender & Italix_54.",
+      "value": "--------------------",
+      "inline": false
+    },
+    {
+      "name": "État : Fermée.",
+      "value": "--------------------",
+      "inline": false
+    },
+    {
+      "name": "Ip / Version : Non disponible.",
+      "value": "--------------------",
+      "inline": false
+    },
+	{
+      "name": "Twitter : https://twitter.com/Minecraft_DWP",
+      "value": "--------------------",
+      "inline": false
+    },
+    {
+      "name": "Discord : Non disponible.",
+      "value": "--------------------",
+      "inline": false
+    }
+  ]
+};
+if(message.content.toLocaleLowerCase() == ("/disneyworldparks")){
+message.reply("voici plus d'informations sur notre partenaire !", {embed: disneyworldparks});
+ }
 });
