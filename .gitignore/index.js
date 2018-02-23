@@ -273,9 +273,8 @@ if(message.author.bot) return;
 message.reply("Merci pour cette suggestion ! Ton idée sera examiné par le staff de DreamsCraft !");
 message.delete()
 client.channels.get('414424677876760577').send({embed: suggestionlogs})
-}		  )
 }
-
+	
   const mcdreams = {
   "url": "http://mcdreams.livehost.fr/index.php",
   "color": 4420817,
