@@ -246,7 +246,7 @@ if (message.content.toLocaleLowerCase().includes("/avis")) {
 if(message.author.bot) return;
 message.reply("Merci d'avoir donné ton avis ! ");
 message.delete()
-client.channels.get('414424677876760577').send({embed: avislogs})
+client.channels.get('415068910300430347').send({embed: avislogs})
 }		
 	
 const suggestionlogs = {
@@ -272,7 +272,7 @@ if (message.content.toLocaleLowerCase().includes("/suggestion")) {
 if(message.author.bot) return;
 message.reply("Merci pour cette suggestion ! Ton idée sera examiné par le staff de DreamsCraft !");
 message.delete()
-client.channels.get('414424677876760577').send({embed: suggestionlogs})
+client.channels.get('415550993267163156').send({embed: suggestionlogs})
 }
 	
   const mcdreams = {
