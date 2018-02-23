@@ -167,12 +167,14 @@ const insultelogs = {
  
 if (message.content.toLocaleLowerCase().includes("pute") || message.content.toLocaleLowerCase().includes("encule") || message.content.includes("fdp") || message.content.toLocaleLowerCase().includes("batard") || message.content.toLocaleLowerCase().includes("ta race") || message.content.toLocaleLowerCase().includes("ta mère") || message.content.includes("ntm") || message.content.toLocaleLowerCase().includes("salop") || message.content.toLocaleLowerCase().includes("bougnoule") || message.content.toLocaleLowerCase().includes("connard") || message.content.toLocaleLowerCase().includes("ntm")) {
 if(message.author.bot) return;
+message.reply("Merci d'éviter ce genre de langage !");
+message.delete()
 client.channels.get('411217787785183245').send({embed: insultelogs})
 }	
 
 const messagelogs = {
   "url": "",
-  "color": 1073142,
+  "color": 15853885,
   "footer": {
     "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
     "text": "Type : MESSAGE "
@@ -194,60 +196,84 @@ if(message.author.bot) return;
 client.channels.get('414418438614941698').send({embed: messagelogs})
 }				
 
+const publogs = {
+  "url": "",
+  "color": 10030606,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
+    "text": "Type : PUB "
+  },
+  "thumbnail": {
+    "url": message.author.displayAvatarURL
+  },
+  "fields": [
+	{
+      "name": "Dans " + message.channel.name + ", " + message.author.username + " à dit : ",
+      "value": message + "",
+      "inline": false
+    }
+  ]
+};
+ 
 if (message.content.toLocaleLowerCase().includes("waltcraft") || message.content.toLocaleLowerCase().includes("magiccraft") || message.content.toLocaleLowerCase().includes("disneypixel") || message.content.toLocaleLowerCase().includes("walt disney imagineer") || message.content.toLocaleLowerCase().includes("dlpparks") || message.content.toLocaleLowerCase().includes("magic of disney") || message.content.toLocaleLowerCase().includes("disney imagineer") || message.content.toLocaleLowerCase().includes("world of disney")) {
 if(message.author.bot) return;
 message.reply("Merci d'éviter la pub ! ");
 message.delete()
-client.channels.get('411217787785183245').send(
-      {
-        embed: {
-          title: ' Dans ' + message.channel.name + ', ' + message.author.username + ' a dit : ',
-          description: message + '',
-          color: embedColor,
-          footer: {
-            text: 'Type : PUB - Message Blacklisté'
-          }
-        }
-      }
-    )
-}	
+client.channels.get('411217787785183245').send({embed: publogs})
+}		
+	
 
-let embedColorr = 1284672
+const avislogs = {
+  "url": "",
+  "color": 1284672,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
+    "text": "Type : AVIS"
+  },
+  "thumbnail": {
+    "url": message.author.displayAvatarURL
+  },
+  "fields": [
+	{
+      "name": message.author.username + " a donné son avis : ",
+      "value": message + "",
+      "inline": false
+    }
+  ]
+};
+ 
 if (message.content.toLocaleLowerCase().includes("/avis")) {
 if(message.author.bot) return;
 message.reply("Merci d'avoir donné ton avis ! ");
 message.delete()
-client.channels.get('415068910300430347').send(
-      {
-        embed: {
-          title: message.author.username + ' a donné son avis : ',
-          description: message + '',
-          color: embedColorr,
-          footer: {
-            text: 'Type : AVIS'
-          }
-        }
-      }
-    )
-}
+client.channels.get('414424677876760577').send({embed: avislogs})
+}		
 	
-let embedColorry = 2977512
+const suggestionlogs = {
+  "url": "",
+  "color": 2977512,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
+    "text": "Type : SUGGESTION"
+  },
+  "thumbnail": {
+    "url": message.author.displayAvatarURL
+  },
+  "fields": [
+	{
+      "name": message.author.username + " a fait part d'une nouvelle suggestion : ",
+      "value": message + "",
+      "inline": false
+    }
+  ]
+};
+ 
 if (message.content.toLocaleLowerCase().includes("/suggestion")) {
 if(message.author.bot) return;
 message.reply("Merci pour cette suggestion ! Ton idée sera examiné par le staff de DreamsCraft !");
 message.delete()
-client.channels.get('415550993267163156').send(
-      {
-        embed: {
-          title: message.author.username + " a fait part d'une nouvelle suggestion : ",
-          description: message + '',
-          color: embedColorry,
-          footer: {
-            text: 'Type : SUGGESTION'
-          }
-        }
-      }
-    )
+client.channels.get('414424677876760577').send({embed: suggestionlogs})
+}		  )
 }
 
   const mcdreams = {
