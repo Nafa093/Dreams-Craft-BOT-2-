@@ -175,6 +175,7 @@ client.channels.get('411217787785183245').send({embed: insultelogs})
 const messagelogs = {
   "url": "",
   "color": 15853885,
+  "timestamp": new Date(),
   "footer": {
     "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
     "text": "Type : MESSAGE "
