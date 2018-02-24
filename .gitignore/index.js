@@ -200,6 +200,7 @@ client.channels.get('414418438614941698').send({embed: messagelogs})
 const publogs = {
   "url": "",
   "color": 10030606,
+  "timestamp": new Date(),
   "footer": {
     "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
     "text": "Type : PUB "
@@ -227,7 +228,8 @@ client.channels.get('411217787785183245').send({embed: publogs})
 const avislogs = {
   "url": "",
   "color": 1284672,
-  "footer": {
+    "timestamp": new Date(),
+    "footer": {
     "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
     "text": "Type : AVIS"
   },
@@ -253,6 +255,7 @@ client.channels.get('415068910300430347').send({embed: avislogs})
 const suggestionlogs = {
   "url": "",
   "color": 2977512,
+  "timestamp": new Date(),
   "footer": {
     "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
     "text": "Type : SUGGESTION"
