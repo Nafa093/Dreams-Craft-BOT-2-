@@ -149,6 +149,7 @@ message.channel.send(args.join(' '))
 const insultelogs = {
   "url": "",
   "color": 10030606,
+  "timestamp": new Date(),
   "footer": {
     "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
     "text": "Type : INSULTE "
