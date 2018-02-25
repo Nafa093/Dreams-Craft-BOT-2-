@@ -469,10 +469,10 @@ if(message.content.toLocaleLowerCase() == ("/disneyworldparks")){
  }
 	
 	const universparks = {
-  "url": "https://disneyworldparks.net/",
-  "color": 1,
+  "url": " ",
+  "color": 10030606,
   "footer": {
-    "icon_url": "https://disneyworldparksdotcom.files.wordpress.com/2017/03/logo3.png",
+    "icon_url": "https://cdn.discordapp.com/attachments/333644419171614722/417278197864857602/LOGO_Univers_Parks_1.1_transparent.png",
     "text": "Nous remercions UniversParks de nous faire confiance !"
   },
   "thumbnail": {
@@ -483,7 +483,7 @@ if(message.content.toLocaleLowerCase() == ("/disneyworldparks")){
     },
   "author": {
     "name": "UniversParks :",
-    "url": "https://disneyworldparks.net/",
+    "url": "",
     "icon_url": "https://cdn.discordapp.com/attachments/333644419171614722/417278197864857602/LOGO_Univers_Parks_1.1_transparent.png"
   },
   "fields": [
@@ -493,7 +493,7 @@ if(message.content.toLocaleLowerCase() == ("/disneyworldparks")){
       "inline": true
     },
     {
-      "name": "Reproduction : ",
+      "name": "Reproduction : Parc custom et reproduction de parc réel. ",
       "value": "--------------------",
       "inline": false
     },
@@ -503,7 +503,7 @@ if(message.content.toLocaleLowerCase() == ("/disneyworldparks")){
       "inline": false
     },
     {
-      "name": "État : Fermée.",
+      "name": "État : Ouvert.",
       "value": "--------------------",
       "inline": false
     },
@@ -513,7 +513,12 @@ if(message.content.toLocaleLowerCase() == ("/disneyworldparks")){
       "inline": false
     },
 	{
-      "name": "Facebook : https://twitter.com/Minecraft_DWP",
+      "name": "Facebook : https://fr-fr.facebook.com/UniversParks/",
+      "value": "--------------------",
+      "inline": false
+    },
+	  {
+      "name": "Twitter : https://twitter.com/UniversParks",
       "value": "--------------------",
       "inline": false
     },
@@ -524,7 +529,7 @@ if(message.content.toLocaleLowerCase() == ("/disneyworldparks")){
     }
   ]
 };
-if(message.content.toLocaleLowerCase() == ("/disneyworldparks")){
+if(message.content.toLocaleLowerCase() == ("/universparks")){
  message.channel.send({embed: universparks});
  }
 });
