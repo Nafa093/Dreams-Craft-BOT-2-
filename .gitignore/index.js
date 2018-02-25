@@ -91,6 +91,11 @@ const help = {
       "name": "``/suggestion``",
       "value": "``Permet de faire part d'une suggestion au staff !``",
       "inline": false
+    },
+	 {
+      "name": "``/version``",
+      "value": "``Permet de connaître ma derrnière version et mes derniers ajouts !``",
+      "inline": false
     }
   ]
 };
@@ -117,6 +122,9 @@ message.reply('Tout les soirs de cette semaine, tu peux retrouver " Le Show Gala
 }
 if(message.content.toLocaleLowerCase() == ("/attractions")){
 message.reply("Les attractions ouvertes sont : ``Les Tapis Volants d'Aladin`` - `` Rc Racer`` - `` Zig-Zag Spin `` - ``Crush Coaster`` !");
+}
+if(message.content.toLocaleLowerCase() == ("/version")){
+message.reply("Je suis actuellement en version ``2.0`` ! Mes derniers ajouts sont les commandes : ``/McDreams`` - ``/UniversParks`` - ``/DisneyWorldParks`` - ``/sortie`` - ``/spectacles`` - ``/avis`` - ``/suggestion`` ");
 }
 if(message.content.toLocaleLowerCase() == ("/sortie")){
 message.reply("La prochaine sortie à DisneyLand Paris organisé par Loulouemerick se déroule le 6 mars ! Vous voulez participer ? Contectez Loulouemerick par MP ! Participants actuels : Loulouemerick.");
