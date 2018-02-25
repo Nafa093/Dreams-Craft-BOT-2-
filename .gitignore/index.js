@@ -467,4 +467,64 @@ if(message.content.toLocaleLowerCase() == ("/mcdreams")){
 if(message.content.toLocaleLowerCase() == ("/disneyworldparks")){
  message.channel.send({embed: disneyworldparks});
  }
+	
+	const universparks = {
+  "url": "https://disneyworldparks.net/",
+  "color": 1,
+  "footer": {
+    "icon_url": "https://disneyworldparksdotcom.files.wordpress.com/2017/03/logo3.png",
+    "text": "Nous remercions UniversParks de nous faire confiance !"
+  },
+  "thumbnail": {
+    "url": "https://cdn.discordapp.com/attachments/333644419171614722/417278197864857602/LOGO_Univers_Parks_1.1_transparent.png"
+  },
+  "image": {
+      "url": "https://cdn.discordapp.com/attachments/366587401528803330/417291573215363073/Sans_titre.png"
+    },
+  "author": {
+    "name": "UniversParks :",
+    "url": "https://disneyworldparks.net/",
+    "icon_url": "https://cdn.discordapp.com/attachments/333644419171614722/417278197864857602/LOGO_Univers_Parks_1.1_transparent.png"
+  },
+  "fields": [
+    {
+      "name": "Nom : UniversParks.",
+      "value": "--------------------",
+      "inline": true
+    },
+    {
+      "name": "Reproduction : ",
+      "value": "--------------------",
+      "inline": false
+    },
+    {
+      "name": "Directeurs : McMagical_ (Theooo_) & waterpoloman.",
+      "value": "--------------------",
+      "inline": false
+    },
+    {
+      "name": "État : Fermée.",
+      "value": "--------------------",
+      "inline": false
+    },
+    {
+      "name": "Ip / Version : UniversParks.boxtoplay.com en 1.12 ( Une version premium est nécéssaire )",
+      "value": "--------------------",
+      "inline": false
+    },
+	{
+      "name": "Facebook : https://twitter.com/Minecraft_DWP",
+      "value": "--------------------",
+      "inline": false
+    },
+    {
+      "name": "Discord : https://discord.gg/mbT6QzG",
+      "value": "--------------------",
+      "inline": false
+    }
+  ]
+};
+if(message.content.toLocaleLowerCase() == ("/disneyworldparks")){
+ message.channel.send({embed: universparks});
+ }
 });
