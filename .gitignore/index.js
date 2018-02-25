@@ -178,6 +178,9 @@ message.reply("Les attractions ouvertes sont : ``Les Tapis Volants d'Aladin`` - 
 if(message.content.toLocaleLowerCase() == ("/version")){
 message.reply("Je suis actuellement en version ``2.0`` ! Mes derniers ajouts sont les commandes : ``/McDreams`` - ``/UniversParks`` - ``/DisneyWorldParks`` - ``/sortie`` - ``/spectacles`` - ``/avis`` - ``/suggestion`` ! ");
 }
+if(message.content.toLocaleLowerCase() == ("Bonjour")){
+client.channels.get('233222558974083072').send("Bonjour !")
+}
 if(message.content.toLocaleLowerCase() == ("/sortie")){
 message.reply("La prochaine sortie à DisneyLand Paris organisé par Loulouemerick se déroule le 6 mars ! Vous voulez participer ? Contactez Loulouemerick par MP ! Participants actuels : Loulouemerick.");
 }
