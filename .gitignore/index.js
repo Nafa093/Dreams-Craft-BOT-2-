@@ -102,6 +102,58 @@ const help = {
 if(message.content.toLocaleLowerCase() == ("/help")){
  message.channel.send({embed: help});
  }
+
+const helpstaff = {
+  "url": " ",
+  "color": 1073142,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
+    "text": "Pour toute autres demande, Natthh se tient à votre disposition."
+  },
+  "thumbnail": {
+    "url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png"
+  },
+  "author": {
+    "name": 'Commande uniquement réservé aux staffs :',
+    "url": " ",
+    "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png"
+  },
+  "fields": [
+    {
+      "name": "``/clear (nombre)``",
+      "value": "``Efface le nombre de message indiqué dans la commande.``",
+      "inline": false
+    },
+    {
+      "name": "``/annonce (message)``",
+      "value": "``Permet de faire parler le bot. ( Permission ADMIN obligatoire )``",
+      "inline": false
+    },
+    {
+      "name": "``A VENIR : /mute (membre) ``",
+      "value": "``Permet de muter quelqu'un.``",
+      "inline": false
+    },
+    {
+      "name": "``A VENIR : /kick (membre) ``",
+      "value": "``Permet de kick un membre du discord.``",
+      "inline": false
+    },
+	{
+      "name": "``A VENIR : /ban (membre)``",
+      "value": "``Permet de ban un membre du discord.``",
+      "inline": false
+    }
+  ]
+};
+
+if (message.content.toLocaleLowerCase() == "/helpstaff") {
+if (!message.member.hasPermission('MANAGE_MESSAGES'))
+return message.channel.send("Tu n'as pas la permissions !");
+message.delete()
+message.channel.send({embed: helpstaff})
+}
+
 });
 
 client.on('message', message => {
