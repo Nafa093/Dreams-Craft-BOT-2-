@@ -113,7 +113,7 @@ if(message.content.toLocaleLowerCase() == ("/ouverture")){
 message.reply("Il n'y a pas encore de date d'ouverture.");
 }
 if(message.content.toLocaleLowerCase() == ("/spectacles")){
-message.reply('Tout les soirs de cette semaine, vous pouvez retrouver " Le Show Galactique " à 21h ! ');
+message.reply('Tout les soirs de cette semaine, tu peux retrouver " Le Show Galactique " à 21h ! ');
 }
 if(message.content.toLocaleLowerCase() == ("/attractions")){
 message.reply("Les attractions ouvertes sont : ``Les Tapis Volants d'Aladin`` - `` Rc Racer`` - `` Zig-Zag Spin `` - ``Crush Coaster`` !");
