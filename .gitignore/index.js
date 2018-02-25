@@ -498,7 +498,7 @@ if(message.content.toLocaleLowerCase() == ("/disneyworldparks")){
       "inline": false
     },
     {
-      "name": "Directeurs : McMagical_ (Theooo_) & waterpoloman.",
+      "name": "Fondateurs : McMagical_ (Theooo_) & waterpoloman.",
       "value": "--------------------",
       "inline": false
     },
