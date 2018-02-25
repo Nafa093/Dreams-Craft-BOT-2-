@@ -67,6 +67,11 @@ const help = {
       "value": "``Donne la liste complète des attractions ouvertes.``",
       "inline": false
     },
+    {
+      "name": "``/spectacles``",
+      "value": "``Donne les horaires des prochains spectacles.``",
+      "inline": false
+    },  
 	{
       "name": "``/partenaires``",
       "value": "``Donne la liste de nos partenaires officiels. Pour plus d'information utilisez /(Nom du partenaire) !``",
@@ -106,6 +111,9 @@ message.reply("La prochaine Soft-Opening se déroule actuellement du 2 février 
 }
 if(message.content.toLocaleLowerCase() == ("/ouverture")){
 message.reply("Il n'y a pas encore de date d'ouverture.");
+}
+if(message.content.toLocaleLowerCase() == ("/spectacles")){
+message.reply('Tout les soirs de cette semaine, vous pouvez retrouver " Le Show Galactique " à 21h ! ');
 }
 if(message.content.toLocaleLowerCase() == ("/attractions")){
 message.reply("Les attractions ouvertes sont : ``Les Tapis Volants d'Aladin`` - `` Rc Racer`` - `` Zig-Zag Spin `` - ``Crush Coaster`` !");
