@@ -534,4 +534,64 @@ if(message.content.toLocaleLowerCase() == ("/disneyworldparks")){
 if(message.content.toLocaleLowerCase() == ("/universparks")){
  message.channel.send({embed: universparks});
  }
+	
+	const dreamsworld = {
+  "url": " ",
+  "color": 10030606,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/397387397081595904/421037147689058325/LogoDW.jpg",
+    "text": "Nous remercions DreamsWorld de nous faire confiance !"
+  },
+  "thumbnail": {
+    "url": "https://cdn.discordapp.com/attachments/397387397081595904/421037147689058325/LogoDW.jpg"
+  },
+  "image": {
+      "url": ""
+    },
+  "author": {
+    "name": "DreamsWorld :",
+    "url": "https://dreamsworldmc.webnode.fr/",
+    "icon_url": "https://cdn.discordapp.com/attachments/397387397081595904/421037147689058325/LogoDW.jpg"
+  },
+  "fields": [
+    {
+      "name": "Nom : DreamsWorld",
+      "value": "--------------------",
+      "inline": true
+    },
+    {
+      "name": "Reproduction : Parcs d'attractions customisés et mini-jeux. ",
+      "value": "--------------------",
+      "inline": false
+    },
+    {
+      "name": "Fondateurs : AlexEpMack.",
+      "value": "--------------------",
+      "inline": false
+    },
+    {
+      "name": "État : Fermé.",
+      "value": "--------------------",
+      "inline": false
+    },
+    {
+      "name": "Ip / Version : Non disponible.",
+      "value": "--------------------",
+      "inline": false
+    },
+	{
+      "name": "Facebook : https://www.facebook.com/dreamsworldmc/",
+      "value": "--------------------",
+      "inline": false
+    },
+    {
+      "name": "Discord : https://discord.gg/EXNdj9A",
+      "value": "--------------------",
+      "inline": false
+    }
+  ]
+};
+if(message.content.toLocaleLowerCase() == ("/dreamsworld")){
+ message.channel.send({embed: dreamsworld});
+ }
 });
