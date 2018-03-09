@@ -11,7 +11,7 @@ client.login(token)
 
 client.on('guildMemberAdd', member => {
 let role = member.guild.roles.find("name","--=[Visiteur]=--");
-const channel = member.guild.channels.find("name", "accueil").send(`Bonjour et bienvenue sur le discord de DreamsCraft ${member.user}. Que la force soit avec toi ! `)
+const channel = member.guild.channels.find("name", "accueil").send(`Bonjour et bienvenue sur le discord de DreamsCraft ${member.user}.`)
 member.addRole(role)
 });
 
@@ -22,7 +22,7 @@ channel.send(`${member.user}`)
 });
 
 client.on('guildMemberRemove', member => {
-const channel = member.guild.channels.find('name', 'accueil').send(` ${member.user} a quitté le discord de DreamsCraft. Que la force soit avec lui ! `);
+const channel = member.guild.channels.find('name', 'accueil').send(` ${member.user} a quitté le discord de DreamsCraft.`);
 });
 
 client.on('message', message =>{
