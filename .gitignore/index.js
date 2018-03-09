@@ -537,7 +537,7 @@ if(message.content.toLocaleLowerCase() == ("/universparks")){
 	
 	const dreamsworld = {
   "url": " ",
-  "color": 10030606,
+  "color": 10457828,
   "footer": {
     "icon_url": "https://cdn.discordapp.com/attachments/397387397081595904/421037147689058325/LogoDW.jpg",
     "text": "Nous remercions DreamsWorld de nous faire confiance !"
@@ -546,7 +546,7 @@ if(message.content.toLocaleLowerCase() == ("/universparks")){
     "url": "https://cdn.discordapp.com/attachments/397387397081595904/421037147689058325/LogoDW.jpg"
   },
   "image": {
-      "url": ""
+      "url": "https://cdn.discordapp.com/attachments/341956374667853824/421081591474028550/2018-02-04_20.59.09.png"
     },
   "author": {
     "name": "DreamsWorld :",
