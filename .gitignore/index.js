@@ -158,7 +158,7 @@ message.channel.send({embed: helpstaff})
 
 client.on('message', message => {
 if(message.content.toLocaleLowerCase() == ("/partenaires")){
-message.reply("Voici la liste des serveurs partenaires de DreamsCraft : DisneyWorldParks -  UniversParks  - McDreams ! Pour plus d'information sur un serveur en question, utilisez /(Nom du partenaire) !");
+message.reply("Voici la liste des serveurs partenaires de DreamsCraft : DisneyWorldParks -  UniversParks  - McDreams - DreamsWorld ! Pour plus d'information sur un serveur en question, utilisez /(Nom du partenaire) !");
 }
 if(message.content.toLocaleLowerCase() == ("/dc")){
 message.reply("L'ip de DreamsCraft est : DreamsCraft.minecraft-mania.fr en version 1.12.2 de minecraft premium !");
