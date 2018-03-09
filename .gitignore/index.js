@@ -164,7 +164,7 @@ if(message.content.toLocaleLowerCase() == ("/dc")){
 message.reply("L'ip de DreamsCraft est : DreamsCraft.minecraft-mania.fr en version 1.12.2 de minecraft premium !");
 }
 if(message.content.toLocaleLowerCase() == ("/soft")){
-message.reply("La prochaine Soft-Opening se déroule actuellement du 2 février au 2 mars pour la saison de le force ! Alors, qu'attends-tu pour venir ? ");
+message.reply("Il n'y a pas de date pour la prochaine Soft-Opening.");
 }
 if(message.content.toLocaleLowerCase() == ("/ouverture")){
 message.reply("Il n'y a pas encore de date d'ouverture.");
