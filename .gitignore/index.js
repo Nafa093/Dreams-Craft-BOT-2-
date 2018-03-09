@@ -3,7 +3,7 @@ client = new discord.Client();
 const token = (process.env.TOKEN);
 var prefix = "/";
 client.on("ready", () => {
-client.user.setPresence({ game: { name: ' /help ', type: 0}});
+client.user.setPresence({ game: { name: ' /help ', type: 1}});
 console.log('|Le bot est en ligne.|');
 });
 
