@@ -186,20 +186,20 @@ message.reply("La prochaine sortie à DisneyLand Paris organisé par Loulouemeri
 }
 	
 	
-var lumineuxRole = client.guilds.get(message.guild.id).roles.find("name", "Côté Lumineux");
-var obscurRole = client.guilds.get(message.guild.id).roles.find("name", "Côté Obscur");
+//var lumineuxRole = client.guilds.get(message.guild.id).roles.find("name", "Côté Lumineux");
+//var obscurRole = client.guilds.get(message.guild.id).roles.find("name", "Côté Obscur");
 
- if(message.content.toLocaleLowerCase() == ("/obscur")){
- message.channel.send(`Tu es définitivement du côté obscur de la force ${message.author} ! Bienvenue jeune sith.`);
- message.guild.member(message.author).addRole(obscurRole);
- message.guild.member(message.author).removeRole(lumineuxRole);
- }
+ //if(message.content.toLocaleLowerCase() == ("/obscur")){
+ //message.channel.send(`Tu es définitivement du côté obscur de la force ${message.author} ! Bienvenue jeune sith.`);
+ //message.guild.member(message.author).addRole(obscurRole);
+ //message.guild.member(message.author).removeRole(lumineuxRole);
+ //}
 	
-if(message.content.toLocaleLowerCase() == ("/lumineux")){
- message.channel.send(`Tu es définitivement du côté lumineux de la force ${message.author} ! Que la force soit avec toi jeune jedi.`);
- message.guild.member(message.author).addRole(lumineuxRole);
- message.guild.member(message.author).removeRole(obscurRole);
- }
+//if(message.content.toLocaleLowerCase() == ("/lumineux")){
+ //message.channel.send(`Tu es définitivement du côté lumineux de la force ${message.author} ! Que la force soit avec toi jeune jedi.`);
+ //message.guild.member(message.author).addRole(lumineuxRole);
+ //message.guild.member(message.author).removeRole(obscurRole);
+ //}
 
 let argument = message.content.split("/clear").slice(1)
 if(!argument) return message.channel.send("Merci d'indiquer de respecter le modèle suivant : ``/clear ( nombre de 0 à 100)``").then(m => m.delete(20000))
