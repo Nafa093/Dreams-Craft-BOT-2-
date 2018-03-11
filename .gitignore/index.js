@@ -18,8 +18,10 @@ client.on('guildMemberAdd', member => {
 let role = member.guild.roles.find("name","--=[Visiteur]=--");
 const channel = member.guild.channels.find("name", "accueil").send(`Bonjour et bienvenue sur le discord de DreamsCraft ${member.user}.`)
 member.addRole(role)
+});
 
 // Utilisateur qui vient d'arrivé, mentionné sur le salon #règlement
+client.on('guildMemberAdd', member => {
 const channel = member.guild.channels.find("name", "reglement");
 channel.send(`${member.user}`)
     .then(message =>  message.delete())
