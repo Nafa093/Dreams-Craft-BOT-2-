@@ -160,9 +160,10 @@ return message.channel.send("Tu n'as pas la permissions !");
 message.delete()
 message.channel.send({embed: helpstaff})
 }
-
+});
 
 // Commandes diverse écrite du bot :
+client.on('message', message => {
 // Commande des partenaires :
 if(message.content.toLocaleLowerCase() == ("/partenaires")){
 message.reply("Voici la liste des serveurs partenaires de DreamsCraft : DisneyWorldParks -  UniversParks  - McDreams - DreamsWorld ! Pour plus d'information sur un serveur en question, utilisez /(Nom du partenaire) !");
