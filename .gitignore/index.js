@@ -18,10 +18,8 @@ client.on('guildMemberAdd', member => {
 let role = member.guild.roles.find("name","--=[Visiteur]=--");
 const channel = member.guild.channels.find("name", "accueil").send(`Bonjour et bienvenue sur le discord de DreamsCraft ${member.user}.`)
 member.addRole(role)
-});
 
 // Utilisateur qui vient d'arrivé, mentionné sur le salon #règlement
-client.on('guildMemberAdd', member => {
 const channel = member.guild.channels.find("name", "reglement");
 channel.send(`${member.user}`)
     .then(message =>  message.delete())
@@ -163,12 +161,8 @@ message.delete()
 message.channel.send({embed: helpstaff})
 }
 
-});
 
 // Commandes diverse écrite du bot :
-
-client.on('message', message => {
-
 // Commande des partenaires :
 if(message.content.toLocaleLowerCase() == ("/partenaires")){
 message.reply("Voici la liste des serveurs partenaires de DreamsCraft : DisneyWorldParks -  UniversParks  - McDreams - DreamsWorld ! Pour plus d'information sur un serveur en question, utilisez /(Nom du partenaire) !");
