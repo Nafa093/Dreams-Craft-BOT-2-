@@ -7,7 +7,7 @@ const token = (process.env.TOKEN);
 var prefix = "/"; // Préfix du bot
 var lumineuxRole = client.guilds.get(message.guild.id).roles.find("name", "Côté Lumineux"); // Rôle Lumineux
 var obscurRole = client.guilds.get(message.guild.id).roles.find("name", "Côté Obscur"); // Rôles Obscur
-var person = message.member.permissions // Permission Clear
+var person = message.member.permissions; // Permission Clear
 
 // Pemière action du bot quand il s'allume :
 client.on("ready", () => {
