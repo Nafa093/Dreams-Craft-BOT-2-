@@ -1,30 +1,42 @@
+// Début du code
 const discord = require('discord.js'),
 client = new discord.Client();
 const token = (process.env.TOKEN);
-var prefix = "/";
+
+// Variables :
+var prefix = "/"; // Préfix du bot
+var lumineuxRole = client.guilds.get(message.guild.id).roles.find("name", "Côté Lumineux"); // Rôle Lumineux
+var obscurRole = client.guilds.get(message.guild.id).roles.find("name", "Côté Obscur"); // Rôles Obscur
+var person = message.member.permissions // Permission Clear
+
+// Pemière action du bot quand il s'allume :
 client.on("ready", () => {
-client.user.setPresence({ game: { name: ' /help ', type: 0}});
-console.log('|Le bot est en ligne.|');
+client.user.setPresence({ game: { name: ' /help ', type: 0}}); // Jeux au quel il joue
+console.log('|Le bot est en ligne.|'); // Message sur le console indiquant qu'il est prêt à l'utilisation
 });
 
 client.login(token)
 
+// Message de bienvenue quand quelqu'un arrive sur discord
 client.on('guildMemberAdd', member => {
 let role = member.guild.roles.find("name","--=[Visiteur]=--");
 const channel = member.guild.channels.find("name", "accueil").send(`Bonjour et bienvenue sur le discord de DreamsCraft ${member.user}.`)
 member.addRole(role)
 });
 
+// Utilisateur qui vient d'arrivé, mentionné sur le salon #règlement
 client.on('guildMemberAdd', member => {
 const channel = member.guild.channels.find("name", "reglement");
 channel.send(`${member.user}`)
     .then(message =>  message.delete())
 });
 
+// Message de départ quand quelqu'un quitte le discord
 client.on('guildMemberRemove', member => {
 const channel = member.guild.channels.find('name', 'accueil').send(` ${member.user} a quitté le discord de DreamsCraft.`);
 });
 
+// Command HELP
 client.on('message', message =>{
 const help = {
   "url": " ",
@@ -103,6 +115,7 @@ if(message.content.toLocaleLowerCase() == ("/help")){
  message.channel.send({embed: help});
  }
 
+// Command HelpStaff
 const helpstaff = {
   "url": " ",
   "color": 1073142,
@@ -156,38 +169,56 @@ message.channel.send({embed: helpstaff})
 
 });
 
+// Commandes diverse écrite du bot :
+
 client.on('message', message => {
+
+// Commande des partenaires :
 if(message.content.toLocaleLowerCase() == ("/partenaires")){
 message.reply("Voici la liste des serveurs partenaires de DreamsCraft : DisneyWorldParks -  UniversParks  - McDreams - DreamsWorld ! Pour plus d'information sur un serveur en question, utilisez /(Nom du partenaire) !");
 }
+
+// Commande d'information sur le serveur :
 if(message.content.toLocaleLowerCase() == ("/dc")){
 message.reply("L'ip de DreamsCraft est : DreamsCraft.minecraft-mania.fr en version 1.12.2 de minecraft premium !");
 }
+	
+// Commande de la prochaine soft
 if(message.content.toLocaleLowerCase() == ("/soft")){
 message.reply("Il n'y a pas de date pour la prochaine Soft-Opening.");
 }
+	
+// Commande d'ouverture du serveur
 if(message.content.toLocaleLowerCase() == ("/ouverture")){
 message.reply("Il n'y a pas encore de date d'ouverture.");
 }
+	
+// Commande des prochains spectacles 
 if(message.content.toLocaleLowerCase() == ("/spectacles")){
 message.reply('Tout les soirs de cette semaine, tu peux retrouver " Le Show Galactique " à 21h ! ');
 }
+
+// Commande des attractions ouvertes
 if(message.content.toLocaleLowerCase() == ("/attractions")){
 message.reply("Les attractions ouvertes sont : ``Les Tapis Volants d'Aladin`` - `` Rc Racer`` - `` Zig-Zag Spin `` - ``Crush Coaster`` !");
 }
+
+// Commande de la version du bot
 if(message.content.toLocaleLowerCase() == ("/version")){
 message.reply("Je suis actuellement en version ``2.0`` ! Mes derniers ajouts sont les commandes : ``/McDreams`` - ``/UniversParks`` - ``/DisneyWorldParks`` - ``/DreamsWorld`` - ``/sortie`` - ``/spectacles`` - ``/avis`` - ``/suggestion`` ! ");
 }
+
+// Commande de Bonjour
 if(message.content.toLocaleLowerCase() == ("Bonjour")){
 client.channels.get('233222558974083072').send("Bonjour !")
 }
+
+// Commande de la prochaine sortie du staff de DreamsCraft
 if(message.content.toLocaleLowerCase() == ("/sortie")){
 message.reply("La prochaine sortie à DisneyLand Paris organisé par Loulouemerick se déroule le 6 mars ! Vous voulez participer ? Contactez Loulouemerick par MP ! Participants actuels : Loulouemerick.");
 }
 	
-	
-//var lumineuxRole = client.guilds.get(message.guild.id).roles.find("name", "Côté Lumineux");
-//var obscurRole = client.guilds.get(message.guild.id).roles.find("name", "Côté Obscur");
+// Command de rôle, OFF
 
  //if(message.content.toLocaleLowerCase() == ("/obscur")){
  //message.channel.send(`Tu es définitivement du côté obscur de la force ${message.author} ! Bienvenue jeune sith.`);
@@ -201,9 +232,11 @@ message.reply("La prochaine sortie à DisneyLand Paris organisé par Loulouemeri
  //message.guild.member(message.author).removeRole(obscurRole);
  //}
 
+	
+// Commande de clear 
+	
 let argument = message.content.split("/clear").slice(1)
 if(!argument) return message.channel.send("Merci d'indiquer de respecter le modèle suivant : ``/clear ( nombre de 0 à 100)``").then(m => m.delete(20000))
-var person = message.member.permissions
 function dot() {
 message.channel.bulkDelete(argument);
 };
@@ -220,6 +253,9 @@ let args = message.content.split(' ')
 args.shift()
 message.channel.send(args.join(' '))
     }
+	
+	
+// Tri des insultes automatique 
 	
 const insultelogs = {
   "url": "",
@@ -248,6 +284,9 @@ message.delete()
 client.channels.get('411217787785183245').send({embed: insultelogs})
 }	
 
+	
+// Archive des messages
+
 const messagelogs = {
   "url": "",
   "color": 15853885,
@@ -273,6 +312,9 @@ if(message.author.bot) return;
 client.channels.get('414418438614941698').send({embed: messagelogs})
 }				
 
+	
+// Filtre Anti-Pub	
+	
 const publogs = {
   "url": "",
   "color": 10030606,
@@ -300,6 +342,8 @@ message.delete()
 client.channels.get('411217787785183245').send({embed: publogs})
 }		
 	
+	
+// Archive avis
 
 const avislogs = {
   "url": "",
@@ -326,6 +370,9 @@ message.reply("Merci d'avoir donné ton avis ! ");
 message.delete()
 client.channels.get('415068910300430347').send({embed: avislogs})
 }		
+	
+	
+// Archive suggestions	
 	
 const suggestionlogs = {
   "url": "",
@@ -354,6 +401,8 @@ message.delete()
 client.channels.get('415550993267163156').send({embed: suggestionlogs})
 }
 	
+// Commande du partenaire McDreams
+
   const mcdreams = {
   "url": "http://mcdreams.livehost.fr/index.php",
   "color": 4420817,
@@ -414,6 +463,8 @@ if(message.content.toLocaleLowerCase() == ("/mcdreams")){
  message.channel.send({embed: mcdreams});
  }	
 	
+// Commande du partenaire DisneyWorldParks
+	
   const disneyworldparks = {
   "url": "https://disneyworldparks.net/",
   "color": 1,
@@ -473,6 +524,8 @@ if(message.content.toLocaleLowerCase() == ("/mcdreams")){
 if(message.content.toLocaleLowerCase() == ("/disneyworldparks")){
  message.channel.send({embed: disneyworldparks});
  }
+
+// Commande du partenaire UniversParks
 	
 	const universparks = {
   "url": " ",
@@ -538,6 +591,8 @@ if(message.content.toLocaleLowerCase() == ("/disneyworldparks")){
 if(message.content.toLocaleLowerCase() == ("/universparks")){
  message.channel.send({embed: universparks});
  }
+
+// Commande du partenaire DreamsWorld
 	
 	const dreamsworld = {
   "url": " ",
@@ -599,3 +654,4 @@ if(message.content.toLocaleLowerCase() == ("/dreamsworld")){
  message.channel.send({embed: dreamsworld});
  }
 });
+// Fin du Code
