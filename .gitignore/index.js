@@ -2,12 +2,8 @@
 const discord = require('discord.js'),
 client = new discord.Client();
 const token = (process.env.TOKEN);
-
-// Variables :
 var prefix = "/"; // Préfix du bot
-var lumineuxRole = client.guilds.get(message.guild.id).roles.find("name", "Côté Lumineux"); // Rôle Lumineux
-var obscurRole = client.guilds.get(message.guild.id).roles.find("name", "Côté Obscur"); // Rôles Obscur
-var person = message.member.permissions; // Permission Clear
+
 
 // Pemière action du bot quand il s'allume :
 client.on("ready", () => {
@@ -220,6 +216,8 @@ message.reply("La prochaine sortie à DisneyLand Paris organisé par Loulouemeri
 	
 // Command de rôle, OFF
 
+//var lumineuxRole = client.guilds.get(message.guild.id).roles.find("name", "Côté Lumineux"); // Rôle Lumineux
+//var obscurRole = client.guilds.get(message.guild.id).roles.find("name", "Côté Obscur"); // Rôles Obscur
  //if(message.content.toLocaleLowerCase() == ("/obscur")){
  //message.channel.send(`Tu es définitivement du côté obscur de la force ${message.author} ! Bienvenue jeune sith.`);
  //message.guild.member(message.author).addRole(obscurRole);
@@ -237,6 +235,7 @@ message.reply("La prochaine sortie à DisneyLand Paris organisé par Loulouemeri
 	
 let argument = message.content.split("/clear").slice(1)
 if(!argument) return message.channel.send("Merci d'indiquer de respecter le modèle suivant : ``/clear ( nombre de 0 à 100)``").then(m => m.delete(20000))
+var person = message.member.permissions // Permission Clear
 function dot() {
 message.channel.bulkDelete(argument);
 };
