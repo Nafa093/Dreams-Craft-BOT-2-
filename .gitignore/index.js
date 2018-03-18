@@ -373,7 +373,7 @@ const avislogs = {
   ]
 };
 	
-if (message.content.toLocaleLowerCase() == "/avis"){
+if (message.content.toLocaleLowerCase().includes("/avis")) {
 if(message.author.bot) return;
 message.reply("Merci d'avoir donné ton avis ! ");
 message.delete()
@@ -403,7 +403,7 @@ const suggestionlogs = {
   ]
 };
  
-if (message.content.toLocaleLowerCase() == "/suggestion"){
+if (message.content.toLocaleLowerCase().includes("/suggestion")) {
 if(message.author.bot) return;
 message.reply("Merci pour cette suggestion ! Ton idée sera examiné par le staff de DreamsCraft !");
 message.delete()
