@@ -662,6 +662,7 @@ if(message.content.toLocaleLowerCase() == ("/dreamsworld")){
  message.channel.send({embed: dreamsworld});
  }
  
+client.on("message", (message) => {
 var member= message.mentions.members.first();
 const kicklogs = { 
   "url": "",
@@ -683,16 +684,13 @@ const kicklogs = {
   ]
 };
 
-});
-
-client.on("message", (message) => {
-    if (message.content.startsWith("/kick")) {
+ 
+ if (message.content.toLocaleLowerCase().includes("/kick")) { 
  member.kick().then((member) => {
 	client.channels.get('424991281458970645').send({embed : kicklogs})
         }).catch(() => {
             message.channel.send("Tu n'as pas la permission !");
         });
     }
-	
 });
 // Fin du Code
