@@ -663,7 +663,8 @@ if(message.content.toLocaleLowerCase() == ("/dreamsworld")){
  }
 });
  
-client.on("message", (message) => {
+client.on("message", (message) => { 
+ var member= message.mentions.members.first();
 	const kicklogs = { 
   "url": "",
   "color": 15425036,
@@ -677,17 +678,17 @@ client.on("message", (message) => {
   },
   "fields": [
 	{
-      "name": " coucou ",
-      "value": "KICK : OK",
+      "name": message.author.username + " a kick un joueur :",
+      "value": message + " ",
       "inline": false
     }
   ]
 };
 	
     if (message.content.startsWith("/kick")) {
- var member= message.mentions.members.first();
+var member= message.mentions.members.first();
         member.kick().then((member) => {
-            message.channel.send({embed: kicklogs});
+client.channels.get('424991281458970645').send({embed : kicklogs})
         }).catch(() => {
             message.channel.send("Impossible à kick ! ");
         });
