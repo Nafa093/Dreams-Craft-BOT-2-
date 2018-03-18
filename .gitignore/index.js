@@ -679,7 +679,7 @@ const kicklogs = {
   "fields": [
 	{
       "name": member.displayName + " c'est fait kick de DreamsCraft par " + message.author.username + "." ,
-      "value": message + " ",
+      "value": message + " test ",
       "inline": false
     }
   ]
