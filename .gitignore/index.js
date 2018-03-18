@@ -664,33 +664,12 @@ if(message.content.toLocaleLowerCase() == ("/dreamsworld")){
 });
  
 client.on("message", (message) => {
-const kicklogs = { 
-  "url": "",
-  "color": 15425036,
-  "timestamp": new Date(),
-  "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
-    "text": "Type : SANCTION "
-  },
-  "thumbnail": {
-    "url": ""
-  },
-  "fields": [
-	{
-      "name": member.displayName + " c'est fait kick de DreamsCraft par " + message.author.username + "." ,
-      "value": "KICK : OK",
-      "inline": false
-    }
-  ]
-};
-
-
- if (message.content.toLocaleLowerCase().includes("/kick")) {  
+    if (message.content.startsWith("/kick")) {
  var member= message.mentions.members.first();
- member.kick().then((member) => {
-	client.channels.get('424991281458970645').send({embed : kicklogs})
+        member.kick().then((member) => {
+            message.channel.send("Utilsateur Kick !");
         }).catch(() => {
-            message.channel.send("Utilisateur kick !");
+            message.channel.send("Impossible à kick ! ");
         });
     }
 });
