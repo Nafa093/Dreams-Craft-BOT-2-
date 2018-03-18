@@ -662,8 +662,6 @@ if(message.content.toLocaleLowerCase() == ("/dreamsworld")){
  message.channel.send({embed: dreamsworld});
  }
  
- if (!message.member.hasPermission('KICK_MEMBERS'))
-return message.channel.send("Tu n'as pas la permissions !");
 var member= message.mentions.members.first();
 const kicklogs = { 
   "url": "",
