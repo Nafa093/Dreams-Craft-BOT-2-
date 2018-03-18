@@ -685,15 +685,52 @@ if(message.content.toLocaleLowerCase() == ("/dreamsworld")){
   ]
 };
 	
-    if (message.content.startsWith("/kick")) {
+if (message.content.toLocaleLowerCase().includes("kick")) {
+	
 	 if (!message.member.hasPermission('KICK_MEMBERS'))
 return message.channel.send("Tu n'as pas la permissions !");
+	
 var member= message.mentions.members.first();
         member.kick().then((member) => {
 client.channels.get('424991281458970645').send({embed : kicklogs})
         }).catch(() => {
-            message.channel.send("Impossible à kick ! ");
+            message.channel.send("Tu n'as pas la permission !");
         });
     }
-});
+	 
+	const banlogs = { 
+  "url": "",
+  "color": 16711680,
+  "timestamp": new Date(),
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
+    "text": "Type : SANCTION "
+  },
+  "thumbnail": {
+    "url": ""
+  },
+  "fields": [
+	{
+      "name": message.author.username + " a bannis un joueur :",
+      "value": message + " ",
+      "inline": false
+    }
+  ]
+};
+
+	
+if (message.content.toLocaleLowerCase().includes("/ban")) {
+	
+	 if (!message.member.hasPermission('BAN_MEMBERS'))
+return message.channel.send("Tu n'as pas la permissions !");
+
+var member= message.mentions.members.first();
+
+        member.ban().then((member) => {
+client.channels.get('424991281458970645').send({embed : banlogs})
+        }).catch(() => {
+            message.channel.send("Tu n'as pas la permission ! ");
+        });
+    }
+}); 
 // Fin du Code
