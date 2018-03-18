@@ -683,7 +683,9 @@ const kicklogs = {
   ]
 };
 
+});
 
+client.on("message", (message) => {
     if (message.content.startsWith("/kick")) {
  member.kick().then((member) => {
 	client.channels.get('424991281458970645').send({embed : kicklogs})
