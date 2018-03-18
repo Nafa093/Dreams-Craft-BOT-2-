@@ -158,7 +158,7 @@ const helpstaff = {
       "inline": false
     },
     {
-      "name": "``A VENIR : /kick (membre) ``",
+      "name": "``/kick (membre) ``",
       "value": "``Permet de kick un membre du discord.``",
       "inline": false
     },
@@ -663,7 +663,7 @@ if(message.content.toLocaleLowerCase() == ("/dreamsworld")){
  }
 });
  
-client.on("message", (message) => { 
+ client.on("message", (message) => { 
  var member= message.mentions.members.first();
 	const kicklogs = { 
   "url": "",
@@ -686,6 +686,8 @@ client.on("message", (message) => {
 };
 	
     if (message.content.startsWith("/kick")) {
+	 if (!message.member.hasPermission('KICK_MEMBERS'))
+return message.channel.send("Tu n'as pas la permissions !");
 var member= message.mentions.members.first();
         member.kick().then((member) => {
 client.channels.get('424991281458970645').send({embed : kicklogs})
