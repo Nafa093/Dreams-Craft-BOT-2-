@@ -372,6 +372,7 @@ const avislogs = {
     }
   ]
 };
+	
 if (message.content.toLocaleLowerCase() == "/avis"){
 if(message.author.bot) return;
 message.reply("Merci d'avoir donné ton avis ! ");
