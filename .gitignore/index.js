@@ -677,7 +677,7 @@ client.on("message", (message) => {
   },
   "fields": [
 	{
-      "name": member.displayName + " c'est fait kick de DreamsCraft par " + message.author.username + "." ,
+      "name": " coucou ",
       "value": "KICK : OK",
       "inline": false
     }
