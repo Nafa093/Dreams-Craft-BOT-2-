@@ -664,7 +664,6 @@ if(message.content.toLocaleLowerCase() == ("/dreamsworld")){
 });
  
 client.on("message", (message) => {
-var member= message.mentions.members.first();
 const kicklogs = { 
   "url": "",
   "color": 15425036,
@@ -679,18 +678,19 @@ const kicklogs = {
   "fields": [
 	{
       "name": member.displayName + " c'est fait kick de DreamsCraft par " + message.author.username + "." ,
-      "value": message + " test ",
+      "value": "KICK : OK",
       "inline": false
     }
   ]
 };
 
- 
- if (message.content.toLocaleLowerCase().includes("/kick")) { 
+
+ if (message.content.toLocaleLowerCase().includes("/kick")) {  
+ var member= message.mentions.members.first();
  member.kick().then((member) => {
 	client.channels.get('424991281458970645').send({embed : kicklogs})
         }).catch(() => {
-            message.channel.send("Tu n'as pas la permission !");
+            message.channel.send("Utilisateur kick !");
         });
     }
 });
