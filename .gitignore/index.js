@@ -661,6 +661,7 @@ if(message.content.toLocaleLowerCase() == ("/universparks")){
 if(message.content.toLocaleLowerCase() == ("/dreamsworld")){
  message.channel.send({embed: dreamsworld});
  }
+});
  
 client.on("message", (message) => {
 var member= message.mentions.members.first();
