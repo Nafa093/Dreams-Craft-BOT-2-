@@ -687,8 +687,6 @@ const kicklogs = {
 
 
     if (message.content.startsWith("/kick")) {
- if (!message.member.hasPermission('MANAGE_MESSAGES'))
-return message.channel.send("Tu n'as pas la permission !");
  member.kick().then((member) => {
 	client.channels.get('424991281458970645').send({embed : kicklogs})
         }).catch(() => {
