@@ -163,7 +163,7 @@ const helpstaff = {
       "inline": false
     },
 	{
-      "name": "``A VENIR : /ban (membre)``",
+      "name": "``/ban (membre)``",
       "value": "``Permet de ban un membre du discord.``",
       "inline": false
     }
@@ -210,7 +210,7 @@ message.reply("Les attractions ouvertes sont : ``Les Tapis Volants d'Aladin`` - 
 
 // Commande de la version du bot
 if(message.content.toLocaleLowerCase() == ("/version")){
-message.reply("Je suis actuellement en version ``2.0`` ! Mes derniers ajouts sont les commandes : ``/McDreams`` - ``/UniversParks`` - ``/DisneyWorldParks`` - ``/DreamsWorld`` - ``/sortie`` - ``/spectacles`` - ``/avis`` - ``/suggestion`` ! ");
+message.reply("Je suis actuellement en version ``3.0`` ! Mes derniers ajouts sont des commandes de modération & un recodage entiers !  ");
 }
 
 // Commande de Bonjour
