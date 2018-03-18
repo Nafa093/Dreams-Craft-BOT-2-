@@ -685,8 +685,8 @@ const kicklogs = {
   ]
 };
 
- 
- if (message.content.toLocaleLowerCase().includes("/kick")) { 
+
+    if (message.content.startsWith("/kick")) {
  if (!message.member.hasPermission('MANAGE_MESSAGES'))
 return message.channel.send("Tu n'as pas la permission !");
  member.kick().then((member) => {
