@@ -9,26 +9,6 @@ var prefix = "/"; // Préfix du bot
 client.on("ready", () => {
 client.user.setPresence({ game: { name: ' /help ', type: 0}}); // Jeux au quel il joue
 console.log('|Le bot est en ligne.|'); // Message sur le console indiquant qu'il est prêt à l'utilisation
-const onbot = {
-  "url": "",
-  "color": 15853885,
-  "timestamp": new Date(),
-  "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
-    "text": ""
-  },
-  "thumbnail": {
-    "url": ""
-  },
-  "fields": [
-	{
-      "name": "BOT EN LIGNE",
-      "value": "",
-      "inline": false
-    }
-  ]
-};
-client.channels.get('424338436560781313').send({embed: onbot})
 });
 
 client.login(token)
