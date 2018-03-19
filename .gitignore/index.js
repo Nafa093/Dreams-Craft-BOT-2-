@@ -773,7 +773,7 @@ client.channels.get('424991281458970645').send({embed: mutelogs})
         });
     }
 	
-		const unmutelogs = { 
+	const unmutelogs = { 
   "url": "",
   "color": 1349919,
   "timestamp": new Date(),
@@ -798,6 +798,8 @@ client.channels.get('424991281458970645').send({embed: mutelogs})
 	 if (!message.member.hasPermission('MANAGE_ROLES'))
 return message.channel.send("Tu n'as pas la permissions !");
 	
+var muteRole = client.guilds.get(message.guild.id).roles.find("name", "Mute"); 
+var member= message.mentions.members.first();
 
         member.removeRole(muteRole).then((member) => {
 		
