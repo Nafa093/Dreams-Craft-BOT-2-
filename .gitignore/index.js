@@ -224,6 +224,11 @@ if(message.author.bot) return;
 message.channel.send("Bonjour !")
 }
 
+if (message.content.toLocaleLowerCase().includes("Ami du soir, Bonsoir")) {
+if(message.author.bot) return;
+message.channel.send("Bonj")
+}
+	
 // Commande de la prochaine sortie du staff de DreamsCraft
 if(message.content.toLocaleLowerCase() == ("/sortie")){
 message.reply("La prochaine sortie à DisneyLand Paris organisé par Loulouemerick se déroule le 6 mars ! Vous voulez participer ? Contactez Loulouemerick par MP ! Participants actuels : Loulouemerick.");
