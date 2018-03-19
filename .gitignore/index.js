@@ -153,17 +153,22 @@ const helpstaff = {
       "inline": false
     },
     {
-      "name": "``A VENIR : /mute (membre) ``",
+      "name": "``/mute (membre) (raison) ``",
       "value": "``Permet de muter quelqu'un.``",
       "inline": false
     },
     {
-      "name": "``/kick (membre) ``",
+      "name": "``/unmute (membre) (raison) ``",
+      "value": "``Permet de dé-muter quelqu'un.``",
+      "inline": false
+    },
+    {
+      "name": "``/kick (membre) (raison) ``",
       "value": "``Permet de kick un membre du discord.``",
       "inline": false
     },
 	{
-      "name": "``/ban (membre)``",
+      "name": "``/ban (membre) (raison)``",
       "value": "``Permet de ban un membre du discord.``",
       "inline": false
     }
