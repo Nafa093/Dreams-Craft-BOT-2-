@@ -807,7 +807,7 @@ client.channels.get('424991281458970645').send({embed: unmutelogs})
         });
     }
  });
-	 client.on("message", function => { 
+	 client.on("message", message => { 
 
 	 	 let argument = message.content.split("/clear").slice(1)
 if(!argument) return message.channel.send("Merci d'indiquer de respecter le modèle suivant : ``/clear ( nombre de 0 à 100)``").then(m => m.delete(20000))
