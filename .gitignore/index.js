@@ -807,6 +807,18 @@ client.channels.get('424991281458970645').send({embed: unmutelogs})
         });
     }
 	
+	 	 let argument = message.content.split("/clear").slice(1)
+if(!argument) return message.channel.send("Merci d'indiquer de respecter le modèle suivant : ``/clear ( nombre de 0 à 100)``").then(m => m.delete(20000))
+var person = message.member.permissions // Permission Clear
+function dot() {
+message.channel.bulkDelete(argument);
+};
+function doNot() {
+message.channel.send(" ").then(m => m.delete(20000));
+};
+person.has("MANAGE_MESSAGES") ? dot() : doNot();
+}); 
  });
+
 
 // Fin du Code
