@@ -219,7 +219,7 @@ message.reply("Je suis actuellement en version ``3.0`` ! Mes derniers ajouts son
 }
 
 // Commande de Bonjour
-if (message.content.toLocaleLowerCase().includes("bonjour") || message.content.toLocaleLowerCase().includes("bjr") || message.content.toLocaleLowerCase().includes("coucou") || message.content.toLocaleLowerCase().includes("cc") ||  message.content.toLocaleLowerCase().includes("salut") || message.content.toLocaleLowerCase().includes("slt") || ) {
+if (message.content.toLocaleLowerCase().includes("bonjour") || message.content.toLocaleLowerCase().includes("bjr") || message.content.toLocaleLowerCase().includes("coucou") || message.content.toLocaleLowerCase().includes("cc") ||  message.content.toLocaleLowerCase().includes("salut") || message.content.toLocaleLowerCase().includes("slt")) {
 if(message.author.bot) return;
 message.channel.send("Bonjour !")
 }
