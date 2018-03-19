@@ -220,7 +220,7 @@ message.reply("Je suis actuellement en version ``3.0`` ! Mes derniers ajouts son
 
 // Commande de Bonjour
 if(message.content.toLocaleLowerCase() == ("Bonjour")){
-client.channels.get('233222558974083072').send("Bonjour !")
+message.channels.send("Bonjour !")
 }
 
 // Commande de la prochaine sortie du staff de DreamsCraft
