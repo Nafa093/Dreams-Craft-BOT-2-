@@ -52,16 +52,16 @@ const help = {
   "url": " ",
   "color": 1073142,
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
+    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/424611282524700672/server-icon.png",
     "text": "Pour toute autres demande, le staff de DreamsCraft se tient à votre disposition."
   },
   "thumbnail": {
-    "url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png"
+    "url": "https://cdn.discordapp.com/attachments/332613934890876931/424611282524700672/server-icon.png"
   },
   "author": {
     "name": 'Toutes mes commandes commencent par " / " : ',
     "url": " ",
-    "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png"
+    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/424611282524700672/server-icon.png"
   },
   "fields": [
     {
@@ -130,20 +130,20 @@ const helpstaff = {
   "url": " ",
   "color": 1073142,
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
+    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/424611282524700672/server-icon.png",
     "text": "Pour toute autres demande, Natthh se tient à votre disposition."
   },
   "thumbnail": {
-    "url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png"
+    "url": "https://cdn.discordapp.com/attachments/332613934890876931/424611282524700672/server-icon.png"
   },
   "author": {
     "name": 'Commande uniquement réservé aux staffs :',
     "url": " ",
-    "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png"
+    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/424611282524700672/server-icon.png"
   },
   "fields": [
     {
-      "name": "``/clear (nombre)``",
+      "name": "``[MAINTENANCE] /clear (nombre)``",
       "value": "``Efface le nombre de message indiqué dans la commande.``",
       "inline": false
     },
@@ -205,12 +205,12 @@ message.reply("Il n'y a pas encore de date d'ouverture.");
 	
 // Commande des prochains spectacles 
 if(message.content.toLocaleLowerCase() == ("/spectacles")){
-message.reply('Tout les soirs de cette semaine, tu peux retrouver " Le Show Galactique " à 21h ! ');
+message.reply('Les horaires des prochains spectacles ne sont pas encore programmé.');
 }
 
 // Commande des attractions ouvertes
 if(message.content.toLocaleLowerCase() == ("/attractions")){
-message.reply("Les attractions ouvertes sont : ``Les Tapis Volants d'Aladin`` - `` Rc Racer`` - `` Zig-Zag Spin `` - ``Crush Coaster`` !");
+message.reply("Les attractions ouvertes sont : ``Les Tapis Volants d'Aladin`` - `` Rc Racer`` - `` Zig-Zag Spin `` - ``Crush Coaster`` - `` Toy Soldiers Parachute Drop `` !");
 }
 
 // Commande de la version du bot
@@ -219,19 +219,19 @@ message.reply("Je suis actuellement en version ``3.0`` ! Mes derniers ajouts son
 }
 
 // Commande de Bonjour
-if (message.content.toLocaleLowerCase().includes("bonjour")) {
+if (message.content.toLocaleLowerCase().includes("bonjour") || message.content.toLocaleLowerCase().includes("bjr") || message.content.toLocaleLowerCase().includes("coucou") || message.content.toLocaleLowerCase().includes("cc")) {
 if(message.author.bot) return;
 message.channel.send("Bonjour !")
 }
 
-if (message.content.toLocaleLowerCase().includes("bonsoir")) {
+if (message.content.toLocaleLowerCase().includes("bonsoir") || message.content.toLocaleLowerCase().includes("bsr")) {
 if(message.author.bot) return;
-message.channel.send("Ami du soir, Bonsoir !")
+message.channel.send(" Bonsoir !")
 }
 	
 // Commande de la prochaine sortie du staff de DreamsCraft
 if(message.content.toLocaleLowerCase() == ("/sortie")){
-message.reply("La prochaine sortie à DisneyLand Paris organisé par Loulouemerick se déroule le 6 mars ! Vous voulez participer ? Contactez Loulouemerick par MP ! Participants actuels : Loulouemerick.");
+message.reply("La prochaine sortie à DisneyLand Paris organisé par Loulouemerick se déroule le 12 avril ! Vous voulez participer ? Contactez Loulouemerick par MP ! Participants actuels : Loulouemerick.");
 }
 	
 // Command de rôle, OFF
@@ -271,7 +271,7 @@ const insultelogs = {
   "color": 10030606,
   "timestamp": new Date(),
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
+    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/424611282524700672/server-icon.png",
     "text": "Type : INSULTE "
   },
   "thumbnail": {
@@ -301,7 +301,7 @@ const messagelogs = {
   "color": 15853885,
   "timestamp": new Date(),
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
+    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/424611282524700672/server-icon.png",
     "text": "Type : MESSAGE "
   },
   "thumbnail": {
@@ -329,7 +329,7 @@ const publogs = {
   "color": 10030606,
   "timestamp": new Date(),
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
+    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/424611282524700672/server-icon.png",
     "text": "Type : PUB "
   },
   "thumbnail": {
@@ -359,7 +359,7 @@ const avislogs = {
   "color": 1284672,
     "timestamp": new Date(),
     "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
+    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/424611282524700672/server-icon.png",
     "text": "Type : AVIS"
   },
   "thumbnail": {
@@ -389,7 +389,7 @@ const suggestionlogs = {
   "color": 2977512,
   "timestamp": new Date(),
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
+    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/424611282524700672/server-icon.png",
     "text": "Type : SUGGESTION"
   },
   "thumbnail": {
