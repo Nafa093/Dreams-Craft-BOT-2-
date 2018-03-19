@@ -224,9 +224,9 @@ if(message.author.bot) return;
 message.channel.send("Bonjour !")
 }
 
-if (message.content.toLocaleLowerCase().includes("Ami du soir, Bonsoir")) {
+if (message.content.toLocaleLowerCase().includes("bonsoir")) {
 if(message.author.bot) return;
-message.channel.send("Bonj")
+message.channel.send("Ami du soir, Bonsoir !")
 }
 	
 // Commande de la prochaine sortie du staff de DreamsCraft
