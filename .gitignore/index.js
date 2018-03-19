@@ -244,9 +244,10 @@ message.reply("La prochaine sortie à DisneyLand Paris organisé par Loulouemeri
  //message.guild.member(message.author).removeRole(obscurRole);
  //}
 
-	
+});	
 // Commande de clear 
-	
+	 
+client.on('message', message =>{
 let argument = message.content.split("/clear").slice(1)
 if(!argument) return message.channel.send("Merci d'indiquer de respecter le modèle suivant : ``/clear ( nombre de 0 à 100)``").then(m => m.delete(20000))
 var person = message.member.permissions // Permission Clear
@@ -266,8 +267,9 @@ let args = message.content.split(' ')
 args.shift()
 message.channel.send(args.join(' '))
     }
-	
-	
+});	
+
+client.on('message', message =>{
 // Tri des insultes automatique 
 	
 const insultelogs = {
