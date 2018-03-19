@@ -659,12 +659,160 @@ if(message.content.toLocaleLowerCase() == ("/dreamsworld")){
  }
 });
  
+ client.on("message", (message) => { 
+ var member= message.mentions.members.first();
+	const kicklogs = { 
+  "url": "",
+  "color": 15425036,
+  "timestamp": new Date(),
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
+    "text": "Type : SANCTION "
+  },
+  "thumbnail": {
+    "url": ""
+  },
+  "fields": [
+	{
+      "name": message.author.username + " a kick un joueur :",
+      "value": message + " ",
+      "inline": false
+    }
+  ]
+};
+	
+if (message.content.toLocaleLowerCase().includes("kick")) {
+	
+	 if (!message.member.hasPermission('KICK_MEMBERS'))
+return message.channel.send("Tu n'as pas la permissions !");
+	
+var member= message.mentions.members.first();
+        member.kick().then((member) => {
+client.channels.get('424991281458970645').send({embed : kicklogs})
+        }).catch(() => {
+            message.channel.send("Tu n'as pas la permission !");
+        });
+    }
+	 
+	const banlogs = { 
+  "url": "",
+  "color": 16711680,
+  "timestamp": new Date(),
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
+    "text": "Type : SANCTION "
+  },
+  "thumbnail": {
+    "url": ""
+  },
+  "fields": [
+	{
+      "name": message.author.username + " a bannis un joueur :",
+      "value": message + " ",
+      "inline": false
+    }
+  ]
+};
+
+	
+if (message.content.toLocaleLowerCase().includes("/ban")) {
+	
+	 if (!message.member.hasPermission('BAN_MEMBERS'))
+return message.channel.send("Tu n'as pas la permissions !");
+
+var member= message.mentions.members.first();
+
+        member.ban().then((member) => {
+client.channels.get('424991281458970645').send({embed : banlogs})
+        }).catch(() => {
+            message.channel.send("Tu n'as pas la permission ! ");
+        });
+    }
+	
+	const mutelogs = { 
+  "url": "",
+  "color": 1349919,
+  "timestamp": new Date(),
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
+    "text": "Type : SANCTION "
+  },
+  "thumbnail": {
+    "url": ""
+  },
+  "fields": [
+	{
+      "name": message.author.username + " a mute un joueur :",
+      "value": message + " ",
+      "inline": false
+    }
+  ]
+};
+
+if (message.content.toLocaleLowerCase().includes("/mute")) {
+
+	 if (!message.member.hasPermission('MANAGE_ROLES'))
+return message.channel.send("Tu n'as pas la permissions !");
+	
+var muteRole = client.guilds.get(message.guild.id).roles.find("name", "Mute"); 
+var member= message.mentions.members.first();
+
+        member.addRole(muteRole).then((member) => {
+		
+client.channels.get('424991281458970645').send({embed: mutelogs})
+
+        }).catch(() => {
+		
+            message.channel.send("Tu n'as pas la permission ! ");
+			
+        });
+    }
+	
+	const unmutelogs = { 
+  "url": "",
+  "color": 1349919,
+  "timestamp": new Date(),
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
+    "text": "Type : SANCTION "
+  },
+  "thumbnail": {
+    "url": ""
+  },
+  "fields": [
+	{
+      "name": message.author.username + " a dé-mute un joueur :",
+      "value": message + " ",
+      "inline": false
+    }
+  ]
+};
+	
+	if (message.content.toLocaleLowerCase().includes("/unmute")) {
+
+	 if (!message.member.hasPermission('MANAGE_ROLES'))
+return message.channel.send("Tu n'as pas la permissions !");
+	
+var muteRole = client.guilds.get(message.guild.id).roles.find("name", "Mute"); 
+var member= message.mentions.members.first();
+
+        member.removeRole(muteRole).then((member) => {
+		
+client.channels.get('424991281458970645').send({embed: unmutelogs})
+
+        }).catch(() => {
+		
+            message.channel.send("Tu n'as pas la permission ! ");
+			
+        });
+    }
+ });
 
 	 client.on("message", message => { 
 
 	 	 let argument = message.content.split("/clear").slice(1)
 if(!argument) return message.channel.send("Merci d'indiquer de respecter le modèle suivant : ``/clear ( nombre de 0 à 100)``").then(m => m.delete(20000))
-var person = message.member.permissions // Permission Clear
+var person = message.member.permissions 
 function dot() {
 message.channel.bulkDelete(argument);
 };
