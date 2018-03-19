@@ -219,7 +219,7 @@ message.reply("Je suis actuellement en version ``3.0`` ! Mes derniers ajouts son
 }
 
 // Commande de Bonjour
-if(message.content.toLocaleLowerCase() == ("Bonjour")){
+if(message.content.toLocaleLowerCase() == ("bonjour")){
 client.message.channel.send("Bonjour !")
 }
 
