@@ -227,7 +227,7 @@ message.channel.send("Bonjour !")
 if(message.content.toLocaleLowerCase() == ("/sortie")){
 message.reply("La prochaine sortie à DisneyLand Paris organisé par Loulouemerick se déroule le 6 mars ! Vous voulez participer ? Contactez Loulouemerick par MP ! Participants actuels : Loulouemerick.");
 }
-});	
+	
 
 // Command de rôle, OFF
 
@@ -246,19 +246,6 @@ message.reply("La prochaine sortie à DisneyLand Paris organisé par Loulouemeri
  //}
 
 // Commande de clear 
-	 
-client.on('message', message =>{
-	
-let argument = message.content.split("/clear").slice(1)
-if(!argument) return message.channel.send("Merci d'indiquer de respecter le modèle suivant : ``/clear ( nombre de 0 à 100)``").then(m => m.delete(20000))
-var person = message.member.permissions // Permission Clear
-function dot() {
-message.channel.bulkDelete(argument);
-};
-function doNot() {
-message.channel.send(" ").then(m => m.delete(20000));
-};
-person.has("MANAGE_MESSAGES") ? dot() : doNot();
 
 if (message.content.startsWith(prefix + 'annonce')) {
 if (!message.member.hasPermission('ADMINISTRATOR'))
@@ -269,7 +256,7 @@ args.shift()
 message.channel.send(args.join(' '))
     }
 	
-});	
+	
 
 client.on('message', message => {
 // Tri des insultes automatique 
@@ -821,6 +808,20 @@ client.channels.get('424991281458970645').send({embed: unmutelogs})
         });
     }
 	
-
+ });
+	
+client.on('message', message =>{
+	
+let argument = message.content.split("/clear").slice(1)
+if(!argument) return message.channel.send("Merci d'indiquer de respecter le modèle suivant : ``/clear ( nombre de 0 à 100)``").then(m => m.delete(20000))
+var person = message.member.permissions // Permission Clear
+function dot() {
+message.channel.bulkDelete(argument);
+};
+function doNot() {
+message.channel.send(" ").then(m => m.delete(20000));
+};
+person.has("MANAGE_MESSAGES") ? dot() : doNot();
+	
 }); 
 // Fin du Code
