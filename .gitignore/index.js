@@ -219,7 +219,7 @@ message.reply("Je suis actuellement en version ``3.0`` ! Mes derniers ajouts son
 }
 
 // Commande de Bonjour
-if (message.content.toLocaleLowerCase().includes("bonjour") || message.content.toLocaleLowerCase().includes("bjr") || message.content.toLocaleLowerCase().includes("coucou") || message.content.toLocaleLowerCase().includes("cc")) {
+if (message.content.toLocaleLowerCase().includes("bonjour") || message.content.toLocaleLowerCase().includes("bjr") || message.content.toLocaleLowerCase().includes("coucou") || message.content.toLocaleLowerCase().includes("cc") ||  message.content.toLocaleLowerCase().includes("salut") || message.content.toLocaleLowerCase().includes("slt") || ) {
 if(message.author.bot) return;
 message.channel.send("Bonjour !")
 }
@@ -740,7 +740,7 @@ client.channels.get('424991281458970645').send({embed : banlogs})
   "color": 1349919,
   "timestamp": new Date(),
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
+    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/424611282524700672/server-icon.png",
     "text": "Type : SANCTION "
   },
   "thumbnail": {
@@ -779,7 +779,7 @@ client.channels.get('424991281458970645').send({embed: mutelogs})
   "color": 1349919,
   "timestamp": new Date(),
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
+    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/424611282524700672/server-icon.png",
     "text": "Type : SANCTION "
   },
   "thumbnail": {
