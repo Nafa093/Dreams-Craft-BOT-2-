@@ -417,11 +417,11 @@ client.channels.get('415550993267163156').send({embed: suggestionlogs})
   "url": "http://mcdreams.livehost.fr/index.php",
   "color": 4420817,
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/347050495392874507/415841617963122700/540677fdea010b286fc35175074dd35b.png",
+    "icon_url": "https://cdn.discordapp.com/attachments/365548464525934592/426488906809212930/McDprofilePintemps.png",
     "text": "Nous remercions McDreams de nous faire confiance !"
   },
   "thumbnail": {
-    "url": "https://cdn.discordapp.com/attachments/347050495392874507/415841617963122700/540677fdea010b286fc35175074dd35b.png"
+    "url": "https://cdn.discordapp.com/attachments/365548464525934592/426488906809212930/McDprofilePintemps.png"
   },
   "image": {
       "url": "https://cdn.discordapp.com/attachments/322470437722521600/399179491726983179/2018-01-06_13.34.58.png"
@@ -429,7 +429,7 @@ client.channels.get('415550993267163156').send({embed: suggestionlogs})
   "author": {
     "name": "McDreams :",
     "url": "https://discordapp.com",
-    "icon_url": "https://cdn.discordapp.com/attachments/347050495392874507/415841617963122700/540677fdea010b286fc35175074dd35b.png"
+    "icon_url": "https://cdn.discordapp.com/attachments/365548464525934592/426488906809212930/McDprofilePintemps.png"
   },
   "fields": [
     {
