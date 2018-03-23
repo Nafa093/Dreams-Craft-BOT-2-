@@ -15,7 +15,7 @@ const onBot = {
   "color": 1697049,
   "timestamp": new Date(),
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
+    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/426734010845102080/JPEG_20180323_142650.jpg",
     "text": ""
   },
   "thumbnail": {
@@ -52,16 +52,16 @@ const help = {
   "url": " ",
   "color": 1073142,
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/424611282524700672/server-icon.png",
+    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/426734010845102080/JPEG_20180323_142650.jpg",
     "text": "Pour toute autres demande, le staff de DreamsCraft se tient à votre disposition."
   },
   "thumbnail": {
-    "url": "https://cdn.discordapp.com/attachments/332613934890876931/424611282524700672/server-icon.png"
+    "url": "https://cdn.discordapp.com/attachments/332613934890876931/426734010845102080/JPEG_20180323_142650.jpg"
   },
   "author": {
     "name": 'Toutes mes commandes commencent par " / " : ',
     "url": " ",
-    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/424611282524700672/server-icon.png"
+    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/426734010845102080/JPEG_20180323_142650.jpg"
   },
   "fields": [
     {
@@ -130,16 +130,16 @@ const helpstaff = {
   "url": " ",
   "color": 1073142,
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/424611282524700672/server-icon.png",
+    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/426734010845102080/JPEG_20180323_142650.jpg",
     "text": "Pour toute autres demande, Natthh se tient à votre disposition."
   },
   "thumbnail": {
-    "url": "https://cdn.discordapp.com/attachments/332613934890876931/424611282524700672/server-icon.png"
+    "url": "https://cdn.discordapp.com/attachments/332613934890876931/426734010845102080/JPEG_20180323_142650.jpg"
   },
   "author": {
     "name": 'Commande uniquement réservé aux staffs :',
     "url": " ",
-    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/424611282524700672/server-icon.png"
+    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/426734010845102080/JPEG_20180323_142650.jpg"
   },
   "fields": [
     {
@@ -271,7 +271,7 @@ const insultelogs = {
   "color": 10030606,
   "timestamp": new Date(),
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/424611282524700672/server-icon.png",
+    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/426734010845102080/JPEG_20180323_142650.jpg",
     "text": "Type : INSULTE "
   },
   "thumbnail": {
@@ -301,7 +301,7 @@ const messagelogs = {
   "color": 15853885,
   "timestamp": new Date(),
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/424611282524700672/server-icon.png",
+    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/426734010845102080/JPEG_20180323_142650.jpg",
     "text": "Type : MESSAGE "
   },
   "thumbnail": {
@@ -329,7 +329,7 @@ const publogs = {
   "color": 10030606,
   "timestamp": new Date(),
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/424611282524700672/server-icon.png",
+    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/426734010845102080/JPEG_20180323_142650.jpg",
     "text": "Type : PUB "
   },
   "thumbnail": {
@@ -359,7 +359,7 @@ const avislogs = {
   "color": 1284672,
     "timestamp": new Date(),
     "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/424611282524700672/server-icon.png",
+    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/426734010845102080/JPEG_20180323_142650.jpg",
     "text": "Type : AVIS"
   },
   "thumbnail": {
@@ -389,7 +389,7 @@ const suggestionlogs = {
   "color": 2977512,
   "timestamp": new Date(),
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/424611282524700672/server-icon.png",
+    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/426734010845102080/JPEG_20180323_142650.jpg",
     "text": "Type : SUGGESTION"
   },
   "thumbnail": {
@@ -672,7 +672,7 @@ if(message.content.toLocaleLowerCase() == ("/dreamsworld")){
   "color": 15425036,
   "timestamp": new Date(),
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
+    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/426734010845102080/JPEG_20180323_142650.jpg",
     "text": "Type : SANCTION "
   },
   "thumbnail": {
@@ -705,7 +705,7 @@ client.channels.get('424991281458970645').send({embed : kicklogs})
   "color": 16711680,
   "timestamp": new Date(),
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
+    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/426734010845102080/JPEG_20180323_142650.jpg",
     "text": "Type : SANCTION "
   },
   "thumbnail": {
@@ -740,7 +740,7 @@ client.channels.get('424991281458970645').send({embed : banlogs})
   "color": 1349919,
   "timestamp": new Date(),
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/424611282524700672/server-icon.png",
+    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/426734010845102080/JPEG_20180323_142650.jpg",
     "text": "Type : SANCTION "
   },
   "thumbnail": {
@@ -780,7 +780,7 @@ client.channels.get('424991281458970645').send({embed: mutelogs})
   "color": 1349919,
   "timestamp": new Date(),
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/424611282524700672/server-icon.png",
+    "icon_url": "https://cdn.discordapp.com/attachments/332613934890876931/426734010845102080/JPEG_20180323_142650.jpg",
     "text": "Type : SANCTION "
   },
   "thumbnail": {
