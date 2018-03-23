@@ -764,8 +764,10 @@ var muteRole = client.guilds.get(message.guild.id).roles.find("name", "Mute");
 var member= message.mentions.members.first();
 var Visiteur = client.guilds.get(message.guild.id).roles.find("name", "--=[Visiteur]=--"); 
 
-        member.addRole(muteRole).then((member) => {
+	message.delete().then((member) => {
+        member.addRole(muteRole)
 	member.removeRole(Visiteur)
+	message.channel.send("Tu es mute !");
 client.channels.get('424991281458970645').send({embed: mutelogs})
 
         }).catch(() => {
@@ -805,12 +807,11 @@ var member= message.mentions.members.first();
 var Visiteur = client.guilds.get(message.guild.id).roles.find("name", "--=[Visiteur]=--"); 
 
 
-        message.delete().then((member) => {
-	member.removeRole(muteRole)
+    
+	member.removeRole(muteRole).then((member) => {
 	member.addRole(Visiteur)
-	message.delete()
 client.channels.get('424991281458970645').send({embed: unmutelogs})
-message.channel.send("Tu es mute !");
+
 
         }).catch(() => {
 		
