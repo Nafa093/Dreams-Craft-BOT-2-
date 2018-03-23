@@ -762,9 +762,10 @@ return message.channel.send("Tu n'as pas la permissions !");
 	
 var muteRole = client.guilds.get(message.guild.id).roles.find("name", "Mute"); 
 var member= message.mentions.members.first();
+var Visiteur = client.guilds.get(message.guild.id).roles.find("name", "--=[Visiteur]=--"); 
 
         member.addRole(muteRole).then((member) => {
-		
+	member.removeRole(Visiteur)
 client.channels.get('424991281458970645').send({embed: mutelogs})
 
         }).catch(() => {
