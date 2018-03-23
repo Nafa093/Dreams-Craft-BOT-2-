@@ -764,10 +764,8 @@ var muteRole = client.guilds.get(message.guild.id).roles.find("name", "Mute");
 var member= message.mentions.members.first();
 var Visiteur = client.guilds.get(message.guild.id).roles.find("name", "--=[Visiteur]=--"); 
 
-	message.delete().then((member) => {
-        member.addRole(muteRole)
+ member.addRole(muteRole).then((member) => {
 	member.removeRole(Visiteur)
-	message.channel.send("Tu es mute !");
 client.channels.get('424991281458970645').send({embed: mutelogs})
 
         }).catch(() => {
