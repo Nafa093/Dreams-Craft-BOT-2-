@@ -826,7 +826,7 @@ client.on("message", message => {
     var person = message.member.permissions
       function dot() {
         message.channel.bulkDelete(argument);
-        message.channel.send("ok").then(m => m.delete(2000));
+        message.channel.send("").then(m => m.delete(2000));
       };
       function doNot() {
         message.channel.send("nop, pas la perm").then(m => m.delete(20000));
