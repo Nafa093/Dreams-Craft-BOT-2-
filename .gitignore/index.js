@@ -805,11 +805,12 @@ var member= message.mentions.members.first();
 var Visiteur = client.guilds.get(message.guild.id).roles.find("name", "--=[Visiteur]=--"); 
 
 
-        member.removeRole(muteRole).then((member) => {
+        message.delete().then((member) => {
+	member.removeRole(muteRole)
 	member.addRole(Visiteur)
 	message.delete()
-	message.channel.send("Tu es mute !");
 client.channels.get('424991281458970645').send({embed: unmutelogs})
+message.channel.send("Tu es mute !");
 
         }).catch(() => {
 		
