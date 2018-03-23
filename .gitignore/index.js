@@ -807,7 +807,8 @@ var Visiteur = client.guilds.get(message.guild.id).roles.find("name", "--=[Visit
 
         member.removeRole(muteRole).then((member) => {
 	member.addRole(Visiteur)
-		
+	message.delete()
+	message.channel.send("Tu es mute !");
 client.channels.get('424991281458970645').send({embed: unmutelogs})
 
         }).catch(() => {
