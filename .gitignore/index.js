@@ -143,12 +143,12 @@ const helpstaff = {
   },
   "fields": [
     {
-      "name": "``[MAINTENANCE] /clear (nombre)``",
+      "name": "``/clear (nombre)``",
       "value": "``Efface le nombre de message indiqué dans la commande.``",
       "inline": false
     },
     {
-      "name": "``/annonce (message)``",
+      "name": "``[MAINTENANCE] /annonce (message)``",
       "value": "``Permet de faire parler le bot. ( Permission ADMIN obligatoire )``",
       "inline": false
     },
