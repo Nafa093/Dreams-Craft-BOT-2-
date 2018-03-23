@@ -819,20 +819,20 @@ client.channels.get('424991281458970645').send({embed: unmutelogs})
     }
  });
 
-client.on("message", message => { 
+//client.on("message", message => { 
 	
- let argument = message.content.split(" ").slice(1)
-      if(!argument) return message.channel.send("**[#]** Provide a number of messages to clear .").then(m => m.delete(20000))
-    var person = message.member.permissions
-      function dot() {
-        message.channel.bulkDelete(argument);
-        message.channel.send("Clear").then(m => m.delete(2000));
-      };
-      function doNot() {
-        message.channel.send("nop, pas la perm").then(m => m.delete(20000));
-      };
-      person.has("MANAGE_MESSAGES") ? dot() : doNot();
- });
+ //let argument = message.content.split(" ").slice(1)
+ //     if(!argument) return message.channel.send("**[#]** Provide a number of messages to clear .").then(m => m.delete(20000))
+   // var person = message.member.permissions
+     // function dot() {
+      //  message.channel.bulkDelete(argument);
+       // message.channel.send("Clear").then(m => m.delete(2000));
+     // };
+     // function doNot() {
+      //  message.channel.send("nop, pas la perm").then(m => m.delete(20000));
+     //};
+     // person.has("MANAGE_MESSAGES") ? dot() : doNot();
+// });
 
 
 // Fin du Code
