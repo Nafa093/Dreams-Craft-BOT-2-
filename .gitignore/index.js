@@ -51,7 +51,8 @@ client.on('message', message =>{
 
 if (message.content.toLocaleLowerCase().includes("tesons")) {
 if(message.author.bot) return;
-client.channels.get('383748539869691904').send(`${message.user}`)
+client.channels.get('383748539869691904').send(`${message}`)
+}
  	
 const help = {
   "url": " ",
