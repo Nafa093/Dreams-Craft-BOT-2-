@@ -819,10 +819,5 @@ args.shift()
 message.channel.send(args.join(' '))
     }
 	 
-	 
-if (message.content.toLocaleLowerCase().includes("tesons")) {
-if(message.author.bot) return;
-client.channels.get('383748539869691904').send(`${message}`)
- 
  });
 // Fin du Code
