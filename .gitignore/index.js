@@ -821,7 +821,7 @@ message.channel.send(args.join(' '))
 	 
 if (message.content.includes(" à sortie une nouvelle vidéo ! N'oublie pas de la liker !")) {
 if(message.author.bot) return;
-client.channels.get('383748539869691904').send(`${message}`)
+client.channels.get('449973748054097921').send(`${message}`)
 }
 	 
  });
