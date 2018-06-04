@@ -48,12 +48,6 @@ const channel = member.guild.channels.find('name', 'accueil').send(` ${member.us
 
 // Command HELP
 client.on('message', message =>{
-
-if (message.content.toLocaleLowerCase().includes("tesons")) {
-if(message.author.bot) return;
-client.channels.get('383748539869691904').send(`${message}`)
-}
- 	
 const help = {
   "url": " ",
   "color": 1073142,
@@ -824,6 +818,11 @@ let args = message.content.split(' ')
 args.shift()
 message.channel.send(args.join(' '))
     }
+	 
+if (message.content.includes(" à sortie une nouvelle vidéo ! N'oublie pas de la liker !")) {
+if(message.author.bot) return;
+client.channels.get('383748539869691904').send(`${message}`)
+}
 	 
  });
 // Fin du Code
