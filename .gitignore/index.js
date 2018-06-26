@@ -120,11 +120,7 @@ const help = {
       "inline": false
     }
   ]
-};
-if(message.content.toLocaleLowerCase() == ("/help")){
- message.channel.send({embed: help});
- }
-  
+}
   	if (message.content === `/help`) {
 	if (message.channel.type == 'dm') return;
 	message.author.send({embed: help});
@@ -133,6 +129,7 @@ if(message.content.toLocaleLowerCase() == ("/help")){
     .then(sentMessage => sentMessage.delete(10000))
     .catch(error => {
     });
+	}
 
 // Command HelpStaff
 const helpstaff = {
