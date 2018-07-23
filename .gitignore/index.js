@@ -14,6 +14,7 @@ client.on('guildMemberRemove', member => {
 const channel = member.guild.channels.find('name', 'bienvenue').send(` **${member.user.username}** est parti de chez les CoasterFans !`);
 });
 
+client.on('message', message =>{
 if (message.content.startsWith(prefix + 'annonce')) {
 if (!message.member.hasPermission('ADMINISTRATOR'))
 return message.channel.send("Tu n'as pas la permissions !");
@@ -22,3 +23,4 @@ let args = message.content.split(' ')
 args.shift()
 message.channel.send(args.join(' '))
     }
+});
