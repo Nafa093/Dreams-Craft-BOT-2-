@@ -53,7 +53,7 @@ message.channel.send(args.join(' '))
             member.ban({
               reason: 'RIP lui.',
             }).then(() => {
-              message.author.send(`Tu as ban **${member.user.username}** !`);
+              message.channel.send(`Tu as ban **${member.user.username}** !`);
               message.delete()
             }).catch(err => {
               message.reply("Tu n'as pas la permission de ban de joueur");
