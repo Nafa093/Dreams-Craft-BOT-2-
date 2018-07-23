@@ -3,6 +3,10 @@ client = new discord.Client();
 const token = (process.env.TOKEN);
 var prefix = ".";
 
+client.on("ready", () => {
+	client.user.setPresence({ game: { name: 'Parks-Mc Community', type: 0}});
+});
+
 
 client.login(token)
 
