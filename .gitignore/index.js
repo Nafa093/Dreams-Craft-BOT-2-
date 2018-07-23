@@ -15,7 +15,8 @@ const channel = member.guild.channels.find('name', 'bienvenue').send(` **${membe
 });
 
 client.on('message', message =>{
-if (message.content.startsWith(prefix + 'annonce')) {
+    
+if (message.content.startsWith(prefix + 'annonce')) {
 if (!message.member.hasPermission('ADMINISTRATOR'))
 return message.channel.send("Tu n'as pas la permissions !");
 message.delete()
@@ -23,4 +24,5 @@ let args = message.content.split(' ')
 args.shift()
 message.channel.send(args.join(' '))
     }
+ 
 });
