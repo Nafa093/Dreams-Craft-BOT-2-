@@ -11,11 +11,11 @@ client.on("ready", () => {
 client.login(token)
 
 client.on('guildMemberAdd', member => {
-const channel = member.guild.channels.find("name", "bienvenue").send(`Bienvenue chez les CoasterFans ${member.user} !`)
+const channel = member.guild.channels.find("name", "👋bienvenue").send(`Bienvenue chez les CoasterFans ${member.user} !`)
 });
 
 client.on('guildMemberRemove', member => {
-const channel = member.guild.channels.find('name', 'bienvenue').send(` **${member.user.username}** est parti de chez les CoasterFans !`);
+const channel = member.guild.channels.find('name', "👋bienvenue").send(` **${member.user.username}** est parti de chez les CoasterFans !`);
 });
 
 client.on('message', message =>{
