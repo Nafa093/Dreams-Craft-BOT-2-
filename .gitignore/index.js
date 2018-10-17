@@ -431,7 +431,7 @@ const helpstaff = {
         "Mieux vaut ne pas te le dire maintenant", "C'est certain", "Non, enfin je crois !", "Mes sources disent non",
         "Malheureusement non", "Je ne pense pas", "Ah d'accord !", "Toujours pas!", "Pff"];
         
-        message.reply((phrase[Math.floor(Math.random() * phrase.length)]));
+        message.channel.send((phrase[Math.floor(Math.random() * phrase.length)]));
 	  
   }
   
