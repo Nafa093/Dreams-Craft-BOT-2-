@@ -432,6 +432,8 @@ const helpstaff = {
         "Malheureusement non", "Je ne pense pas", "Ah d'accord !", "Toujours pas!", "Pff"];
         
         message.reply((phrase[Math.floor(Math.random() * phrase.length)]));
+	  
+  }
   
   
 	const recrutement = {
