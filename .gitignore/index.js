@@ -447,7 +447,7 @@ const helpstaff = {
         var d3 = emotes[Math.floor(Math.random() * emotes.length)]
 	
 
-        message.channel.send(`${d1} - ${d2} - ${d3});
+        message.channel.send(`${d1} - ${d2} - ${d3}`);
 	  
   } 
   
