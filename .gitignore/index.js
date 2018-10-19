@@ -452,9 +452,6 @@ const helpstaff = {
 	  fs.writeFile(user, JSON.stringify(name), (err) => console.error
 		       
 		setTimeout(function() { 
-		  fs.unlink(user,function () {
-			  console.log("b")
-				      });
 		  }, 50000);
 	  
   } 
