@@ -428,7 +428,7 @@ const helpstaff = {
 	if (message.channel.type === "dm") return;
 
 	var phrase = ["Cest certain !","Probablement.","Oui !","Je ne pense pas.","Demande à Natthh !","Bip Bip Erreur Bip Bip.","Mieux vaut ne pas te le dire.","Ah d'acccord !","Peut être.","Mes sources me disent que non","Mes sources me disent que non","ok.","Repose ta question, je n'ai pas compris","Sûrement.","Bonne question !","Il fait beau dehors hyn..","DreamsCraftBot.exe a cessé de fonctionner.","Oui avec deux grands N et un grand O !","Certainement.","Probalement pas.","Et là, c'est le bug"]
-        message.channel.send((phrase[Math.floor(Math.random() * phrase.length)]) + `${message.author}`);
+        message.channel.send((phrase[Math.floor(Math.random() * phrase.length)]) + ` ${message.author}`);
 	  
   }
   
