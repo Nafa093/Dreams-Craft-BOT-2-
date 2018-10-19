@@ -449,7 +449,6 @@ const helpstaff = {
 
         message.channel.send(`${d1} - ${d2} - ${d3}`);
 	  
-	  fs.writeFile(user, JSON.stringify(name), (err) => console.error
 		       
 		setTimeout(function() { 
 		  }, 50000);
