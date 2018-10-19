@@ -439,9 +439,11 @@ const helpstaff = {
   if (message.content.startsWith("/loterie")) {
 	if (message.channel.type === "dm") return;
 
-        var phrase = ["b","y","e"];
+        var emoji1 = ["b"];
+	var emoji2 = ["c"];
+	var emoji3 = ["d"];
         
-        message.channel.send((phrase[Math.floor(Math.random() * phrase.length)]));
+        message.channel.send((phrase[Math.floor(Math.random() * emoji1.length)])+ (phrase[Math.floor(Math.random() * emoji2.length)]) + (phrase[Math.floor(Math.random() * emoji3.length)]));
 	  
   } 
   
