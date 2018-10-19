@@ -441,7 +441,7 @@ const helpstaff = {
 
         var phrase = ["b","y","e"];
         
-        message.channel.send((phrase[Math.floor(Math.random() * phrase.length + phrase.length + phrase.length)]));
+        message.channel.send((phrase[Math.floor(Math.random() * phrase.length)]));
 	  
   } 
   
@@ -704,14 +704,15 @@ const insultelogs = {
       ]
     };
      
-    if (message.content.startsWith("/suggestion")) {
+	if (message.content.toLocaleLowerCase().includes("/suggestion")) {
       if(message.author.bot) return;
         message.channel.send(`Merci pour ta suggestion ! {message.author}`)
+	client.channels.get('415550993267163156').send({embed: suggestionlogs})
         .then(sentMessage => sentMessage.delete(150000))
         .catch(error => {
         });
             }
-        client.channels.get('415550993267163156').send({embed: suggestionlogs})
+
     
          
       const mcdreams = {
