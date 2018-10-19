@@ -706,7 +706,8 @@ const insultelogs = {
      
 	if (message.content.toLocaleLowerCase().includes("/suggestion")) {
       if(message.author.bot) return;
-        message.channel.send(`Merci pour ta suggestion ! {message.author}`)
+        message.channel.send(`Merci pour ta suggestion ! ${message.author}`)
+	message.delete()
 	client.channels.get('415550993267163156').send({embed: suggestionlogs})
         .then(sentMessage => sentMessage.delete(150000))
         .catch(error => {
