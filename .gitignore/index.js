@@ -446,6 +446,8 @@ const helpstaff = {
         var d2 = emotes[Math.floor(Math.random() * emotes.length)]
         var d3 = emotes[Math.floor(Math.random() * emotes.length)]
 	
+	    message.channel.send(`-------------------\r| ${d1} | ${d2} | ${d3} |\r-------------------`);
+	
 	if (d1 == emotes[0] && d2 == emotes[0] && d3 == emotes[0]) {
 		message.channel.send("Bravo, tu as gagné !")
 	} else
@@ -456,9 +458,8 @@ const helpstaff = {
 		message.channel.send("Bravo, tu as gagné !")
 	} else
 		message.channel.send("Perdu, rente ta chance !")
-		
 
-        message.channel.send(`-------------------\r| ${d1} | ${d2} | ${d3} |\r-------------------`);
+	  
 	  
 		       
 		setTimeout(function() { 
