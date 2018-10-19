@@ -427,11 +427,8 @@ const helpstaff = {
   if (message.content.startsWith("/8ball")) {
 	if (message.channel.type === "dm") return;
 
-        var phrase = ["Je ne peux pas te le dire !", "Bonne question ! ", "Surement", "Oui définitivement", "Probablement",
-        "Mieux vaut ne pas te le dire maintenant", "C'est certain", "Non, enfin je crois !", "Mes sources disent non",
-        "Malheureusement non", "Je ne pense pas", "Ah d'accord !", "Toujours pas!", "Pff"];
-        
-        message.channel.send((phrase[Math.floor(Math.random() * phrase.length)]));
+	var phrase = ["Cest certain !","Probablement.","Oui !","Je ne pense pas.","Demande à Natthh !","Bip Bip Erreur Bip Bip.","Mieux vaut ne pas te le dire.","Ah d'acccord !","Peut être.","Mes sources me disent que non","Mes sources me disent que non","ok.","Repose ta question, je n'ai pas compris","Sûrement.","Bonne question !","Il fait beau dehors hyn..","DreamsCraftBot.exe a cessé de fonctionner.","Oui avec deux grands N et un grand O !","Certainement.","Probalement pas.","Et là, c'est le bug"]
+        message.channel.send((phrase[Math.floor(Math.random() * phrase.length)]) + `${message.author}`);
 	  
   }
   
