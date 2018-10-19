@@ -458,6 +458,8 @@ const helpstaff = {
 		message.channel.send(`Perdu ${message.author}, rente ta chance !`)
 	  
 	  message.channel.send(`-------------------\r| ${d1} | ${d2} | ${d3} |\r-------------------`);
+	  
+  }
   
   
   
