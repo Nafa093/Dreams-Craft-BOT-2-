@@ -443,7 +443,7 @@ const helpstaff = {
 	var emoji2 = ["c"];
 	var emoji3 = ["d"];
         
-        message.channel.send((phrase[Math.floor(Math.random() * emoji1.length)])+ (phrase[Math.floor(Math.random() * emoji2.length)]) + (phrase[Math.floor(Math.random() * emoji3.length)]));
+        message.channel.send((phrase[Math.floor(Math.random() * emoji1.length)]) + (phrase[Math.floor(Math.random() * emoji2.length)]) + (phrase[Math.floor(Math.random() * emoji3.length)]));
 	  
   } 
   
