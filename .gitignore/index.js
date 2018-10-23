@@ -426,7 +426,7 @@ const helpstaff = {
 
   if (message.content.startsWith("/8ball")) {
 	if (message.channel.type === "dm") return;
-  if !(message.channel.id('502895914025877514')) return;
+  if !(message.channel.id === '502895914025877514') return;
 
 	var phrase = ["C'est certain !","Probablement.","Oui !","Je ne pense pas.","Demande à Natthh !","Bip Bip Erreur Bip Bip.","Mieux vaut ne pas te le dire.","Ah d'acccord !","Peut être.","Mes sources me disent que non","Mes sources me disent que non","ok.","Repose ta question, je n'ai pas compris","Sûrement.","Bonne question !","Il fait beau dehors hyn..","DreamsCraftBot.exe a cessé de fonctionner.","Oui avec deux grands N et un grand O !","Certainement.","Probalement pas.","Et là, c'est le bug"]
         message.channel.send((phrase[Math.floor(Math.random() * phrase.length)]) + ` ${message.author}`);
