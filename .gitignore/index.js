@@ -476,8 +476,6 @@ if (d1 == emotes[0] && d2 == emotes[0] && d3 == emotes[0]) {
       
       message.delete()
       message.channel.send(`-------------------\r| ${d1} | ${d2} | ${d3} |\r-------------------`);
-	
-}
     
     
   talkedRecently.add(message.author.id);
@@ -486,8 +484,6 @@ if (d1 == emotes[0] && d2 == emotes[0] && d3 == emotes[0]) {
   }, 3600000);
 }
   }
-  
-  
   
   
 	const recrutement = {
