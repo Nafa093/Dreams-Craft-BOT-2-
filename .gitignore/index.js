@@ -49,7 +49,7 @@ const channel = member.guild.channels.find("name", "règlement");
 
 client.on('guildMemberRemove', member => {
 
-const channel = member.guild.channels.find('name', 'départ').send(`**${member}** a quitté le discord de DreamsCraft.`);
+const channel = member.guild.channels.find('name', 'départ').send(`**${member.user.username}** a quitté le discord de DreamsCraft.`);
 
 });
 
