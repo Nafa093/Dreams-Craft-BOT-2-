@@ -458,6 +458,7 @@ const helpstaff = {
       .then(sentMessage => sentMessage.delete(150000))
       .catch(error => {
       });
+	    
 } else {
 
 if (d1 == emotes[0] && d2 == emotes[0] && d3 == emotes[0]) {
@@ -493,6 +494,8 @@ if (d1 == emotes[0] && d2 == emotes[0] && d3 == emotes[0]) {
     var d2 = emotes[Math.floor(Math.random() * emotes.length)]
     var d3 = emotes[Math.floor(Math.random() * emotes.length)]
     
+ 
+    
 if (d1 == emotes[0] && d2 == emotes[0] && d3 == emotes[0]) {
       message.channel.send(`Bravo ${message.author}, tu as gagné !`)
     } else
@@ -507,6 +510,10 @@ if (d1 == emotes[0] && d2 == emotes[0] && d3 == emotes[0]) {
       message.delete()
       message.channel.send(`-------------------\r| ${d1} | ${d2} | ${d3} |\r-------------------`);
 
+ }
+}
+	   
+	   
 	const recrutement = {
     "url": " ",
     "color": 13514346,
