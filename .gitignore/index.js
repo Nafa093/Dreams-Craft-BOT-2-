@@ -446,9 +446,12 @@ const helpstaff = {
     if (message.channel.type === "dm") return;
     if (message.channel.id !== '505337666028437515') return;
 
-     const kinder = client.emojis.find("name", "kinder");
+const feuille1 = client.emojis.find("name", "feuille1");
+const feuille2 = client.emojis.find("name", "feuille2");
+const feuille3 = client.emojis.find("name", "feuille3");
+const feuille4 = client.emojis.find("name", "feuille4");
      
-    var emotes = [kinder,"🎃","💀"]
+    var emotes = [feuille1,feuille2,feuille3,feuille4]
             
     var d1 = emotes[Math.floor(Math.random() * emotes.length)]
     var d2 = emotes[Math.floor(Math.random() * emotes.length)]
