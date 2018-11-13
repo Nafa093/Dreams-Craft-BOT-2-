@@ -611,7 +611,7 @@ if (d1 == emotes[0] && d2 == emotes[0] && d3 == emotes[0]) {
 	 if (message.channel.type == 'dm') return;
 	 message.delete()
 	 message.author.send({embed: sortie});
-	 message.channel.send(`Les informations concernant les attractions de DreamsCraft vous ont été envoyé en privé. ${message.author}`)
+	 message.channel.send(`Les informations concernant la prochaine sortie de loulouemerick vous ont été envoyé en privé. ${message.author}`)
 	 .then(sentMessage => sentMessage.delete(150000))
      .catch(error => {
      });
