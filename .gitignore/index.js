@@ -198,14 +198,22 @@ const helpstaff = {
 	if(message.content.toLocaleLowerCase() == ("/partenaires")){
 	 if (message.channel.type == 'dm') return;
 	 message.delete()
-	 message.author.send("Voici la liste des serveurs partenaires de DreamsCraft : UniversParks  - McDreams - DreamsWorld ! Pour plus d'information sur un serveur en question, utilisez /(Nom du partenaire) !");
+	 message.author.send("Voici la liste des serveurs partenaires de DreamsCraft : UniversParks  - McDreams ! Pour plus d'information sur un serveur en question, utilisez /(Nom du partenaire) !");
      message.channel.send(`Les informations sur les partenaires de DreamsCraft vous ont été envoyé en privé. ${message.author}`)
 	 .then(sentMessage => sentMessage.delete(150000))
      .catch(error => {
      });
 	}
 
-	
+if (message.content.startsWith(prefix + 'bot')) {
+if (!message.member.hasPermission('ADMINISTRATOR'))
+return message.channel.send("Tu n'as pas la permissions !");
+message.delete()
+let args = message.content.split(' ')
+args.shift()
+message.channel.send(args.join(' '))
+    }
+		
 	const dc = {
   "url": " ",
   "color": 12190976,
@@ -436,7 +444,7 @@ const helpstaff = {
 	if (message.channel.type === "dm") return;
   if (message.channel.id !== '504394913979301888') return;
 
-	var phrase = ["C'est certain !","Probablement.","Oui !","Je ne pense pas.","Demande à Natthh !","Bip Bip Erreur Bip Bip.","Mieux vaut ne pas te le dire.","Ah d'acccord !","Peut être.","Mes sources me disent que non","Mes sources me disent que non","ok.","Repose ta question, je n'ai pas compris","Sûrement.","Bonne question !","Il fait beau dehors hyn..","DreamsCraftBot.exe a cessé de fonctionner.","Oui avec deux grands N et un grand O !","Certainement.","Probalement pas.","Et là, c'est le bug"]
+		var phrase = ["C'est certain !","Probablement.","Oui !","Je ne pense pas mais je ne suis pas sûre.","Demande à Dremas !","BIP - Je suis actuellement indisponible. _Mais si tu fait un don, peut être que... _","Mieux vaut ne pas te le dire.","Je te retourne la question.","Peut être.","Mes sources me disent que non","Mes sources me disent que non.","ok.","Oui, ! Oui Bien sûr !  En faite non, c'est faux.","Sûrement.","Bonne question !","Il fait beau dehors hyn..","Sûrement pas !","Oui avec deux grands N et un grand O !","Certainement.","Probablement pas.","Je suppose que cela est vrai."]
         message.channel.send((phrase[Math.floor(Math.random() * phrase.length)]) + ` ${message.author}`);
 	  
   }
@@ -493,12 +501,17 @@ if (d1 == emotes[0] && d2 == emotes[0] && d3 == emotes[0]) {
     if (message.member.hasPermission('MANAGE_MESSAGES'))
      if (message.channel.type === "dm") return;
      
-    var emotes = ["👻","🎃","💀"]
+const feuille1 = client.emojis.find("name", "feuille1");
+const feuille2 = client.emojis.find("name", "feuille2");
+const feuille3 = client.emojis.find("name", "feuille3");
+const feuille4 = client.emojis.find("name", "feuille4");
+     
+    var emotes = [feuille1,feuille2,feuille3,feuille4]
             
     var d1 = emotes[Math.floor(Math.random() * emotes.length)]
     var d2 = emotes[Math.floor(Math.random() * emotes.length)]
     var d3 = emotes[Math.floor(Math.random() * emotes.length)]
-    
+        
  
     
 if (d1 == emotes[0] && d2 == emotes[0] && d3 == emotes[0]) {
@@ -586,7 +599,7 @@ if (d1 == emotes[0] && d2 == emotes[0] && d3 == emotes[0]) {
       "value": "--------------------",
       "inline": false
     },{
-	  "name": "Date de la prochaine sortie : 13 juillet 2018",
+	  "name": "Date de la prochaine sortie : NON PROGRAMMÉ",
       "value": "--------------------",
       "inline": false
     }
