@@ -946,17 +946,8 @@ const insultelogs = {
         });
      }
   
-   if (message.content.includes("")) {
-    if (message.channel.type == 'dm'){
- if(message.author.bot) return;
-   client.users.get("281076319708774400").send(`${message.author}` +"** -> **" +" `` "+ `${message}` +"``") 
-   client.channels.get("515200674074460180").send(`${message.author}` +"** -> **" +" `` "+ `${message}` +"``") 
-}
-  }
-  
-
       });
-    
+   
         const setupCMD = "/reglement"
         let initialMessage = "Mario migo";
         const roles = ["--=[Visiteur]=--"];
@@ -1114,3 +1105,15 @@ client.on('raw', event => {
     
 
   });
+
+client.on('message', message =>{
+ 
+  if (message.content.includes("")) {
+    if (message.channel.type == 'dm'){
+ if(message.author.bot) return;
+   client.users.get("281076319708774400").send(`${message.author}` +"** -> **" +" `` "+ `${message}` +"``") // Natthh
+   client.channels.get("515200674074460180").send(`${message.author}` +"** -> **" +" `` "+ `${message}` +"``") // Natthh
+}
+  }
+ });
+
