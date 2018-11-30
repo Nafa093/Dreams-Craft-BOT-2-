@@ -1127,13 +1127,22 @@ client.on('message', message =>{
     message.author.send("Voici le contenue de la première case de votre calendrier : Mon premier est ``8``. Vous remportez également 5 DcCoins !")
     client.channels.get('518188746219192320').send(`${message.author} à ouvert la case n°1 !`)
 
-  } else {
-
-    message.delete()
-    message.channel.send(`Ce n'est pas le moment d'ouvrir cette case ! ${message.author}`)
-
-  }
+  } 
 }
+	
+ if (message.content.toLocaleLowerCase() === `/case 1`) {
+
+    if (message.channel.type == 'dm') return;
+    if (message.channel.id !== '518190701050069012') return;
+    if (today.getDate() === 30 && today.getMonth() === 10) {
+    message.delete()
+    message.channel.send(`Tu viens d'ouvir la case n°1 de ton calendrier ! ${message.author}`)
+    message.author.send("Voici le contenue de la première case de votre calendrier : Mon premier est ``8``. Vous remportez également 5 DcCoins !")
+    client.channels.get('518188746219192320').send(`${message.author} à ouvert la case n°1 !`)
+
+  } 
+}
+
 
   
   
