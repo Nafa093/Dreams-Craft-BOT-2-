@@ -1117,17 +1117,17 @@ client.on('message', message =>{
 }
   }
   
-if (message.content.toLocaleLowerCase() === `/case 1`) {
-
-	 if (talkedRecently.has(message.author.id)) {
+ if (message.content.toLocaleLowerCase() === `/case 1`) {		 
+    if (message.channel.type == 'dm') return;
+    if (message.channel.id !== '518190701050069012') return;
+	 
+	if (talkedRecently.has(message.author.id)) {
       message.delete()
       .then(sentMessage => sentMessage.delete(86400000))
       .catch(error => {
       }); 
 	 } else {
-		 
-    if (message.channel.type == 'dm') return;
-    if (message.channel.id !== '518190701050069012') return;
+	 
     if (today.getDate() === 1 && today.getMonth() === 11) {
     message.delete()
     message.channel.send(`Tu viens d'ouvir la case n°1 de ton calendrier ! ${message.author}`)
@@ -1138,17 +1138,17 @@ if (message.content.toLocaleLowerCase() === `/case 1`) {
   } 
 }
 	
- if (message.content.toLocaleLowerCase() === `/case 1`) {
-
-	 if (talkedRecently.has(message.author.id)) {
+ if (message.content.toLocaleLowerCase() === `/case 1`) {		 
+    if (message.channel.type == 'dm') return;
+    if (message.channel.id !== '518190701050069012') return;
+	 
+	if (talkedRecently.has(message.author.id)) {
       message.delete()
       .then(sentMessage => sentMessage.delete(86400000))
       .catch(error => {
       }); 
 	 } else {
-		 
-    if (message.channel.type == 'dm') return;
-    if (message.channel.id !== '518190701050069012') return;
+	 
     if (today.getDate() === 30 && today.getMonth() === 10) {
     message.delete()
     message.channel.send(`Tu viens d'ouvir la case n°1 de ton calendrier ! ${message.author}`)
@@ -1159,11 +1159,4 @@ if (message.content.toLocaleLowerCase() === `/case 1`) {
   } 
 }
 
-
-  
-  
-  
-  
-  
-  
  }):
