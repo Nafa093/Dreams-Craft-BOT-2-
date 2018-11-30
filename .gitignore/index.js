@@ -1117,8 +1117,15 @@ client.on('message', message =>{
 }
   }
   
-  if (message.content.toLocaleLowerCase() === `/case 1`) {
+if (message.content.toLocaleLowerCase() === `/case 1`) {
 
+	 if (talkedRecently.has(message.author.id)) {
+      message.delete()
+      .then(sentMessage => sentMessage.delete(86400000))
+      .catch(error => {
+      }); 
+	 } else {
+		 
     if (message.channel.type == 'dm') return;
     if (message.channel.id !== '518190701050069012') return;
     if (today.getDate() === 1 && today.getMonth() === 11) {
@@ -1127,17 +1134,19 @@ client.on('message', message =>{
     message.author.send("Voici le contenue de la première case de votre calendrier : Mon premier est ``8``. Vous remportez également 5 DcCoins !")
     client.channels.get('518188746219192320').send(`${message.author} à ouvert la case n°1 !`)
 
-        if (talkedRecently.has(message.author.id)) {
-      message.delete()
-      .then(sentMessage => sentMessage.delete(86400000))
-      .catch(error => {
-      });
-      
+    }
   } 
 }
 	
  if (message.content.toLocaleLowerCase() === `/case 1`) {
 
+	 if (talkedRecently.has(message.author.id)) {
+      message.delete()
+      .then(sentMessage => sentMessage.delete(86400000))
+      .catch(error => {
+      }); 
+	 } else {
+		 
     if (message.channel.type == 'dm') return;
     if (message.channel.id !== '518190701050069012') return;
     if (today.getDate() === 30 && today.getMonth() === 10) {
@@ -1146,12 +1155,7 @@ client.on('message', message =>{
     message.author.send("Voici le contenue de la première case de votre calendrier : Mon premier est ``8``. Vous remportez également 5 DcCoins !")
     client.channels.get('518188746219192320').send(`${message.author} à ouvert la case n°1 !`)
 
-         if (talkedRecently.has(message.author.id)) {
-      message.delete()
-      .then(sentMessage => sentMessage.delete(86400000))
-      .catch(error => {
-      });
-   
+    }
   } 
 }
 
