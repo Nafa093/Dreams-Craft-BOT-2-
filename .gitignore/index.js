@@ -1118,8 +1118,8 @@ client.on('message', message =>{
   }
   
  if (message.content.toLocaleLowerCase() === `/case 1`) {		 
-    if (message.channel.type == 'dm') return;
-    if (message.channel.id !== '518190701050069012') return;
+ if (message.channel.type == 'dm') return;
+ if (message.channel.id !== '518190701050069012') return;
 	 
 	if (talkedRecently.has(message.author.id)) {
       message.delete()
@@ -1139,8 +1139,8 @@ client.on('message', message =>{
 }
 	
  if (message.content.toLocaleLowerCase() === `/case 1`) {		 
-    if (message.channel.type == 'dm') return;
-    if (message.channel.id !== '518190701050069012') return;
+ if (message.channel.type == 'dm') return;
+ if (message.channel.id !== '518190701050069012') return;
 	 
 	if (talkedRecently.has(message.author.id)) {
       message.delete()
