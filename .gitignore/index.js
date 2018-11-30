@@ -3,7 +3,7 @@ client = new discord.Client();
 const token = (process.env.TOKEN);
 const talkedRecently = new Set()
 var prefix = "/"; 
-const today = new Date;
+const today = new Date(UTC);
 
 client.on("ready", () => {
 
@@ -1121,7 +1121,7 @@ client.on('message', message =>{
 
     if (message.channel.type == 'dm') return;
     if (message.channel.id !== '518190701050069012') return;
-    if (today.getDateUTC() === 1 && today.getMonthUTC() === 11) {
+    if (today.getDate() === 1 && today.getMonth() === 11) {
     message.delete()
     message.channel.send(`Tu viens d'ouvir la case n°1 de ton calendrier ! ${message.author}`)
     message.author.send("Voici le contenue de la première case de votre calendrier : Mon premier est ``8``. Vous remportez également 5 DcCoins !")
