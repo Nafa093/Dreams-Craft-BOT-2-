@@ -1159,4 +1159,4 @@ client.on('message', message =>{
   } 
 }
 
- }):
+ });
