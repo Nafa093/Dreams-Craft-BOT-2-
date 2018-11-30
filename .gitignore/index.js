@@ -3,7 +3,7 @@ client = new discord.Client();
 const token = (process.env.TOKEN);
 const talkedRecently = new Set()
 var prefix = "/"; 
-const today = new Date(UTC);
+const today = new Date(Date.UTC());
 
 client.on("ready", () => {
 
