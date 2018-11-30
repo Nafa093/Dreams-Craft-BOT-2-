@@ -495,7 +495,7 @@ if (d1 == emotes[0] && d2 == emotes[0] && d3 == emotes[0]) {
   talkedRecently.add(message.author.id);
   setTimeout(() => {
     talkedRecently.delete(message.author.id);
-  }, 3600000);
+  }, 30000000);
 }
   }
   
