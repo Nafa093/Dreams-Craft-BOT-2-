@@ -1151,8 +1151,7 @@ client.on('message', message =>{
       .then(sentMessage => sentMessage.delete(86400000))
       .catch(error => {
       });
-      
-      
+   
   } 
 }
 
@@ -1163,3 +1162,4 @@ client.on('message', message =>{
   
   
   
+ }):
