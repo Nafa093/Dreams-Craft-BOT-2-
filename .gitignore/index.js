@@ -9,7 +9,6 @@ client.on("ready", () => {
 
 	client.user.setPresence({ game: { name: ' /help ', type: 0}}); // Jeux au quel il joue
 	console.log('|Le bot est en ligne.|'); // Message sur le console indiquant qu'il est prêt à l'utilisation
-console.log(today.getUTC-1Hours() + "UTC");
   
 
 const onBot = {
