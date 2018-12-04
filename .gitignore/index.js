@@ -1129,7 +1129,6 @@ client.on('message', message =>{
 
     }
   } 
-}
   
    if (message.content.toLocaleLowerCase() === `/case 4`) {		 
  if (message.channel.type == 'dm') return;
@@ -1142,7 +1141,6 @@ client.on('message', message =>{
 
     }
   } 
-}
   
   
   
