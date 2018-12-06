@@ -1177,14 +1177,14 @@ client.on('message', message =>{
     }
   } 
   
-   if (message.content.toLocaleLowerCase() === `/case 4`) {		 
+   if (message.content.toLocaleLowerCase() === `/case 7`) {		 
  if (message.channel.type == 'dm') return;
  if (message.channel.id !== '518190701050069012') return;
-    if (today.getDate() === 4 && today.getMonth() === 11) {
+    if (today.getDate() === 7 && today.getMonth() === 11) {
     message.delete()
-    message.channel.send(`Tu viens d'ouvir la case n°4 de ton calendrier ! ${message.author}`)
-    message.author.send("Voici le contenue de la quatrième case de votre calendrier : Mon quatrième est ``l``. Vous remportez également 2 DcCoins !")
-    client.channels.get('518188746219192320').send(`${message.author} à ouvert la case n°4 !`)
+    message.channel.send(`Tu viens d'ouvir la case n°7 de ton calendrier ! ${message.author}`)
+    message.author.send("Voici le contenue de la septième case de votre calendrier : Mon septième est ``q``. Vous gagnez également le droit de jouer à un casino spéciale en ce septième jour en utilisant la commande ``/calendriercasino`` dans le channel du casino toutes les 3 heures ! _PS : les gagnants auront une récompenses un peu spéciale !_")
+    client.channels.get('518188746219192320').send(`${message.author} à ouvert la case n°7 !`)
 
     }
   } 
