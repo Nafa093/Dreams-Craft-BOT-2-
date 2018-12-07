@@ -1183,7 +1183,7 @@ client.on('message', message =>{
     if (today.getDate() === 7 && today.getMonth() === 11) {
     message.delete()
     message.channel.send(`Tu viens d'ouvir la case n°7 de ton calendrier ! ${message.author}`)
-    message.author.send("Voici le contenue de la septième case de votre calendrier : Mon septième est ``q``. Vous gagnez également le droit de jouer à un casino spéciale en ce septième jour en utilisant la commande ``/calendriercasino`` dans le channel du casino toutes les 3 heures ! _PS : les gagnants auront une récompenses un peu spéciale !_")
+    message.author.send("Voici le contenue de la septième case de votre calendrier : Mon septième est ``q``. Vous gagnez également le droit de jouer à un casino spéciale en ce septième jour en utilisant la commande ``/casinobonus`` dans le channel du casino toutes les 3 heures ! _PS : les gagnants auront une récompenses un peu spéciale !_")
     client.channels.get('518188746219192320').send(`${message.author} à ouvert la case n°7 !`)
 
     }
