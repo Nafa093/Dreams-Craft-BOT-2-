@@ -519,7 +519,7 @@ const noell3 = ["🌟"]
 
     if (talkedRecentlyCalendrier.has(message.author.id)) {
       message.delete()
-      message.channel.send("Tu ne peux profiter du bonus qu'une fois toute les 3 heures aurjodu'hui " + message.author + ` ! Merci d'attendre !`)
+      message.channel.send("Tu ne peux profiter du bonus qu'une fois toute les 3 heures aujourd'hui " + message.author + ` ! Merci d'attendre !`)
       .then(sentMessage => sentMessage.delete(150000))
       .catch(error => {
       });
