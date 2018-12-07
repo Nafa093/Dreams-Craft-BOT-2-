@@ -541,9 +541,9 @@ if (d1 == emotes[0] && d2 == emotes[0] && d3 == emotes[0]) {
       message.channel.send(`-------------------\r| ${d1} | ${d2} | ${d3} |\r-------------------`);
     
     
-  talkedRecently.add(message.author.id);
+  talkedRecentlyCalendrier.add(message.author.id);
   setTimeout(() => {
-    talkedRecently.delete(message.author.id);
+    talkedRecentlyCalendrier.delete(message.author.id);
   }, 10800000);
 }
   }
