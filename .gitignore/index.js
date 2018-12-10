@@ -1144,7 +1144,7 @@ client.on('message', message =>{
   } 
   
   
-    if (message.content.toLocaleLowerCase() === `/case =10`) {		 
+    if (message.content.toLocaleLowerCase() === `/case 10`) {		 
  if (message.channel.type == 'dm') return;
  if (message.channel.id !== '518190701050069012') return;
     if (today.getDate() === 10 && today.getMonth() === 11) {
