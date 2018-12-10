@@ -1131,14 +1131,14 @@ client.on('message', message =>{
     }
   } 
   
-    if (message.content.toLocaleLowerCase() === `/case 9`) {		 
+    if (message.content.toLocaleLowerCase() === `/case 11`) {		 
  if (message.channel.type == 'dm') return;
  if (message.channel.id !== '518190701050069012') return;
-    if (today.getDate() === 9 && today.getMonth() === 11) {
+    if (today.getDate() === 11 && today.getMonth() === 11) {
     message.delete()
-    message.channel.send(`Tu viens d'ouvir la case n°9 de ton calendrier ! ${message.author}`)
-    message.author.send("Voici le contenue de la neuvième case de votre calendrier : Mon neuvième est ``G``. Vous remportez également 4 DcCoins !")
-    client.channels.get('518188746219192320').send(`${message.author} à ouvert la case n°9 !`)
+    message.channel.send(`Tu viens d'ouvir la case n°11 de ton calendrier ! ${message.author}`)
+    message.author.send("Voici le contenue de la onzième case de votre calendrier : Mon onzième est ``D``. Vous remportez également 2 DcCoins !")
+    client.channels.get('518188746219192320').send(`${message.author} à ouvert la case n°11 !`)
 
     }
   } 
