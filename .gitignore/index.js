@@ -1150,7 +1150,7 @@ client.on('message', message =>{
     if (today.getDate() === 10 && today.getMonth() === 11) {
     message.delete()
     message.channel.send(`Tu viens d'ouvir la case n°10 de ton calendrier ! ${message.author}`)
-    message.author.send("Voici le contenue de la dixième case de votre calendrier : Mon dixième est ``3`. Vous ne remportez rien d'autre. J'ai plus rien. Juste un vieux pc au fond là bas mais... ça, c'est autre chose.")
+    message.author.send("Voici le contenue de la dixième case de votre calendrier : Mon dixième est ``3``. Vous ne remportez rien d'autre. J'ai plus rien. Juste un vieux pc au fond là bas mais... ça, c'est autre chose.")
     client.channels.get('518188746219192320').send(`${message.author} à ouvert la case n°10 !`)
 
     }
