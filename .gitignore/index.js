@@ -1137,7 +1137,7 @@ client.on('message', message =>{
     if (today.getDate() === 11 && today.getMonth() === 11) {
     message.delete()
     message.channel.send(`Tu viens d'ouvir la case n°12 de ton calendrier ! ${message.author}`)
-    message.author.send("Voici le contenue de la douzième case de votre calendrier : Mon douzième est ``D``. Vous remportez également un yaourt à la grec !")
+    message.author.send("Voici le contenue de la douzième case de votre calendrier : Mon douzième est ``q``. Vous remportez également un yaourt à la grec !")
     client.channels.get('518188746219192320').send(`${message.author} à ouvert la case n°12 !`)
 
     }
@@ -1150,7 +1150,7 @@ client.on('message', message =>{
     if (today.getDate() === 12 && today.getMonth() === 11) {
     message.delete()
     message.channel.send(`Tu viens d'ouvir la case n°12 de ton calendrier ! ${message.author}`)
-    message.author.send("Voici le contenue de la douzième case de votre calendrier : Mon douzième est ``D``. Vous remportez également un yaourt à la grec !")
+    message.author.send("Voici le contenue de la douzième case de votre calendrier : Mon douzième est ``q``. Vous remportez également un yaourt à la grec !")
     client.channels.get('518188746219192320').send(`${message.author} à ouvert la case n°12 !`)
 
     }
