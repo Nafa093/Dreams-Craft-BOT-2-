@@ -951,7 +951,7 @@ const insultelogs = {
   
       });
    
-        const setupCMD = "/reglement"
+        const setupCMD = "/regles"
         let initialMessage = "Mario migo";
         const roles = ["--=[Visiteur]=--"];
         const reactions = ["✅"];
