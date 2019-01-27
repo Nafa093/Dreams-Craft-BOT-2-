@@ -459,8 +459,9 @@ message.channel.send(args.join(' '))
 const noel1 = ["🏂"]
 const noel2 = ["⛄"]
 const noel3 = ["❄"]
+const noel4 = ["🌨️"]
      
-    var emotes = [noel1,noel2,noel3]
+    var emotes = [noel1,noel2,noel3,noel4]
             
     var d1 = emotes[Math.floor(Math.random() * emotes.length)]
     var d2 = emotes[Math.floor(Math.random() * emotes.length)]
@@ -484,6 +485,9 @@ if (d1 == emotes[0] && d2 == emotes[0] && d3 == emotes[0]) {
     if (d1 == emotes[1] && d2 == emotes[1] && d3 == emotes[1]) {
       message.channel.send(`Bravo ${message.author}, tu as gagné !`)
     } else      
+    if (d1 == emotes[3] && d2 == emotes[3] && d3 == emotes[3]) {
+      message.channel.send(`Bravo ${message.author}, tu as gagné !`)
+    } else  
       message.channel.send(`Perdu ${message.author}, retente ta chance !`)
       
       message.delete()
@@ -506,8 +510,9 @@ if (d1 == emotes[0] && d2 == emotes[0] && d3 == emotes[0]) {
 const noel1 = ["🏂"]
 const noel2 = ["⛄"]
 const noel3 = ["❄"]
+const noel4 = ["🌨️"]
      
-    var emotes = [noel1,noel2,noel3]
+    var emotes = [noel1,noel2,noel3,noel4]
             
     var d1 = emotes[Math.floor(Math.random() * emotes.length)]
     var d2 = emotes[Math.floor(Math.random() * emotes.length)]
@@ -522,7 +527,10 @@ if (d1 == emotes[0] && d2 == emotes[0] && d3 == emotes[0]) {
     } else
     if (d1 == emotes[1] && d2 == emotes[1] && d3 == emotes[1]) {
       message.channel.send(`Bravo ${message.author}, tu as gagné !`)
-    } else      
+    } else
+    if (d1 == emotes[3] && d2 == emotes[3] && d3 == emotes[3]) {
+      message.channel.send(`Bravo ${message.author}, tu as gagné !`)
+    } else  
       message.channel.send(`Perdu ${message.author}, retente ta chance !`)
       
       message.delete()
