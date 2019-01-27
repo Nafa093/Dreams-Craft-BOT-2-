@@ -17,7 +17,7 @@ const onBot = {
   "color": 1697049,
   "timestamp": new Date(),
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png",
+    "icon_url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png",
     "text": ""
   },
   "thumbnail": {
@@ -62,16 +62,16 @@ const help = {
   "url": " ",
   "color": 1073142,
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png",
+    "icon_url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png",
     "text": "Pour toute autres demande, le staff de DreamsCraft se tient à votre disposition."
   },
   "thumbnail": {
-    "url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png"
+    "url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png"
   },
   "author": {
     "name": 'Voici toutes mes commandes utilisables sur le discord de DreamsCraft : ',
     "url": " ",
-    "icon_url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png"
+    "icon_url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png"
   },
   "fields": [
     {
@@ -141,16 +141,16 @@ const helpstaff = {
   "url": " ",
   "color": 1073142,
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png",
+    "icon_url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png",
     "text": "Pour toute autres demande, Natthh se tient à votre disposition."
   },
   "thumbnail": {
-    "url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png"
+    "url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png"
   },
   "author": {
     "name": 'Commande uniquement réservé aux staffs :',
     "url": " ",
-    "icon_url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png"
+    "icon_url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png"
   },
   "fields": [
     {
@@ -220,16 +220,16 @@ message.channel.send(args.join(' '))
   "url": " ",
   "color": 12190976,
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png",
+    "icon_url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png",
     "text": ""
   },
   "thumbnail": {
-    "url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png"
+    "url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png"
   },
   "author": {
     "name": 'Voici les informations concernant DreamsCraft :',
     "url": " ",
-    "icon_url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png"
+    "icon_url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png"
   },
   "fields": [
     {
@@ -265,16 +265,16 @@ message.channel.send(args.join(' '))
   "url": " ",
   "color": 65535,
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png",
+    "icon_url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png",
     "text": ""
   },
   "thumbnail": {
-    "url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png"
+    "url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png"
   },
   "author": {
     "name": 'Voici les informations concernant la prochaine soft-opening DreamsCraft :',
     "url": " ",
-    "icon_url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png"
+    "icon_url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png"
   },
   "fields": [
     {
@@ -304,16 +304,16 @@ message.channel.send(args.join(' '))
   "url": " ",
   "color": 245820,
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png",
+    "icon_url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png",
     "text": ""
   },
   "thumbnail": {
-    "url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png"
+    "url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png"
   },
   "author": {
     "name": "Voici les informations concernant l'ouverture de DreamsCraft :",
     "url": " ",
-    "icon_url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png"
+    "icon_url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png"
   },
   "fields": [
     {
@@ -342,16 +342,16 @@ message.channel.send(args.join(' '))
   "url": " ",
   "color": 16754432,
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png",
+    "icon_url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png",
     "text": ""
   },
   "thumbnail": {
-    "url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png"
+    "url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png"
   },
   "author": {
     "name": 'Voici les informations concernant le prochain spectacle sur DreamsCraft :',
     "url": " ",
-    "icon_url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png"
+    "icon_url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png"
   },
   "fields": [
     {
@@ -384,16 +384,16 @@ message.channel.send(args.join(' '))
   "url": " ",
   "color": 13514346,
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png",
+    "icon_url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png",
     "text": ""
   },
   "thumbnail": {
-    "url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png"
+    "url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png"
   },
   "author": {
     "name": 'Voici les informations concernant les attractions ouvertes sur DreamsCraft :',
     "url": " ",
-    "icon_url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png"
+    "icon_url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png"
   },
   "fields": [
     {
@@ -543,24 +543,24 @@ if (d1 == emotes[0] && d2 == emotes[0] && d3 == emotes[0]) {
     "url": " ",
     "color": 13514346,
     "footer": {
-      "icon_url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png",
+      "icon_url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png",
       "text": ""
     },
     "thumbnail": {
-      "url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png"
+      "url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png"
     },
     "author": {
       "name": 'Voici les informations concernant les recrutements sur DreamsCraft :',
       "url": " ",
-      "icon_url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png"
+      "icon_url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png"
     },
     "fields": [
       {
-        "name": "Guide : Fermé",
+        "name": "Guide : OUVERT",
         "value": "--------------------",
         "inline": false
       },{
-    "name": "Animateur : Fermé",
+    "name": "Animateur : OUVERT",
         "value": "--------------------",
         "inline": false
       },{
@@ -590,16 +590,16 @@ if (d1 == emotes[0] && d2 == emotes[0] && d3 == emotes[0]) {
   "url": " ",
   "color": 16708420,
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png",
+    "icon_url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png",
     "text": "Vous voulez participer ? Contactez Loulouemerick en privé !"
   },
   "thumbnail": {
-    "url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png"
+    "url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png"
   },
   "author": {
     "name": 'Voici les informations concernant la prochaine sortie de Loulouemerick et Dremas92 :',
     "url": " ",
-    "icon_url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png"
+    "icon_url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png"
   },
   "fields": [
     {
@@ -633,7 +633,7 @@ const insultelogs = {
   "color": 10030606,
   "timestamp": new Date(),
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png",
+    "icon_url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png",
     "text": "Type : INSULTE "
   },
   "thumbnail": {
@@ -665,7 +665,7 @@ const insultelogs = {
   "color": 15853885,
   "timestamp": new Date(),
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png",
+    "icon_url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png",
     "text": "Type : MESSAGE "
   },
   "thumbnail": {
@@ -692,7 +692,7 @@ const insultelogs = {
   "color": 10030606,
   "timestamp": new Date(),
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png",
+    "icon_url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png",
     "text": "Type : PUB "
   },
   "thumbnail": {
@@ -726,7 +726,7 @@ const insultelogs = {
   "color": 1284672,
     "timestamp": new Date(),
     "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png",
+    "icon_url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png",
     "text": "Type : AVIS"
   },
   "thumbnail": {
@@ -780,7 +780,7 @@ const insultelogs = {
       "color": 2977512,
       "timestamp": new Date(),
       "footer": {
-        "icon_url": "https://cdn.discordapp.com/attachments/423566417242095638/426742650935312385/test.png",
+        "icon_url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png",
         "text": "Type : SUGGESTION"
       },
       "thumbnail": {
@@ -1033,7 +1033,7 @@ client.on('raw', event => {
       "color": 1349919,
       "timestamp": new Date(),
       "footer": {
-        "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
+        "icon_url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png",
         "text": "Type : SANCTION "
       },
       "thumbnail": {
@@ -1072,7 +1072,7 @@ client.on('raw', event => {
             "color": 1349919,
             "timestamp": new Date(),
             "footer": {
-              "icon_url": "https://cdn.discordapp.com/attachments/383748539869691904/416275362129903637/DCSW.png",
+              "icon_url": "https://cdn.discordapp.com/icons/233222558974083072/db29e19354671a4d9031a96e6e09c8c6.png",
               "text": "Type : SANCTION "
             },
             "thumbnail": {
