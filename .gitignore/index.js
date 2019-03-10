@@ -971,7 +971,7 @@ function generateMessages(){
       :red_circle: - Le contenu pornographique et strictement interdit.
       :red_circle: - Toute menace, par n'importe quel moyen est interdite.
       :red_circle: - Toute pub, par n'importe quel moyen est interdite (Sauf acceptation par un membre du staff).
-      :red_circle: - Nous vous demandons d'être un minimum mature dans les salon vocaux mis à votre disposition.\n n\
+      :red_circle: - Nous vous demandons d'être un minimum mature dans les salon vocaux mis à votre disposition.n\ n\
       :lock: *Les sanctions vous seront attribuées en fonction de vos manquements au règlement, elle pourra aller du simple avertissement au ban définitif.
       :newspaper2: * Il est important de noter que ce n’est pas parce que un staff vous inflige une sanction, qu’il vous en veut personnellement.
       :newspaper2: * Il est également important de noter que nous nous réservons le droit de modifier le règlement à tout moment.
