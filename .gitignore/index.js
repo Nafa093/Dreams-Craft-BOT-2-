@@ -35,7 +35,7 @@ client.login(token)
 client.on('guildMemberAdd', member => {
 
 	let role = member.guild.roles.find("name","--=[Visiteur]=--");
-const channel = member.guild.channels.find("name", "accueil").send(`Bonjour et bienvenue sur le discord de DreamsCraft ${member.user} ! Pour recevoir ton grade visiteur, merci d'aller accepter le réglement.`)
+const channel = member.guild.channels.find("name", "🏁-accueil").send(`Bonjour et bienvenue sur le discord de DreamsCraft ${member.user} ! Pour recevoir ton grade visiteur, merci d'aller accepter le réglement.`)
 	
 });
 
