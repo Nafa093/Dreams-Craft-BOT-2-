@@ -847,7 +847,7 @@ const insultelogs = {
           "inline": false
         },
         {
-          "name": "Ip / Version : McDreams.boxtoplay.com en 1.12.  \n( Une version premium est nécéssaire.)",
+          "name": "Ip / Version : McDreams.boxtoplay.com en 1.12.2  \n( Une version premium est nécéssaire.)",
           "value": "--------------------",
           "inline": false
         },
