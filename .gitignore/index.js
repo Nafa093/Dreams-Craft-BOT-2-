@@ -974,8 +974,8 @@ function generateMessages(){
       :red_circle: - Nous vous demandons d'être un minimum mature dans les salon vocaux mis à votre disposition.\n
       :lock: *Les sanctions vous seront attribuées en fonction de vos manquements au règlement, elle pourra aller du simple avertissement au ban définitif.
       :newspaper2: * Il est important de noter que ce n’est pas parce que un staff vous inflige une sanction, qu’il vous en veut personnellement.
-      :newspaper2: * Il est également important de noter que nous nous réservons le droit de modifier le règlement à tout moment.
-                                                           :exclamation:️ [staff] Tout départ du staff est définitif :exclamation:️
+      :newspaper2: * Il est également important de noter que nous nous réservons le droit de modifier le règlement à tout moment.\n
+                                                           :exclamation:️ [STAFF] Tout départ du staff est définitif. :exclamation:\n
                                          **Clique sur l'émojis " ✅ " pour avoir le rôle** **"${role}"** **et pouvoir avoir accès à tout les channels !**
                                                                                       [@everyone]`); 
     return messages;
