@@ -963,7 +963,7 @@ function generateMessages(){
     messages.push(initialMessage);
     for (let role of roles) messages.push(`
     :straight_ruler: __Règlement Discord/Minecraft de  DreamsCraft__ :sparkles:  :
-        :red_circle: - Vous devez être respectueux et courtois entre vous.
+      :red_circle: - Vous devez être respectueux et courtois entre vous.
       :red_circle: - Les glitchs sur le serveur sont interdits.
       :red_circle: - Le spam et le flood ne sont pas tolérés.
       :red_circle: - Les insultes, le racisme ou toute autre forme de paroles/messages qui pourrait faire du mal mentalement à quelqu'un sont prohibés.
@@ -971,10 +971,10 @@ function generateMessages(){
       :red_circle: - Le contenu pornographique et strictement interdit.
       :red_circle: - Toute menace, par n'importe quel moyen est interdite.
       :red_circle: - Toute pub, par n'importe quel moyen est interdite (Sauf acceptation par un membre du staff).
-      :red_circle: - Nous vous demandons d'être un minimum mature dans les salon vocaux mis à votre disposition.
-      :lock:Les sanctions vous seront attribuées en fonction de vos manquements au règlement, elle pourra aller du simple avertissement au ban définitif.:lock:
-      :newspaper2:* Il est important de noter que ce n’est pas parce que un staff vous inflige une sanction, qu’il vous en veut personnellement.
-      :newspaper2:* Il est également important de noter que nous nous réservons le droit de modifier le règlement à tout moment.
+      :red_circle: - Nous vous demandons d'être un minimum mature dans les salon vocaux mis à votre disposition.\n n\
+      :lock: *Les sanctions vous seront attribuées en fonction de vos manquements au règlement, elle pourra aller du simple avertissement au ban définitif.
+      :newspaper2: * Il est important de noter que ce n’est pas parce que un staff vous inflige une sanction, qu’il vous en veut personnellement.
+      :newspaper2: * Il est également important de noter que nous nous réservons le droit de modifier le règlement à tout moment.
                                                            :exclamation:️ [staff] Tout départ du staff est définitif :exclamation:️
                                          **Clique sur l'émojis " ✅ " pour avoir le rôle** **"${role}"** **et pouvoir avoir accès à tout les channels !**
                                                                                       [@everyone]`); 
