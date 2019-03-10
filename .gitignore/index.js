@@ -200,7 +200,7 @@ const helpstaff = {
 	if(message.content.toLocaleLowerCase() == ("/partenaires")){
 	 if (message.channel.type == 'dm') return;
 	 message.delete()
-	 message.author.send("Voici la liste des serveurs partenaires de DreamsCraft : UniversParks  - McDreams ! Pour plus d'information sur un serveur en question, utilisez /(Nom du partenaire) !");
+	 message.author.send("Voici la liste des serveurs partenaires de DreamsCraft : WizardKingdom  - McDreams ! Pour plus d'information sur un serveur en question, utilisez /(Nom du partenaire) !");
      message.channel.send(`Les informations sur les partenaires de DreamsCraft vous ont été envoyé en privé. ${message.author}`)
 	 .then(sentMessage => sentMessage.delete(150000))
      .catch(error => {
@@ -874,80 +874,72 @@ const insultelogs = {
         });
      }	
       
-     
-    // Commande du partenaire UniversParks
-      
-      const universparks = {
-      "url": " ",
-      "color": 10030606,
+	      const wizard = {
+      "url": "",
+      "color": 996633,
       "footer": {
-        "icon_url": "https://cdn.discordapp.com/attachments/333644419171614722/417278197864857602/LOGO_Univers_Parks_1.1_transparent.png",
-        "text": "Nous remercions UniversParks de nous faire confiance !"
+        "icon_url": "https://cdn.discordapp.com/attachments/531084935029850112/554354299380170752/logo_wizard_Kingdom_2.1.jpg",
+        "text": "Nous remercions WizardKingdom de nous faire confiance !"
       },
       "thumbnail": {
-        "url": "https://cdn.discordapp.com/attachments/333644419171614722/417278197864857602/LOGO_Univers_Parks_1.1_transparent.png"
+        "url": "https://cdn.discordapp.com/attachments/531084935029850112/554354299380170752/logo_wizard_Kingdom_2.1.jpg"
       },
       "image": {
-          "url": "https://cdn.discordapp.com/attachments/333644419171614722/463679249220501514/Partner.png"
+          "url": "https://cdn.discordapp.com/attachments/513444409501810689/554356560344776715/2018-07-20_14.png"
         },
       "author": {
-        "name": "UniversParks :",
-        "url": "",
-        "icon_url": "https://cdn.discordapp.com/attachments/333644419171614722/417278197864857602/LOGO_Univers_Parks_1.1_transparent.png"
+        "name": "WizardKingdom :",
+        "url": "https://discordapp.com",
+        "icon_url": "https://cdn.discordapp.com/attachments/531084935029850112/554354299380170752/logo_wizard_Kingdom_2.1.jpg"
       },
       "fields": [
         {
-          "name": "Nom : UniversParks.",
+          "name": "Nom : WizardKingdom.",
           "value": "--------------------",
           "inline": true
         },
         {
-          "name": "Reproduction : Parc custom et reproduction de parc réel. ",
+          "name": "Reproduction : Parcs Customs, Europa-Park.",
           "value": "--------------------",
           "inline": false
         },
         {
-          "name": "Fondateurs : Theooo & Mathieuu.",
+          "name": "Directeurs : Mastercondor47.",
           "value": "--------------------",
           "inline": false
         },
         {
-          "name": "État : Ouvert.",
+          "name": "État : Fermée.",
           "value": "--------------------",
           "inline": false
         },
         {
-          "name": "Ip / Version : UniversParks.boxtoplay.com en 1.12 ( Une version premium est nécéssaire )",
-          "value": "--------------------",
-          "inline": false
-        },
-      {
-          "name": "Facebook : https://fr-fr.facebook.com/UniversParks/",
+          "name": "Ip / Version : WizardKingdom.ovh en 1.13.2 \n( Une version premium n'est pas nécéssaire.)",
           "value": "--------------------",
           "inline": false
         },
         {
-          "name": "Twitter : https://twitter.com/UniversParks",
-          "value": "--------------------",
-          "inline": false
-        },
-        {
-          "name": "Discord : https://discord.gg/mbT6QzG",
+          "name": "Discord : https://discord.gg/XPG5esm",
           "value": "--------------------",
           "inline": false
         }
       ]
     };
 
-    if(message.content.toLocaleLowerCase() == ("/universparks")){
+    if(message.content.toLocaleLowerCase() == ("/wizardkingdom")){
       if (message.channel.type == 'dm') return;
       message.delete()
-      message.author.send({embed: universparks});
-      message.channel.send(`Les informations concernant Universparks vous ont été envoyé en privé. ${message.author}`)
+      message.author.send({embed: wizard});
+      message.channel.send(`Les informations concernant WizardKingdom vous ont été envoyé en privé. ${message.author}`)
         .then(sentMessage => sentMessage.delete(150000))
         .catch(error => {
         });
-     }
+     }	
+	
+     
+    // Commande du partenaire UniversParks
+      
+   
   
       });
    
