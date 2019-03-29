@@ -492,7 +492,7 @@ if (d1 == emotes[0] && d2 == emotes[0] && d3 == emotes[0]) {
       message.channel.send(`Bravo ${message.author}, tu as gagné ! Tu remportes 2 DcCoins !`)
   	  message.author.send("Pour recevoir vos DcCoins, merci de répondre avec le format suivant : \n Pseudo: [VOTRE PSEUDO MINECRAFT]");
     } else  
-      message.channel.send(`Perdu ${message.author}, retente ta chance ! Tu remportes 2 DcCoins !`)
+      message.channel.send(`Perdu ${message.author}, retente ta chance !`)
       
       message.delete()
       message.channel.send(`-------------------\r| ${d1} | ${d2} | ${d3} |\r-------------------`);
