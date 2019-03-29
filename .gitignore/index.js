@@ -251,7 +251,7 @@ message.channel.send(args.join(' '))
 };
 	
 
-	if(message.content.toLocaleLowerCase() == ("/dc")){
+	if(message.content.toLocaleLowerCase() == ("/dc") || message.content.toLocaleLowerCase() == ("/ip")){
 	 if (message.channel.type == 'dm') return;
 	 message.delete()
 	 message.author.send({embed: dc});
@@ -278,11 +278,11 @@ message.channel.send(args.join(' '))
   },
   "fields": [
     {
-      "name": "Prochaine soft opening : Indéterminé",
+      "name": "Prochaine soft opening : 26 avril.",
       "value": "--------------------",
       "inline": false
 	   },{
-	  "name": "Horaires de la soft opening : Indéterminé",
+	  "name": "Horaires de la soft opening : de 20h à 01h00. #Electroshowk",
       "value": "--------------------",
       "inline": false
     }
