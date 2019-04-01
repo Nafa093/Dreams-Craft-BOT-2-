@@ -456,10 +456,10 @@ message.channel.send(args.join(' '))
     if (message.channel.type === "dm") return;
     if (message.channel.id !== '554334321037541377') return;
 
-const noel1 = ["🌻"]
-const noel2 = ["🌹"]
-const noel3 = ["🌷"]
-const noel4 = ["🌸"]
+const noel1 = client.emojis.find("name", "Magikarp");
+const noel2 = client.emojis.find("name", "Gardon");
+const noel3 = client.emojis.find("name", "Croustibat");
+const noel4 = ["🐟"]
      
     var emotes = [noel1,noel2,noel3,noel4]
             
@@ -477,22 +477,23 @@ const noel4 = ["🌸"]
 } else {
 
 if (d1 == emotes[0] && d2 == emotes[0] && d3 == emotes[0]) {
-      message.channel.send(`Bravo ${message.author}, tu as gagné !`)
-  	  message.author.send("Pour recevoir vos DcCoins, merci de répondre avec le format suivant : \n Pseudo: [VOTRE PSEUDO MINECRAFT]");
+      message.channel.send(`Bravo ${message.author}, tu as gagné ! Tu remportes un brochet !`)
+  	  message.author.send("Pour recevoir ton brochet, merci de répondre avec le format suivant : \n Pseudo: [VOTRE PSEUDO MINECRAFT]");
     } else
     if (d1 == emotes[2] && d2 == emotes[2] && d3 == emotes[2]) {
-      message.channel.send(`Bravo ${message.author}, tu as gagné ! Tu remportes 2 DcCoins !`)
-  	  message.author.send("Pour recevoir vos DcCoins, merci de répondre avec le format suivant : \n Pseudo: [VOTRE PSEUDO MINECRAFT]");
+      message.channel.send(`Bravo ${message.author}, tu as gagné ! Tu remportes une carpe !`)
+  	  message.author.send("Pour recevoir ta carpe merci de répondre avec le format suivant : \n Pseudo: [VOTRE PSEUDO MINECRAFT]");
     } else
     if (d1 == emotes[1] && d2 == emotes[1] && d3 == emotes[1]) {
-      message.channel.send(`Bravo ${message.author}, tu as gagné ! Tu remportes 2 DcCoins !`)
-  	  message.author.send("Pour recevoir vos DcCoins, merci de répondre avec le format suivant : \n Pseudo: [VOTRE PSEUDO MINECRAFT]");
-    } else      
+      message.channel.send(`Bravo ${message.author}, tu as gagné !Tu remportes un gardon ! `)
+  	  message.author.send("Pour recevoir ton gardon, merci de répondre avec le format suivant : \n Pseudo: [VOTRE PSEUDO MINECRAFT]");
+    } else
     if (d1 == emotes[3] && d2 == emotes[3] && d3 == emotes[3]) {
-      message.channel.send(`Bravo ${message.author}, tu as gagné ! Tu remportes 2 DcCoins !`)
-  	  message.author.send("Pour recevoir vos DcCoins, merci de répondre avec le format suivant : \n Pseudo: [VOTRE PSEUDO MINECRAFT]");
+      message.channel.send(`Bravo ${message.author}, tu as gagné ! Tu remportes un croustibat !`)
+  	  message.author.send("Pour recevoir ton croustibat, merci de répondre avec le format suivant : \n Pseudo: [VOTRE PSEUDO MINECRAFT]");
+
     } else  
-      message.channel.send(`Perdu ${message.author}, retente ta chance !`)
+      message.channel.send(`Bravo ${message.author}, tu as gagné ! Eh bah non. Poisson d'avril ! 🐟`)
       
       message.delete()
       message.channel.send(`-------------------\r| ${d1} | ${d2} | ${d3} |\r-------------------`);
