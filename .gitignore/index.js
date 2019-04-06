@@ -452,22 +452,6 @@ message.channel.send(args.join(' '))
 	  
   }
   
-  
-   if (message.content.toLocaleLowerCase() == ("/rule34")) {
-    if (message.channel.type === "dm") return;
-       if (talkedRecently2.has(message.author.id)) {
-      message.delete()
-      message.channel.send(`Tu ne peux utiliser cette commande que toutes les 5 secondes !`)
-      .then(sentMessage => sentMessage.delete(10000))
-      .catch(error => {
-      });
-       }
-          talkedRecently2.add(message.author.id);
-          setTimeout(() => {
-          talkedRecently2.delete(message.author.id);
-      }, 5000);
-   }
- 
    if (message.content.toLocaleLowerCase() == ("/casino")) {
     if (message.channel.type === "dm") return;
     if (message.channel.id !== '554334321037541377') return;
