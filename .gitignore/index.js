@@ -461,11 +461,11 @@ message.channel.send(args.join(' '))
       .then(sentMessage => sentMessage.delete(10000))
       .catch(error => {
       });
+       }
           talkedRecently2.add(message.author.id);
           setTimeout(() => {
           talkedRecently2.delete(message.author.id);
       }, 5000);
-       }
    }
  
    if (message.content.toLocaleLowerCase() == ("/casino")) {
