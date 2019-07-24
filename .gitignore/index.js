@@ -283,7 +283,7 @@ message.channel.send(args.join(' '))
       "value": "--------------------",
       "inline": false
 	   },{
-	  "name": "Horaires de la soft opening : -.,
+	  "name": "Horaires de la soft opening : -.",
       "value": "--------------------",
       "inline": false
     }
