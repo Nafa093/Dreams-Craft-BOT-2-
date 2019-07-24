@@ -279,11 +279,11 @@ message.channel.send(args.join(' '))
   },
   "fields": [
     {
-      "name": "Prochaine soft opening : 26 avril.",
+      "name": "Prochaine soft opening : -.",
       "value": "--------------------",
       "inline": false
 	   },{
-	  "name": "Horaires de la soft opening : de 20h à 01h00. #Electroshowk",
+	  "name": "Horaires de la soft opening : -.,
       "value": "--------------------",
       "inline": false
     }
@@ -456,13 +456,13 @@ message.channel.send(args.join(' '))
     if (message.channel.type === "dm") return;
     if (message.channel.id !== '554334321037541377') return;
 
-const venom1 = client.emojis.find("name", "Emoji_Props_Universal1L");
-const venom2 = client.emojis.find("name", "Emoji_Props_Universal1L");
-const venom3 = client.emojis.find("name", "Emoji_Props_Universal1L");
-const venom4 = client.emojis.find("name", "Emoji_Props_Universal1L");
+const venom1 = client.emojis.find("name", "clara");
+const venom2 = client.emojis.find("name", "batiste");
+const venom3 = client.emojis.find("name", "guillaume");
+const venom4 = client.emojis.find("name", "laetitia");
      
 
-    var emotes = [noel1,noel2,noel3,noel4]
+    var emotes = [venom1,venom2,venom3,venom4]
             
     var d1 = emotes[Math.floor(Math.random() * emotes.length)]
     var d2 = emotes[Math.floor(Math.random() * emotes.length)]
@@ -478,20 +478,16 @@ const venom4 = client.emojis.find("name", "Emoji_Props_Universal1L");
 } else {
 
 if (d1 == emotes[0] && d2 == emotes[0] && d3 == emotes[0]) {
-      message.channel.send(`Bravo ${message.author}, tu as gagné !`)
-  	  message.author.send("Pour recevoir vos DcCoins, merci de répondre avec le format suivant : \n Pseudo: [VOTRE PSEUDO MINECRAFT]");
+      message.channel.send(`Bravo ${message.author}, tu as gagné ! N'oublies pas de venir rejouer pour gagner une place pour l'avant première de venom !`)
     } else
     if (d1 == emotes[2] && d2 == emotes[2] && d3 == emotes[2]) {
-      message.channel.send(`Bravo ${message.author}, tu as gagné ! Tu remportes 2 DcCoins !`)
-  	  message.author.send("Pour recevoir vos DcCoins, merci de répondre avec le format suivant : \n Pseudo: [VOTRE PSEUDO MINECRAFT]");
+      message.channel.send(`Bravo ${message.author}, tu as gagné ! N'oublies pas de venir rejouer pour gagner une place pour l'avant première de venom !`)
     } else
     if (d1 == emotes[1] && d2 == emotes[1] && d3 == emotes[1]) {
-      message.channel.send(`Bravo ${message.author}, tu as gagné ! Tu remportes 2 DcCoins !`)
-  	  message.author.send("Pour recevoir vos DcCoins, merci de répondre avec le format suivant : \n Pseudo: [VOTRE PSEUDO MINECRAFT]");
+      message.channel.send(`Bravo ${message.author}, tu as gagné ! N'oublies pas de venir rejouer pour gagner une place pour l'avant première de venom !`)
     } else      
     if (d1 == emotes[3] && d2 == emotes[3] && d3 == emotes[3]) {
-      message.channel.send(`Bravo ${message.author}, tu as gagné ! Tu remportes 2 DcCoins !`)
-  	  message.author.send("Pour recevoir vos DcCoins, merci de répondre avec le format suivant : \n Pseudo: [VOTRE PSEUDO MINECRAFT]");
+      message.channel.send(`Bravo ${message.author}, tu as gagné ! N'oublies pas de venir rejouer pour gagner une place pour l'avant première de venom !`)
     } else  
       message.channel.send(`Perdu ${message.author}, retente ta chance !`)
       
@@ -512,12 +508,13 @@ if (d1 == emotes[0] && d2 == emotes[0] && d3 == emotes[0]) {
     if (message.member.hasPermission('MANAGE_MESSAGES'))
      if (message.channel.type === "dm") return;
      
-const noel1 = ["🌻"]
-const noel2 = ["🌹"]
-const noel3 = ["🌷"]
-const noel4 = ["🌸"]
+const venom1 = client.emojis.find("name", "clara");
+const venom2 = client.emojis.find("name", "batiste");
+const venom3 = client.emojis.find("name", "guillaume");
+const venom4 = client.emojis.find("name", "laetitia");
      
-    var emotes = [noel1,noel2,noel3,noel4]
+
+    var emotes = [venom1,venom2,venom3,venom4]
             
     var d1 = emotes[Math.floor(Math.random() * emotes.length)]
     var d2 = emotes[Math.floor(Math.random() * emotes.length)]
@@ -525,20 +522,16 @@ const noel4 = ["🌸"]
 
     
 if (d1 == emotes[0] && d2 == emotes[0] && d3 == emotes[0]) {
-      message.channel.send(`Bravo ${message.author}, tu as gagné ! Tu remportes 2 DcCoins !`)
-  	  message.author.send("Pour recevoir vos DcCoins, merci de répondre avec le format suivant : \n Pseudo: [VOTRE PSEUDO MINECRAFT]");
+      message.channel.send(`Bravo ${message.author}, tu as gagné ! N'oublies pas de venir rejouer pour gagner une place pour l'avant première de venom !`)
     } else
     if (d1 == emotes[2] && d2 == emotes[2] && d3 == emotes[2]) {
-      message.channel.send(`Bravo ${message.author}, tu as gagné ! Tu remportes 2 DcCoins !`)
-  	  message.author.send("Pour recevoir vos DcCoins, merci de répondre avec le format suivant : \n Pseudo: [VOTRE PSEUDO MINECRAFT]");
+      message.channel.send(`Bravo ${message.author}, tu as gagné ! N'oublies pas de venir rejouer pour gagner une place pour l'avant première de venom !`)
     } else
     if (d1 == emotes[1] && d2 == emotes[1] && d3 == emotes[1]) {
-      message.channel.send(`Bravo ${message.author}, tu as gagné !Tu remportes 2 DcCoins ! `)
-  	  message.author.send("Pour recevoir vos DcCoins, merci de répondre avec le format suivant : \n Pseudo: [VOTRE PSEUDO MINECRAFT]");
+      message.channel.send(`Bravo ${message.author}, tu as gagné ! N'oublies pas de venir rejouer pour gagner une place pour l'avant première de venom !`)
     } else
     if (d1 == emotes[3] && d2 == emotes[3] && d3 == emotes[3]) {
-      message.channel.send(`Bravo ${message.author}, tu as gagné ! Tu remportes 2 DcCoins !`)
-  	  message.author.send("Pour recevoir vos DcCoins, merci de répondre avec le format suivant : \n Pseudo: [VOTRE PSEUDO MINECRAFT]");
+      message.channel.send(`Bravo ${message.author}, tu as gagné ! N'oublies pas de venir rejouer pour gagner une place pour l'avant première de venom !`)
 
     } else  
       message.channel.send(`Perdu ${message.author}, retente ta chance !`)
