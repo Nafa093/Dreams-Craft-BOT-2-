@@ -458,9 +458,7 @@ message.channel.send(args.join(' '))
 
 const venom1 = client.emojis.find("name", "clara");
 const venom2 = client.emojis.find("name", "batiste");
-const venom3 = client.emojis.find("name", "guillaume");
-const venom4 = client.emojis.find("name", "laetitia");
-     
+const venom3 = client.emojis.find("name", "guillaume");     
 
     var emotes = [venom1,venom2,venom3,venom4]
             
@@ -485,10 +483,7 @@ if (d1 == emotes[0] && d2 == emotes[0] && d3 == emotes[0]) {
     } else
     if (d1 == emotes[1] && d2 == emotes[1] && d3 == emotes[1]) {
       message.channel.send(`Bravo ${message.author}, tu as gagné ! N'oublies pas de venir rejouer pour gagner une place pour l'avant première de venom !`)
-    } else      
-    if (d1 == emotes[3] && d2 == emotes[3] && d3 == emotes[3]) {
-      message.channel.send(`Bravo ${message.author}, tu as gagné ! N'oublies pas de venir rejouer pour gagner une place pour l'avant première de venom !`)
-    } else  
+    } else     
       message.channel.send(`Perdu ${message.author}, retente ta chance !`)
       
       message.delete()
