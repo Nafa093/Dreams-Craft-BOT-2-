@@ -460,7 +460,7 @@ const venom1 = client.emojis.find("name", "clara");
 const venom2 = client.emojis.find("name", "batiste");
 const venom3 = client.emojis.find("name", "guillaume");     
 
-    var emotes = [venom1,venom2,venom3,venom4]
+    var emotes = [venom1,venom2,venom3]
             
     var d1 = emotes[Math.floor(Math.random() * emotes.length)]
     var d2 = emotes[Math.floor(Math.random() * emotes.length)]
